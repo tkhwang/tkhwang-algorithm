@@ -1,11 +1,16 @@
+## tkhwang-algorithm-leetcode
+
+
+    slow, but steady wins the game.
+
 leetcode activity sync using [LeetHub](https://github.com/QasimWani/LeetHub)
 
-slow, but steady wins the game.
+## Procedure
 
 * Problem solving in leetcode
-* Sync by [LeetHub](https://github.com/QasimWani/LeetHub)
-* Sometimes arrange by difficulty (easy/medium/high)
+* Auto sync by [LeetHub](https://github.com/QasimWani/LeetHub)
+* Sometimes re-arrange by difficulty (easy/medium/high)
 
-## status
+## Status
 
 ![Leetcode Stats](https://leetcard.jacoblin.cool/tkhwang)
