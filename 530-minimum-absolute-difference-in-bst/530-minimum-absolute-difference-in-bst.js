@@ -23,8 +23,6 @@ var getMinimumDifference = function(root) {
     
     const result = dfs(root)
     
-    console.log(result);
-    
     let min = Infinity;
     for (let i = 1; i < result.length; i += 1) {
         const diff = result[i] - result[i-1]
