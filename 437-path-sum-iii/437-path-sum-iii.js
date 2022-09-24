@@ -20,7 +20,6 @@ var pathSum = function(root, targetSum) {
         
         sum += node.val;
         
-        // if (sum === targetSum) count += 1;
         if (map[sum - targetSum] !== undefined) count += map[sum - targetSum];
 
         map[sum] = (map[sum] || 0) +1;
