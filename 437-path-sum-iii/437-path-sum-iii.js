@@ -12,7 +12,7 @@
  * @return {number}
  */
 var pathSum = function(root, targetSum) {
-    const map = {};
+    const map = { 0: 1 };
     let count = 0;
     
     const dfs = (node, sum) => {
@@ -20,7 +20,7 @@ var pathSum = function(root, targetSum) {
         
         sum += node.val;
         
-        if (sum === targetSum) count += 1;
+        // if (sum === targetSum) count += 1;
         if (map[sum - targetSum] !== undefined) count += map[sum - targetSum];
 
         map[sum] = (map[sum] || 0) +1;
