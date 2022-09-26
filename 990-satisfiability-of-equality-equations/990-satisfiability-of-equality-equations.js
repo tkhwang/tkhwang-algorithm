@@ -9,30 +9,24 @@ var equationsPossible = function(equations) {
     
     const unionFind = new UnionFind(26);
     
+    // connect
     for (const equation of equations) {
         const [ left, isEqual, _, right] = equation.split("");
-        console.log(left, isEqual, right);
-        if (isEqual === "!") {
-            if (unionFind.connected(getCode(left), getCode(right))) {
-                console.log(unionFind)
-                return false;
-            }
-        } else {
-            unionFind.union(getCode(left), getCode(right))
-        } 
+
+        if (isEqual === "!") continue;
+
+        unionFind.union(getCode(left), getCode(right))
     }
     
+    // verify
     for (const equation of equations) {
         const [ left, isEqual, _, right] = equation.split("");
-        console.log(left, isEqual, right);
+
         if (isEqual === "!") {
             if (unionFind.connected(getCode(left), getCode(right))) {
-                console.log(unionFind)
                 return false;
             }
-        } else {
-            unionFind.union(getCode(left), getCode(right))
-        } 
+        }
     }    
 
     return true;
