@@ -31,9 +31,10 @@ var numberOfGoodPaths = function(vals, edges) {
     
     for (const cur of Object.keys(d)) {
         for (const node of d[cur]) {
-            added[node] = true;
+            // added[node] = true;
             for (const next of graph[node]) {
-                if (added[next]) unionFind.union(node, next)
+                // if (added[next]) unionFind.union(node, next)
+                if (vals[node] >= vals[next]) unionFind.union(node, next)
             }
         }
         const counts = {};
