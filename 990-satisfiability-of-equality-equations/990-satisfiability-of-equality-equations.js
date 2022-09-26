@@ -21,7 +21,6 @@ var equationsPossible = function(equations) {
             unionFind.union(getCode(left), getCode(right))
         } 
     }
-    console.log(unionFind)
     
     for (const equation of equations) {
         const [ left, isEqual, _, right] = equation.split("");
@@ -36,7 +35,6 @@ var equationsPossible = function(equations) {
         } 
     }    
 
-    
     return true;
 };
 
