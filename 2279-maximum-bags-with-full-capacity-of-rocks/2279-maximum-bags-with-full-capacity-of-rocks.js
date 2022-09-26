@@ -15,8 +15,6 @@ var maximumBags = function(capacity, rocks, additionalRocks) {
     
     diff.sort((a,b) => a - b);
     
-    console.log(diff)
-
     let cnt = 0;
     
     for (let i = 0; i < n && additionalRocks >= 0; i += 1) {
