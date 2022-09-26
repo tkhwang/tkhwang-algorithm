@@ -8,13 +8,9 @@ var maxIceCream = function(costs, coins) {
     
     costs.sort((a,b) => a - b);
     
-    for (let i = 0; i < n && coins >= 0; i += 1) {
-        if (costs[i] <= coins) {
-            coins -= costs[i];
-            if (coins === 0) return i + 1;
-        } else {
-            return i
-        }
+    for (const [ i, cost ] of costs.entries()) {
+        coins -= cost;
+        if (coins < 0) return i
     }
     return n;
 };
