@@ -28,8 +28,6 @@ var pushDominoes = function(dominoes) {
         else if (dp[LEFT][i] === dp[RIGHT][i]) dp[FINAL][i] = dp[LEFT][i];
     }
     
-    console.log(dp)
-
     let left = 0;
     while (left < n) {
         while (left < n && !(dp[RIGHT][left] === "R" && dp[LEFT][left] === "L")) {
