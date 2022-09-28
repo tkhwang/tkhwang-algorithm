@@ -5,25 +5,25 @@
  */
 var combinationSum = function(candidates, target) {
     const n = candidates.length;
-    const res = [];
+    const result = [];
     
-    const backtrack = (cur, sum, index) => {
+    const dfs = (cur, sum, index) => {
         if (sum === 0) {
-            res.push([...cur]);
+            result.push([...cur])
             return;
         }
         if (sum < 0) return;
         
         for (let i = index; i < n; i += 1) {
-            if (sum >= candidates[i]) {
-                cur.push(candidates[i]);
-                backtrack(cur, sum - candidates[i], i);
-                cur.pop();
-            }
+            cur.push(candidates[i]);
+            
+            dfs(cur, sum - candidates[i], i);
+            
+            cur.pop();
         }
     }
     
-    backtrack([], target, 0);
+    dfs([], target, 0);
     
-    return res;
+    return result;
 };
