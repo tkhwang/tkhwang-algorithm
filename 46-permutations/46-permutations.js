@@ -6,26 +6,24 @@ var permute = function(nums) {
     const n = nums.length;
     const res = [];
     
-    const backtrack = (cur, used) => {
+    const backtrack = (cur) => {
         if (cur.length >= n) {
             res.push([...cur]);
             return;
         }
         
         for (let i = 0; i < n; i += 1) {
-            if (used.includes(i)) continue;
+            if (cur.includes(nums[i])) continue;
             
-            used.push(i);
             cur.push(nums[i]);
             
-            backtrack(cur, used);
+            backtrack(cur);
             
-            used.pop();
             cur.pop();
         }
     }
     
-    backtrack([], []);
+    backtrack([]);
     
     return res;
 };
