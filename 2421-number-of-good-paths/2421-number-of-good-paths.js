@@ -29,7 +29,6 @@ var numberOfGoodPaths = function(vals, edges) {
         for (const node of val2node[val]) {
             for (const neighbor of graph[node]) {
                 if (val >= vals[neighbor]) {
-                    console.log(`${node}->${neighbor}`)
                     unionFind.union(node, neighbor);
                 }
             }
