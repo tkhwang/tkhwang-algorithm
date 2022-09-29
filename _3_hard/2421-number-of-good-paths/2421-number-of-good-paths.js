@@ -5,48 +5,46 @@
  */
 var numberOfGoodPaths = function(vals, edges) {
     if (edges.length === 0) return 1;
+        
+    const N = vals.length;
     
-    const n = vals.length;
-    
-    const graph = {};
+    const graph = {}
     for (const [ begin, end ] of edges) {
         if (graph[begin] === undefined) graph[begin] = [];
         if (graph[end] === undefined) graph[end] = [];
         graph[begin].push(end);
         graph[end].push(begin);
     }
-    
-    const unionFind = new UnionFind(n);
 
-    // { value : [ nodes ]}
-    const d = {};
-    for (let i = 0; i < n; i += 1) {
-        if (d[vals[i]] === undefined) d[vals[i]] = [];
-        d[vals[i]].push(i);
+    const val2node = {};
+    for (const [ node, val ] of vals.entries()) {
+        if (val2node[val] === undefined) val2node[val] = [];
+        val2node[val].push(node);
     }
 
-    const added = Array(n).fill(false);
-    let res = 0;
+    const unionFind = new UnionFind(N);
+    let sum = 0;
     
-    for (const cur of Object.keys(d)) {
-        for (const node of d[cur]) {
-            for (const next of graph[node]) {
-                if (vals[node] >= vals[next]) unionFind.union(node, next)
+    for (const val of Object.keys(val2node).map(Number).sort((a,b) => a - b)) {
+        for (const node of val2node[val]) {
+            for (const neighbor of graph[node]) {
+                if (val >= vals[neighbor]) {
+                    unionFind.union(node, neighbor);
+                }
             }
-        }
+         }
         const counts = {};
-        for (const node of d[cur]) {
-            const root = unionFind.find(node)
+        for (const node of val2node[val]) {
+            const root = unionFind.find(node);
             counts[root] = (counts[root] || 0) + 1;
-        }
-        for (const value of Object.values(counts)) {
-            res += value * (value + 1) / 2;
+            
+            sum += counts[root];
         }
     }
     
-    return res;
+    return sum;
 };
-
+    
 class UnionFind {
     constructor(n) {
         this.root = Array(n).fill(null).map((_,i) => i);
@@ -84,4 +82,4 @@ class UnionFind {
     getComponents() {
         return this.components;
     }
-}
+}    
