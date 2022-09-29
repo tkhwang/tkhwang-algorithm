@@ -12,27 +12,23 @@
  */
 var getMinimumDifference = function(root) {
     
-    const data = [];
+    const result = [];
     
     const dfs = (node) => {
         if (!node) return;
         
-        data.push(node.val);
-        
         dfs(node.left);
+        
+        result.push(node.val);
+        
         dfs(node.right);
     }
     
     dfs(root);
-    
-    data.sort((a,b) => a - b);
-    
     let min = Infinity;
-    
-    for (let i = 1; i < data.length; i += 1) {
-        const diff = data[i] - data[i-1];
-        if (min > diff) min = diff;    
+    for (let i = 1; i < result.length; i += 1) {
+        const diff = result[i] - result[i-1];
+        if (min > diff) min = diff;
     }
-    
-    return min;    
+    return min;
 };
