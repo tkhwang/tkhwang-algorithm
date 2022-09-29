@@ -19,9 +19,11 @@ var rangeSumBST = function(root, low, high) {
         if (!node) return;
         
         if (low <= node.val && node.val <= high) sum += node.val;
-        
-        dfs(node.left);
-        dfs(node.right);
+
+        if (low < node.val) dfs(node.left);
+
+        if (node.val < high) dfs(node.right);
+
     }
     
     dfs(root)
