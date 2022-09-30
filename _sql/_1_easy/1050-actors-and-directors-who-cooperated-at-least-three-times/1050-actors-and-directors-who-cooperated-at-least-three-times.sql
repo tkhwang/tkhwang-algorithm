@@ -1,9 +1,9 @@
 # Write your MySQL query statement below
-SELECT 
+SELECT
     actor_id
     , director_id
 FROM ActorDirector
-GROUP BY 
+GROUP BY
     actor_id
     , director_id
-HAVING COUNT(*) >= 3
+HAVING COUNT(*) >= 3    

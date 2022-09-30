@@ -1,7 +1,7 @@
 # Write your MySQL query statement below
 SELECT
     customer_id
-    , COUNT(visit_id) count_no_trans
+    , COUNT(*) count_no_trans
 FROM Visits
 WHERE visit_id NOT IN (
     SELECT DISTINCT visit_id
