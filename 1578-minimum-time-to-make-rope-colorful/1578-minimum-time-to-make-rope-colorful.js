@@ -9,8 +9,6 @@ var minCost = function(colors, neededTime) {
     let res = 0;
     
     for (let i = 1; i < N; i += 1) {
-        console.log(i, prvIndex);
-        
         const cur = colors[i];
         
         if (colors[prvIndex] !== cur)  {
