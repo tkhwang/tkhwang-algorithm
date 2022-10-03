@@ -36,7 +36,5 @@ var longestIncreasingPath = function(matrix) {
         }
     }
     
-    console.log(cache);
-    
     return max;
 };
