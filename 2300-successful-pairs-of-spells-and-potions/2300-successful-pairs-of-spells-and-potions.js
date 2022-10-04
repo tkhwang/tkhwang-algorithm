@@ -11,9 +11,10 @@
  * @return {number[]}
  */
 var successfulPairs = function(spells, potions, success) {
-    let binarySearch = (arr, target) => {
+    const binarySearch = (arr, target) => {
         left = 0;
         right = arr.length - 1;
+        
         while (left <= right) {
             let mid = Math.floor((left + right) / 2);
             if (arr[mid] < target) {
@@ -27,6 +28,7 @@ var successfulPairs = function(spells, potions, success) {
     }
     
     potions.sort((a, b) => a - b);
+    
     let ans = [];
     let m = potions.length;
     
