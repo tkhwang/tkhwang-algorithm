@@ -22,8 +22,6 @@ WordDictionary.prototype.addWord = function(word) {
  */
 WordDictionary.prototype.search = function(word) {
     const dfs = (index, trieNode) => {
-        // if (index >= word.length) return true;
-        
         let node = trieNode;
         
         for (let i = index; i < word.length; i += 1) {
