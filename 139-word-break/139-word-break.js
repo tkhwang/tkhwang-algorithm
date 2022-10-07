@@ -25,8 +25,6 @@ var wordBreak = function(s, wordDict) {
         for (let i = index; i < N; i += 1) {
             const cur = s[i];
             
-            console.log(i, cur, node)
-            
             if (node[cur] === undefined) return;
             
             if (node[cur].isWord) {
