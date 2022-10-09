@@ -20,8 +20,6 @@ var minWindow = function(s, t) {
         return true;
     }
     
-    console.log(freq)
-    
     let min = Infinity;
     const freqT = {};
     let result = "";
