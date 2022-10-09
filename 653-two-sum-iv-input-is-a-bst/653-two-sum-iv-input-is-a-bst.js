@@ -26,7 +26,6 @@ var findTarget = function(root, k) {
     
     dfs(root)
     
-    console.log(result);
     const hash = {}
     for (const [i, num] of result.entries()) {
         if (hash[k - num] === undefined) {
