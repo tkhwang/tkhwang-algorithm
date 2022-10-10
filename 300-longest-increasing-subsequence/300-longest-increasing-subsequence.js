@@ -32,6 +32,7 @@ var lengthOfLIS = function(nums) {
     const sub = [];
     for (const num of nums) {
         const index = bisectLeft(sub, num);
+        
         if (index === sub.length) sub.push(num)
         else sub[index] = num;
     }
