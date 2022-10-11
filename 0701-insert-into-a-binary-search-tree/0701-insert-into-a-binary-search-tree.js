@@ -17,15 +17,11 @@ var insertIntoBST = function(root, val) {
         
         if (node.val === val) return node;
         
-        let left;
-        let right;
         if (node.val > val) {
-            left = dfs(node.left, val);
+            node.left = dfs(node.left, val);
         } else if (node.val < val) {
-            right = dfs(node.right, val);
+            node.right = dfs(node.right, val);
         }
-        if (left) node.left = left;
-        if (right) node.right = right;
         return node;
     }
     
