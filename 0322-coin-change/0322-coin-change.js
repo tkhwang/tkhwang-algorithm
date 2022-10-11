@@ -4,16 +4,23 @@
  * @return {number}
  */
 var coinChange = function(coins, amount) {
-    const dp = Array(amount + 1).fill(Infinity);
-    dp[0] = 0;
+    const cache = {};
     
-    for (let i = 1; i <= amount; i += 1) {
+    const dp = (n) => {
+        if (n === 0) return 0;
+        if (n < 0) return -1;
+        if (cache[n] !== undefined) return cache[n];
+        
+        let counts = Infinity;
         for (const coin of coins) {
-            if (i - coin < 0) continue;
+            const subProblem = dp(n - coin);
+            if (subProblem === -1) continue;
             
-            dp[i] = Math.min(dp[i], 1 + dp[i-coin])
+            counts = Math.min(counts, 1 + subProblem);
         }
+        counts = counts === Infinity ? -1 : counts;
+        return cache[n] = counts;
     }
     
-    return dp[amount] === Infinity ? -1 : dp[amount];
+    return dp(amount);
 };
