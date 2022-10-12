@@ -16,13 +16,9 @@ var tree2str = function(root) {
 
         let res = "" + node.val;
 
-        // openning
         if (node.left || node.right) {
             res += "(" + dfs(node.left) + ")";
-            // if (node.right) res +=  "(" + dfs(node.right);
-
-            // closing
-            // res += ")";
+            
             if (node.right) {
                 res += "(" + dfs(node.right) + ")"
             }
