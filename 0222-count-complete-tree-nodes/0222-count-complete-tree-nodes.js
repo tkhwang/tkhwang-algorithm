@@ -11,18 +11,10 @@
  * @return {number}
  */
 var countNodes = function(root) {
-    const res = [];
-    
     const dfs = (node) => {
-        if (!node) return;
+        if (!node) return 0;
         
-        res.push(node.val);
-        
-        dfs(node.left);
-        dfs(node.right);
+        return 1 + dfs(node.left) + dfs(node.right);
     }
-    
-    dfs(root);
-    
-    return res.length;
+    return dfs(root)
 };
