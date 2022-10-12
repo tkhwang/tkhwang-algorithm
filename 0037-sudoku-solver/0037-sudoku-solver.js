@@ -40,7 +40,7 @@ var solveSudoku = function(board) {
         return true;
     }
     
-    const dfs = (r, c) => {
+    const backtrack = (r, c) => {
         if (c === COLS) {
             r += 1;
             c = 0;
@@ -49,7 +49,7 @@ var solveSudoku = function(board) {
             return true;
         }
         
-        if (board[r][c] !== ".") return dfs(r, c+1);
+        if (board[r][c] !== ".") return backtrack(r, c+1);
         
         for (let i = 1; i <= 9; i += 1) {
             if (!possible(r, c, i)) continue;
@@ -57,7 +57,7 @@ var solveSudoku = function(board) {
             board[r][c] = "" + i;
             addSet(r, c, i);
             
-            if (dfs(r, c+1)) return true;
+            if (backtrack(r, c+1)) return true;
             
             board[r][c] = ".";
             deleteSet(r, c, i);
@@ -65,7 +65,7 @@ var solveSudoku = function(board) {
         return false;
     }
     
-    dfs(0, 0);
+    backtrack(0, 0);
     
     return board;
 };
