@@ -26,7 +26,7 @@ var calculate = function(_s) {
                 stack.push(pre * n);
             } else if (op === "/") {
                 const pre = stack.pop();
-                stack.push(parseInt(pre / n, 10 ));
+                stack.push(Math.trunc(pre / n));
             }
             op = c;
             n = 0;
