@@ -20,6 +20,7 @@ var subarraySum = function(nums, k) {
         if (counts[sum - k] !== undefined) {
             res += counts[sum - k];
         } 
+        
         counts[sum] = (counts[sum] || 0) + 1;
     }
     
