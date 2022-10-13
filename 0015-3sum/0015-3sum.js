@@ -13,6 +13,7 @@ var threeSum = function(nums) {
         while (left < right) {
             const leftValue = nums[left];
             const rightValue = nums[right];
+            
             const sum = leftValue + rightValue;
             
             if (sum > target) {
@@ -22,13 +23,14 @@ var threeSum = function(nums) {
             } else if (sum === target) {
                 res.push([ -target, nums[left], nums[right] ]);
                 while (left < right && nums[right] === rightValue) right -= 1;
-                while (left < right && nums[right] === rightValue) right -= 1;
+                while (left < right && nums[left] === leftValue) left += 1;
             }
         }
     }
     
     for (let i = 0; i < N; i += 1) {
         const cur = nums[i];
+        
         twoSum(i+1, N-1, -cur);
         
         while (i < N && nums[i] === nums[i+1]) i += 1;
