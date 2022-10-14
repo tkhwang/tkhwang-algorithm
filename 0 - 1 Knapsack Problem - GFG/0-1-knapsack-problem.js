@@ -72,29 +72,26 @@ class Solution
     //Function to return max value that can be put in knapsack of capacity W.
     knapSack(W, wt, val, N)
     { 
-       const cache = {};
-       const genKey = (n, w) => `${n}:${w}`;
+       // code here
        
-       const dp = (n, w) => {
-           const key = genKey(n, w);
-           
-           if (n <= 0 || w <= 0) return 0;
-           if (cache[key] !== undefined) return cache[key];
-                      
-           if (wt[n-1] > w) {
-               return dp(n-1, w);
-           } else {
-                cache[key] = Math.max(
-                    // n번째 물건 포함
-                    dp(n-1, w - wt[n-1]) + val[n-1],
-                    // n번째 물건 포함하지 않음
-                    dp(n-1, w)
-                   )
-                return cache[key];
+       const dp = Array(N+1).fill(null).map((_) => Array(W+1).fill(0));
+       
+       for (let n = 1; n <= N; n += 1) {
+           for (let w = 1; w <= W; w += 1) {
+               if (wt[n-1] > w) {
+                   dp[n][w] = dp[n-1][w];
+               } else {
+                   dp[n][w] = Math.max(
+                        // n 번째 포함하지 않는 경우
+                        dp[n-1][w],
+                        // n 번째 포함한 경우
+                        dp[n-1][w - wt[n-1]] + val[n-1]
+                       )
+               }
            }
        }
        
-       return dp(N, W)
+       return dp[N][W];
     }
 }
 
