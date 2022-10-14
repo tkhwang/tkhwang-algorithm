@@ -5,13 +5,17 @@
  */
 var findTargetSumWays = function(nums, target) {
     const N = nums.length;
+    const cache = {};
+    const key = (index, sum) => `${index}:${sum}`
 
     const dp = (index, sum) => {
         if (index >= N) {
             return sum === 0 ? 1 : 0;
         }
+        if (cache[key(index, sum)] !== undefined) return cache[key(index, sum)];
         
-        return dp(index + 1, sum + nums[index]) + dp(index + 1, sum - nums[index]);
+        cache[key(index,sum)] = dp(index + 1, sum + nums[index]) + dp(index + 1, sum - nums[index]);
+        return cache[key(index,sum)];
     }
 
 
