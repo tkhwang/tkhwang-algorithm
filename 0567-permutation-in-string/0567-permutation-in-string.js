@@ -19,15 +19,12 @@ var checkInclusion = function(s1, s2) {
     }
     
     const window = {};
-    let valid = 0;
     
     let left = 0;
     for (let right = 0; right < N; right += 1) {
         const ch = s2[right];
         
         window[ch] = (window[ch] || 0) + 1;
-
-        if (window[ch] === needs[ch]) valid += 1;
         
         while (right - left + 1 > s1.length) {
             const chLeft = s2[left];
