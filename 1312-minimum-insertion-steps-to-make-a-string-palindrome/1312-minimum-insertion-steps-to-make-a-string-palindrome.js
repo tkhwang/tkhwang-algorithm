@@ -5,13 +5,7 @@
 var minInsertions = function(s) {
     const N = s.length;
     
-    // dp[i][j]  s[i...j] 가 palindrome 이다.
-
     const dp = Array(N).fill(null).map((_) => Array(N).fill(0));
-    
-    // for (let i = 0; i < N; i += 1) {
-    //     dp[i][i] = true;
-    // }
     
     for (let i = N -2; i >= 0; i -= 1) {
         for (let j = i + 1; j < N; j += 1) {
