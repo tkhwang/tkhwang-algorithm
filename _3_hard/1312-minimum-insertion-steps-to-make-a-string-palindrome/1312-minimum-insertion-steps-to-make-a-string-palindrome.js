@@ -7,18 +7,18 @@ var minInsertions = function(s) {
     
     const dp = Array(N).fill(null).map((_) => Array(N).fill(0));
     
-    for (let r = N-2; r >= 0; r -= 1) {
-        for (let c = r + 1; c < N; c += 1) {
-            if (s[r] === s[c]) {
-                dp[r][c] = dp[r+1][c-1];
+    for (let i = N -2; i >= 0; i -= 1) {
+        for (let j = i + 1; j < N; j += 1) {
+            if (s[i] === s[j]) {
+                dp[i][j] = dp[i+1][j-1]
             } else {
-                dp[r][c] = Math.min(
-                    dp[r][c-1],
-                    dp[r+1][c]
-                ) + 1
+                dp[i][j] = Math.min(
+                    1 + dp[i+1][j],
+                    1 + dp[i][j-1]
+                )
             }
         }
     }
-
+    
     return dp[0][N-1];
 };

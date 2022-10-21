@@ -5,12 +5,12 @@
 var maxProfit = function(prices) {
     const N = prices.length;
     
-    let min = Infinity;
+    let minPrice = Infinity;
     let maxProfit = -Infinity;
     
     for (let i = 0; i < N; i += 1) {
-        min = Math.min(min, prices[i]);
-        maxProfit = Math.max(maxProfit, prices[i] - min);
+        if (minPrice > prices[i]) minPrice = prices[i];
+        maxProfit = Math.max(maxProfit, prices[i] - minPrice);
     }
     
     return maxProfit;

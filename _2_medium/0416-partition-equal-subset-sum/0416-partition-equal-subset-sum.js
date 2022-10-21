@@ -3,14 +3,16 @@
  * @return {boolean}
  */
 var canPartition = function(nums) {
+    const total = nums.reduce((a,b) => a + b, 0);
+    if (total % 2 === 1) return false;
+    
+    const W = total/2;
+    
+    // dp[i][w]
+    
     const N = nums.length;
-    const totalSum = nums.reduce((a,b) => a + b, 0);
-    
-    if (totalSum % 2 === 1) return false;
-    
-    const W = totalSum/2
-    const dp = Array(N+1).fill(null).map((_) => Array(W+1).fill(false));
-    
+    const dp = Array(N+1).fill(null).map((_) => Array(W + 1).fill(false));
+
     for (let n = 0; n <= N; n += 1) {
         dp[n][0] = true;
     }
