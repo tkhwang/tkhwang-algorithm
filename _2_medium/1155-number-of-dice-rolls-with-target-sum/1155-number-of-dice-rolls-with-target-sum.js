@@ -5,26 +5,26 @@
  * @return {number}
  */
 var numRollsToTarget = function(n, k, target) {
-    let search = function(i, sum, dp) {
-        if( sum == target && i == n ) return 1;
-        if( i == n ) return 0;
-        if( sum >= target ) return 0;
-        if( dp[i][sum] != -1 ) return dp[i][sum];
+    const MOD = 7 + 10 ** 9;
+    const cache = {};
+    const genKey = (sum, times) => `${sum}:${times}`;
+    
+    const dfs = (sum, times) => {
+        const key = genKey(sum, times);
         
-        var j, ans=0;
-        
-        for( j=1; j<=k; j++ ) {
-            if( sum+j > target ) break;
-            ans = (ans+search(i+1, sum+j, dp))%1000000007;
+        if (times === 0) {
+            if (sum === 0) return 1;
+            else 0;
         }
+        if (sum < 0 || times < 0) return 0;
+        if (cache[key] !== undefined) return cache[key];
         
-        return dp[i][sum] = ans;
-    }
-    let dp = new Array(n);
-    var i;
-    for( i=0; i<n; i++ ) {
-        dp[i] = new Array(target).fill(-1);
+        let res = 0;
+        for (let i = 1; i <= k; i += 1) {
+            res += dfs(sum - i, times - 1) % MOD;
+        }
+        return cache[key] = res % MOD;
     }
     
-    return search(0, 0, dp);
+    return dfs(target, n)
 };
