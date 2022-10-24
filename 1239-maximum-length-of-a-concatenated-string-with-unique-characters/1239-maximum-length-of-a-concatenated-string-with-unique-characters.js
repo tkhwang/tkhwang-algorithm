@@ -4,38 +4,42 @@
  */
 var maxLength = function(arr) {
     const N = arr.length;
+    
+    const lookup = [];
+    
+    const getSet = (word) => {
+        let b = 0;
+        for (const ch of word) {
+            const d = ch.charCodeAt(0) - 'a'.charCodeAt(0);
+            if ((b & 1 << d) > 0) return - 1;
+            
+            b |= 1 << d;
+        }
+        return b;
+    }
+    
     let max = -Infinity;
     
-    const dfs = (index, cur, set) => {
+    const dfs = (index, currentS, currentL) => {
         if (index >= N) {
-            if (max < cur.length) max = cur.length;
+            if (max < currentL) max = currentL;
             return;
         }
         
-        // not add
-        dfs(index + 1, cur, set);
+        // not use
+        dfs(index + 1, currentS, currentL);
         
-        // add
-        const localSet = new Set();
-        for (const ch of arr[index]) {
-            if (localSet.has(ch)) return;
-            localSet.add(ch);
+        // use
+        if (lookup[index] !== -1 && (currentS & lookup[index]) === 0) {
+            dfs(index + 1, currentS | lookup[index], currentL + arr[index].length)
         }
-        for (const ch of arr[index]) {
-            if (set.has(ch)) return;
-        }
-        
-        for (const ch of arr[index]) {
-            set.add(ch);
-        }
-        dfs(index + 1, cur + arr[index], set);
-        
-        for (const ch of arr[index]) {
-            set.delete(ch);
-        }        
     }
     
-    dfs(0, "", new Set());
+    for (const word of arr) {
+        lookup.push(getSet(word));
+    }
+    
+    dfs(0, 0, 0)
     
     return max;
 };
