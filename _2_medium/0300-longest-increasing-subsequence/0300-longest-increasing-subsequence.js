@@ -3,7 +3,7 @@
  * @return {number}
  */
 var lengthOfLIS = function(nums) {
-        const bisectLeft = (array, target) => {
+    const bisectLeft = (array, target) => {
         const N = array.length;
         
         // [0, N)
@@ -26,10 +26,9 @@ var lengthOfLIS = function(nums) {
         }
         return left;
     }
-        
-    const N = nums.length;
     
     const piles = [];
+    
     for (const num of nums) {
         const index = bisectLeft(piles, num);
         
