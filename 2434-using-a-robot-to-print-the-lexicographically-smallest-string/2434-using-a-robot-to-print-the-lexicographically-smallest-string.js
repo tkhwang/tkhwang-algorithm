@@ -15,8 +15,6 @@ var robotWithString = function(_s) {
         suffixMin[i] = cur < latest ? cur : suffixMin[i+1];
     }
 
-    console.log(suffixMin);
-    
     const t = [];
     let res = "";
 
