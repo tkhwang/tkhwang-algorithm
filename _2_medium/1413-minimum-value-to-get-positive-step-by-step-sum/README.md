@@ -9,7 +9,7 @@
 
 <pre><strong>Input:</strong> nums = [-3,2,-3,4,2]
 <strong>Output:</strong> 5
-<strong>Explanation: </strong>If you choose startValue = 4, in the third iteration your step by step sum is less than 1.
+<strong>Expddddddddddddddddddddddddddddlanation: </strong>If you choose startValue = 4, in the third iteration your step by step sum is less than 1.
 <strong>step by step sum</strong>
 <strong>startValue = 4 | startValue = 5 | nums</strong>
   (4 <strong>-3</strong> ) = 1  | (5 <strong>-3</strong> ) = 2    |  -3
@@ -23,7 +23,7 @@
 
 <pre><strong>Input:</strong> nums = [1,2]
 <strong>Output:</strong> 1
-<strong>Explanation:</strong> Minimum start value should be positive. 
+<strong>Explanation:</strong> Minimum start value should be positive.
 </pre>
 
 <p><strong class="example">Example 3:</strong></p>
