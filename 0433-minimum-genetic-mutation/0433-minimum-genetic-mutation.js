@@ -23,12 +23,8 @@ var minMutation = function(start, end, bank) {
             if (cur === end) return steps;
 
             for (let j = 0; j < cur.length; j += 1) {
-                // if (cur[j] === end[j]) continue;
-                
                 for (const gene of genes) {
                     const next = cur.substring(0, j) + gene + cur.substring(j+1);
-                    
-                    // console.log(cur, next);
                     
                     if (set.has(next) && !seen.has(next)) {
                         seen.add(next);
