@@ -12,22 +12,27 @@
  * @return {TreeNode}
  */
 var lowestCommonAncestor = function(root, p, q) {
-    const dfs = (node, p, q) => {
-        if (!node) return null;
+    const dfs = (node, parent) => {
+        if (!node) return;
         
-        if (node === p || node === q) return node;
+        node.parent = parent;
         
-        const left = dfs(node.left, p, q);
-        const right = dfs(node.right, p, q);
-
-        if (left && right) return node;
-        
-//         if (left) return left;
-        
-//         return right;
-        
-        return left || right;
+        dfs(node.left, node);
+        dfs(node.right, node);
     }
     
-    return dfs(root, p, q)
+    dfs(root, null);
+    
+    const ancestors = new Set();
+    
+    while (p) {
+        ancestors.add(p);
+        p = p.parent;        
+    }
+    
+    while (!ancestors.has(q)) {
+        q = q.parent;
+    }
+    
+    return q;
 };
