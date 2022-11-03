@@ -21,8 +21,6 @@ var nextGreaterElement = function(nums1, nums2) {
         map[stack.pop()] = -1;
     }
     
-    console.log(map);
-    
     const res = [];
     
     for (let i = 0; i < N1; i += 1) {
