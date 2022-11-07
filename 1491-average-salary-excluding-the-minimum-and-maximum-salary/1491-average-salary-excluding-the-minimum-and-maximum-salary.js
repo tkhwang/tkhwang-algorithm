@@ -3,12 +3,19 @@
  * @return {number}
  */
 var average = function(salary) {
-    salary.sort((a, b) => a - b);
+
+    const N = salary.length;
     
-    salary.shift();
-    salary.pop();
+    let sum = 0;
+    let min = Infinity;
+    let max = -Infinity;
     
-    console.log(salary);
+    for (let i = 0; i < N; i += 1) {
+        sum += salary[i];
+        
+        if (min > salary[i]) min = salary[i];
+        if (max < salary[i]) max = salary[i];
+    }
     
-    return salary.reduce((a,b) => a + b, 0) / salary.length;
+    return (sum - min - max) / (N - 2);
 };
