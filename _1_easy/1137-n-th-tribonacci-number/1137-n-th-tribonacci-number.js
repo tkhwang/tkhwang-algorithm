@@ -9,7 +9,7 @@ var tribonacci = function(n) {
     dp[2] = 1;
     
     for (let i = 3; i <= n; i += 1) {
-        dp[i] = dp[i-3] + dp[i-2] + dp[i-1];
+        dp[i] = dp[i-1] + dp[i-2] + dp[i-3];
     }
     
     return dp[n];

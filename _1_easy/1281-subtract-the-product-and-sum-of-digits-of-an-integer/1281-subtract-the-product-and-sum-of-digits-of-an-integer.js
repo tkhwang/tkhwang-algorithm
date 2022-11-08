@@ -4,9 +4,5 @@
  */
 var subtractProductAndSum = function(_n) {
     const n = String(_n).split("").map(Number);
-    
-    const product = n.reduce((a,b) => a * b, 1);
-    const sum = n.reduce((a,b) => a + b, 0);
-    
-    return product - sum;
+    return n.reduce((a,b) => a * b, 1) - n.reduce((a,b) => a + b, 0);
 };

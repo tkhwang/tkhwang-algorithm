@@ -4,14 +4,14 @@
  */
 var minCostClimbingStairs = function(cost) {
     const N = cost.length;
-    const cache = {};
     
-    const dp = (n) => {
-        if (n <= 1) return 0;
-        if (cache[n] !== undefined) return cache[n];
-        
-        return cache[n] = Math.min(dp(n-2) + cost[n-2], dp(n-1) + cost[n-1])
+    const dp = Array(N+1).fill(0);
+    dp[0] = 0;
+    dp[1] = 0;
+    
+    for (let i = 2; i <= N; i += 1) {
+        dp[i] = Math.min(dp[i-2] + cost[i-2], dp[i-1] + cost[i-1])
     }
     
-    return dp(N);
+    return dp[N];
 };

@@ -4,7 +4,6 @@
  */
 var maxSubArray = function(nums) {
     const N = nums.length;
-
     if (N === 1) return nums[0];
     
     const dp = Array(N).fill(0);

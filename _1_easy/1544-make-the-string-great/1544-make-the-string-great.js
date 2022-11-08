@@ -3,14 +3,21 @@
  * @return {string}
  */
 var makeGood = function(s) {
-    const getCode = (str) => str.charCodeAt(0);
-    
-    const isBad = (a, b) => a.toLowerCase() === b.toLowerCase()   && a !== b;
-    
+    const N = s.length;
     const stack = [ "" ];
-    for (const ch of s) {
-        if (isBad(stack[stack.length - 1], ch)) stack.pop();
-        else stack.push(ch)
+    
+    const isBad = (first, second) => {
+        return (first !== first.toUpperCase() && second === first.toUpperCase()) ||
+               (first !== first.toLowerCase() && second === first.toLowerCase());
     }
+    
+    for (const ch of s.split("")) {
+        if (isBad(stack[stack.length - 1], ch)) {
+           stack.pop();
+        } else {
+            stack.push(ch);
+        }
+    }
+    
     return stack.join("");
 };
