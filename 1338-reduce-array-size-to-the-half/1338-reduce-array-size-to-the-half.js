@@ -10,13 +10,9 @@ var minSetSize = function(arr) {
         freq[n] = (freq[n] || 0) + 1;
     }
     
-    console.log(freq);
-    
     const keys = Object.keys(freq);
     
     keys.sort((a,b) => freq[b] - freq[a])
-    
-    console.log(keys)
     
     let remain = N;
     let count = 0;
