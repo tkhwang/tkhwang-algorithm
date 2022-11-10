@@ -22,8 +22,8 @@ var lowestCommonAncestor = function(root, p, q) {
         const right = dfs(node.right, p, q) ;
         
         if (left && right) return node;
-        
-        return left || right;
+        if (!left && !right) return null;
+        if (left || right) return left || right;
     }
     
     return dfs(root, p, q)
