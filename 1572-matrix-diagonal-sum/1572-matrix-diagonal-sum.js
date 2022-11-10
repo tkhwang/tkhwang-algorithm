@@ -9,15 +9,14 @@ var diagonalSum = function(mat) {
     
     for (let r = 0; r < ROWS; r += 1) {
         for (let c = 0; c < COLS; c += 1) {
-            if (r === c) sum += mat[r][c];
-            if (r + c === ROWS - 1) sum += mat[r][c];
+            if (r === c || r + c === ROWS - 1) sum += mat[r][c];
         }
     }
     
-    if (ROWS % 2 === 1) {
-        const mid = Math.floor(ROWS/2);
-        sum -= mat[mid][mid];
-    }
+    // if (ROWS % 2 === 1) {
+    //     const mid = Math.floor(ROWS/2);
+    //     sum -= mat[mid][mid];
+    // }
     
     return sum;
 };
