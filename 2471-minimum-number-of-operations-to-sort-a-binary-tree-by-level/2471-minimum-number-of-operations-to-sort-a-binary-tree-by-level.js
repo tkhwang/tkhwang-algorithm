@@ -45,8 +45,6 @@ const minSwaps = (array) => {
         minHeap.enqueue([ num, i ]);
     }
 
-    console.log("before:", array);
-    
     let i = 0;
     let count = 0;
     
@@ -63,11 +61,8 @@ const minSwaps = (array) => {
             
             count += 1;
         }
-        
         i += 1;
     }
-    
-    console.log("after:", array);
     
     return count;
 }
