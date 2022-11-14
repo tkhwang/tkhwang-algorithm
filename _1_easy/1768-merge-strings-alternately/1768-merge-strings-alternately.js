@@ -7,17 +7,15 @@ var mergeAlternately = function(word1, word2) {
     const N1 = word1.length;
     const N2 = word2.length;
     
-    let res = "";
-    
     let i = 0;
     let j = 0;
     
+    let res = "";
+    
     while (i < N1 && j < N2) {
-        
         res += word1[i];
-        res += word2[j];
-        
         i += 1;
+        res += word2[j];
         j += 1;
     }
     
@@ -30,6 +28,7 @@ var mergeAlternately = function(word1, word2) {
         res += word2[j];
         j += 1;
     }
+
     
     return res;
 };
