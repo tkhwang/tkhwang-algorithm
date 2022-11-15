@@ -14,7 +14,11 @@ var countNodes = function(root) {
     const dfs = (node) => {
         if (!node) return 0;
         
-        return 1 + dfs(node.left) + dfs(node.right);
+        const left = dfs(node.left);
+        const right = dfs(node.right);
+        
+        return left + right + 1;
     }
+    
     return dfs(root)
 };
