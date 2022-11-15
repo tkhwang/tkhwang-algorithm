@@ -3,12 +3,11 @@
  * @return {number}
  */
 var singleNumber = function(nums) {
-    const freq = {};
+    let sum = 0;
+    
     for (const num of nums) {
-        freq[num] = (freq[num] || 0) + 1;
+        sum ^= num;
     }
     
-    const keys = Object.keys(freq);
-    
-    return keys.filter((key) => freq[key] === 1)[0];
+    return sum;
 };
