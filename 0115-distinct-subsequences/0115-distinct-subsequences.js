@@ -6,23 +6,24 @@
 var numDistinct = function(s, t) {
     const NS = s.length;
     const NT = t.length;
+    
+    const cache = {};
+    const genKey = (i, j) => `${i}:${j}`;
 
-    // dp[i][j] : s[0...i] t[0...j] maching character number
-    const dp = Array(NS + 1).fill(null).map((_) => Array(NT+1).fill(0));
-    
-    for (let i = 0; i <= NS; i += 1) {
-        dp[i][0] = 1;
-    }
-    
-    for (let i = 1; i <= NS; i += 1) {
-        for (let j = 1; j <= NT; j += 1) {
-            if (s[i-1] === t[j-1]) {
-                dp[i][j] = dp[i-1][j-1] + dp[i-1][j]
-            } else {
-                dp[i][j] = dp[i-1][j]
-            }
+    const recursive = (i, j) => {
+        const key = genKey(i, j);
+        if (i === NS || j === NT) {
+            return j === NT;
         }
+        if (cache[key] !== undefined) return cache[key];
+        
+        let res = 0;
+        res += recursive(i+1, j)
+        if (s[i] === t[j]) {
+            res += recursive(i + 1, j+ 1)
+        } 
+        return cache[key] = res;
     }
-
-    return dp[NS][NT];
+    
+    return recursive(0, 0)
 };
