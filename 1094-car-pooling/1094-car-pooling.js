@@ -14,21 +14,18 @@ var carPooling = function(trips, capacity) {
         max = Math.max(max, to);
     }
     
-    const used = Array(max - min + 1).fill(0);
+    const delta = Array(max - min + 1).fill(0);
     
     for (const [ passengers, from, to ] of trips) {
-        for (let i = from; i < to; i += 1) {
-            used[i] += passengers;
-        }
+        delta[from] += passengers;
+        delta[to] -= passengers;
     }
     
-    for (const [ passengers, from, to ] of trips) {
-        for (let i = from; i < to; i += 1) {
-            if (used[i] > capacity) return false;
-        }
+    let cur = 0;
+    for (let i = min; i <= max; i += 1) {
+        cur += delta[i];
+        if (cur > capacity) return false;
     }
-    
-    console.log(used);
     
     return true;
 };
