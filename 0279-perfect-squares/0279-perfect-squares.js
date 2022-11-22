@@ -4,19 +4,18 @@
  */
 var numSquares = function(N) {
     const isSquare = (num) => num > 0 && Math.sqrt(num) % 1 === 0;
-
-    // dp[i] 
-    const dp = Array(N+1).fill(Infinity);
-    dp[0] = 0;
+    const memo = {};
     
-    for (let i = 1; i <= N; i += 1) {
-        for (let j = 1; j * j <= i; j += 1) {
-            dp[i] = Math.min(
-                dp[i],
-                dp[i - j * j] + 1
-            )
+    const dp = (n) => {
+        if (isSquare(n)) return 1;
+        if (memo[n] !== undefined) return memo[n];
+        
+        let res = Infinity;
+        for (let i = 1; i * i <= n; i += 1) {
+            res = Math.min(res, 1 + dp(n - i*i));
         }
+        return memo[n] = res;
     }
-    
-    return dp[N];
+ 
+    return dp(N)
 };
