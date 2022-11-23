@@ -11,6 +11,8 @@ var jump = function(nums) {
     for (let i = 0; i < N; i += 1) {
         const steps = nums[i];
         for (let j = 1; j <= steps; j += 1) {
+            if (i+j >= N) continue;
+            
             dp[i+j] = Math.min(
                 dp[i+j],
                 dp[i] + 1
