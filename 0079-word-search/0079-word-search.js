@@ -19,6 +19,7 @@ var exist = function(board, word) {
 
         board[r][c] = VISITED;
         
+        let res = false;
         for (const [ dR, dC ] of directions) {
             const newR = r + dR;
             const newC = c + dC;
@@ -26,11 +27,14 @@ var exist = function(board, word) {
             if (!isValid(newR, newC)) continue;
             if (board[newR][newC] === VISITED) continue;
             
-            if (dfs(newR, newC, index + 1)) return true;
+            if (dfs(newR, newC, index + 1)) {
+                res = true;
+                break;
+            }
         }
         board[r][c] = word[index];
         
-        return false;
+        return res;
     }
     
     for (let r = 0; r < ROWS; r += 1) {
