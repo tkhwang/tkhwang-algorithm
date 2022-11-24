@@ -27,7 +27,10 @@ var exist = function(board, word) {
             if (!isValid(newR, newC)) continue;
             if (board[newR][newC] === VISITED) continue;
             
-            res = res || dfs(newR, newC, index + 1);
+            if (dfs(newR, newC, index + 1)) {
+                res = true;
+                break;
+            }
         }
         
         board[r][c] = word[index];
