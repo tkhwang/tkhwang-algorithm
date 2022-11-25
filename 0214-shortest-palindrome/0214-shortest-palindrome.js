@@ -18,7 +18,7 @@ var shortestPalindrome = function(s) {
 
         //  [0 ... [index ... N-1 ]]
         
-        let remain = str.substr(index, N);
+        let remain = str.slice(index, N);
         
         return reverse(remain) + recursive(str.slice(0, index)) + str.slice(index);
     }
