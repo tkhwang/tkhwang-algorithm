@@ -24,8 +24,6 @@ var jobScheduling = function(startTime, endTime, profit) {
     let maxProfit = 0;
     
     for (const [ start, end, pf ] of events) {
-        console.log(curProfit, maxProfit);
-        
         while (minHeap.size() > 0 && minHeap.front()[0] <= start) {
             const [ tempEnd, tempProfit ] = minHeap.dequeue();
             curProfit = Math.max(curProfit, tempProfit);
