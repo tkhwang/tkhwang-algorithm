@@ -26,7 +26,5 @@ var isValidPalindrome = function(s, k) {
         }
     }
     
-    console.log(dp);
-    
     return dp[0][N-1] <= k;
 };
