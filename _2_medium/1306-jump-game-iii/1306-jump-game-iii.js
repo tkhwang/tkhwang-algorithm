@@ -4,36 +4,28 @@
  * @return {boolean}
  */
 var canReach = function(arr, start) {
-    const N = arr.length;
-    const queue = [ start ];
-    
-    const isValid = (n) => 0 <= n && n < N;
-    
-    const seen = new Set();
-    seen.add(start);
-    
-    while (queue.length) {
-        const len = queue.length;
+
+    const dfs = (cur, seen) => {
+        if (arr[cur] === 0) return true;
         
-        for (let i = 0; i < len; i += 1) {
-            const cur = queue.pop();
-
-            console.log(cur);
-            
-            if (arr[cur] === 0) return true;
-            
-            for (const next of [ cur + arr[cur], cur - arr[cur] ]) {
-                if (!isValid(next)) continue;
-                if (seen.has(next)) continue;
-
-                seen.add(next);
-                
-                queue.push(next);
-                
-                // seen.delete(next);
-            }
+        let res = false;
+        let next = cur + arr[cur];
+        if (!seen.has(next)) {
+            seen.add(next);
+            res = res || dfs(next, seen);
+            seen.delete(next);
         }
+        next = cur - arr[cur];
+        if (!seen.has(next)) {
+            seen.add(next);
+            res = res || dfs(next, seen);
+            seen.delete(next);
+        }
+        return res;
     }
+
+    const seen = new Set();
+    seen.add(start)
     
-    return false;
+    return dfs(start, seen);
 };
