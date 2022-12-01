@@ -24,24 +24,13 @@ var halvesAreAlike = function(s) {
     let counts = 0;
     for (let i = 0; i < half; i += 1) {
         const cur = s[i];
-        if (set.has(cur)) {
-            counts += 1;
-            freq[cur] += 1;
-        }
+        if (set.has(cur)) counts += 1;
     }
-    
-    console.log(freq)
     
     for (let i = half; i < N; i += 1) {
         const cur = s[i];
-        if (set.has(cur)) {
-            counts -= 1;
-            freq[cur] -= 1;
-        }
+        if (set.has(cur)) counts -= 1;
     }
     
-    console.log(freq)
-    
     return counts === 0;
-    // return Object.values(freq).every((v) => v === 0);
 };
