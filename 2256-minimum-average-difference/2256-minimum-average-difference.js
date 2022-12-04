@@ -30,8 +30,6 @@ var minimumAverageDifference = function(nums) {
 
         const local = Math.abs(left - right);
 
-        console.log(left, right, local);
-        
         if (min > local) {
             min = local;
             minIndex = i;
