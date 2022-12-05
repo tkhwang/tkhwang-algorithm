@@ -11,7 +11,7 @@ var countVowels = function(word) {
     for (let i = 0; i < N; i += 1) {
         const cur = word[i];
         if (set.has(cur)) {
-            sum += (i + 1) * (N - i)
+            sum += (i - 0 + 1) * (N-1 - i + 1);
         }
     }
     return sum;
