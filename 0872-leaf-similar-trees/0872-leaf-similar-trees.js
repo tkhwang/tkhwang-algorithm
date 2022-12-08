@@ -18,10 +18,9 @@ var leafSimilar = function(root1, root2) {
     const dfs = (node, arr) => {
         if (!node) return;
         
-        dfs(node.left, arr);
-        
         if (!node.left && !node.right) arr.push(node.val);
         
+        dfs(node.left, arr);
         dfs(node.right, arr);
     }
     
