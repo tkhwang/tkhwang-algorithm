@@ -13,20 +13,22 @@
 var maxAncestorDiff = function(root) {
     let max = -Infinity;
     
-    const dfs = (node, minSoFar, maxSoFar) => {
+    const dfs = (node, uptoMax, uptoMin) => {
         if (!node) return;
         
-        const maxDiff = maxSoFar === -Infinity ? 0 : Math.abs(maxSoFar - node.val);
-        const minDiff = minSoFar === Infinity ? 0 : Math.abs(minSoFar - node.val);
-        const localMax = Math.max(maxDiff, minDiff);
+        if (uptoMax !== -Infinity && uptoMin !== Infinity) {
+            const localDiff = Math.max(
+                Math.abs(uptoMax - node.val),
+                Math.abs(uptoMin - node.val)
+            )
+            if (max < localDiff) max = localDiff;
+        }
         
-        if (max < localMax) max = localMax;
-
-        dfs(node.left,  Math.min(minSoFar, node.val), Math.max(maxSoFar, node.val)); 
-        dfs(node.right, Math.min(minSoFar, node.val), Math.max(maxSoFar, node.val));
+        dfs(node.left,  Math.max(uptoMax, node.val), Math.min(uptoMin, node.val));
+        dfs(node.right, Math.max(uptoMax, node.val), Math.min(uptoMin, node.val));
     }
     
-    dfs(root, Infinity, -Infinity);
+    dfs(root, -Infinity, Infinity);
     
     return max;
 };
