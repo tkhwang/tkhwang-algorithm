@@ -9,8 +9,6 @@ var deleteGreatestValue = function(grid) {
         grid[i].sort((a,b) => b - a);
     }
 
-    console.log(grid);
-    
     let res = 0;
     
     for (let c = 0; c < COLS; c += 1) {
