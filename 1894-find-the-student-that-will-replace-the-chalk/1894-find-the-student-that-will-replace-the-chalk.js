@@ -12,8 +12,6 @@ var chalkReplacer = function(chalk, k) {
         k -= sum;
     }
     
-    console.log(k);
-    
     if (k === 0) return 0;
     
     k += sum;
