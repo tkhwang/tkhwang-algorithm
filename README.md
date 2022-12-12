@@ -4,13 +4,13 @@
 
 leetcode activity sync using [LeetHub](https://github.com/QasimWani/LeetHub)
 
-## Procedure
+## Leetcode
 
 - Problem solving in leetcode
 - Auto sync by [LeetHub](https://github.com/QasimWani/LeetHub)
 - Sometimes re-arrange by difficulty (easy/medium/high)
 
-## Status
+#### Status
 
 if the below profile card is not shown properly, please reload this page again.
 
