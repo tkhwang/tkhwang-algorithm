@@ -5,7 +5,7 @@
 - leetcode activity sync using [LeetHub](https://github.com/QasimWani/LeetHub)
 - algorithm and data-structure related problem solving in other sites.
 
-## Leetcode
+## problem solving: leetcode
 
 - Problem solving in leetcode
 - Auto sync by [LeetHub](https://github.com/QasimWani/LeetHub)
@@ -17,6 +17,16 @@ if the below profile card is not shown properly, please reload this page again.
 
 ![Leetcode Stats](https://leetcard.jacoblin.cool/tkhwang)
 
-## Others
+## library
+
+building blocks for solving algorithm problems.
+
+- [binary search](./__templates/binary-search/)
+
+## template
+
+typical code snippet for solving algorithm problems
+
+## others
 
 - codewars
