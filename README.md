@@ -1,8 +1,9 @@
-## tkhwang-algorithm-leetcode
+## tkhwang-algorithm
 
     slow, but steady wins the game.
 
-leetcode activity sync using [LeetHub](https://github.com/QasimWani/LeetHub)
+- leetcode activity sync using [LeetHub](https://github.com/QasimWani/LeetHub)
+- algorithm and data-structure related problem solving in other sites.
 
 ## Leetcode
 
