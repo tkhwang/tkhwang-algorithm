@@ -15,3 +15,7 @@ leetcode activity sync using [LeetHub](https://github.com/QasimWani/LeetHub)
 if the below profile card is not shown properly, please reload this page again.
 
 ![Leetcode Stats](https://leetcard.jacoblin.cool/tkhwang)
+
+## Others
+
+- codewars
