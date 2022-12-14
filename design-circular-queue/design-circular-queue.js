@@ -40,7 +40,7 @@ MyCircularQueue.prototype.deQueue = function() {
         this.head = -1;
         this.tail = -1;
     } else {
-        this.head = (this.k + this.head + 1) % this.k;
+        this.head = (this.head + 1) % this.k;
     }
     
     return true;
