@@ -2,14 +2,16 @@
  * @param {number} n
  * @return {number}
  */
-var climbStairs = function(N) {
-    const dp = Array(N+1).fill(0);
-    dp[1] = 1;
-    dp[2] = 2;
+var climbStairs = function(n) {
+    const cache = {};
     
-    for (let i = 3; i <= N; i += 1) {
-        dp[i] = dp[i-1] + dp[i-2];
+    const dp = (n) => {
+        if (n === 1) return 1;
+        if (n === 2) return 2;
+        if (cache[n] !== undefined) return cache[n];
+        
+        return cache[n] = dp(n-1) + dp(n-2);
     }
     
-    return dp[N];
+    return dp(n)
 };

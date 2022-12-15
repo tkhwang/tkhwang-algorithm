@@ -5,27 +5,19 @@
  */
 var findTargetSumWays = function(nums, target) {
     const N = nums.length;
+    let count = 0;
     
-    const cache = {};
-    const genKey = (remain, i) => `${remain}:${i}`;
-    
-    const dfs = (remain, i) => {
-        const key = genKey(remain, i);
-        
-        if (i === N) {
-            if (remain === 0) return 1;
-            return 0;
-        }    
-        
-        if (cache[key] !== undefined) return cache[key];
+    const dfs = (remain, index) => {
+        if (index >= N) {
+            if (remain === 0) count += 1;
+            return;
+        }
 
-        let local = 0;
-        local += dfs(remain + nums[i], i + 1);
-        local += dfs(remain - nums[i], i + 1);
-        cache[key] = local;
-        
-        return cache[key];
+        dfs(remain - nums[index], index + 1);
+        dfs(remain + nums[index], index + 1);
     }
     
-    return dfs(target, 0);
+    dfs(target, 0)
+    
+    return count;
 };
