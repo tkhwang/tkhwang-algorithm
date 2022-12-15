@@ -3,8 +3,12 @@
  * @return {number}
  */
 var arraySign = function(nums) {
-    const product = nums.reduce((acc, cur) => acc * cur, 1);
+    let sign = 1;
     
-    return product > 0 ? 1 :
-           product < 0 ? -1 : 0;
+    for (const num of nums) {
+        if (num === 0) return 0;
+        if (num < 0) sign *= -1;
+    }
+    
+    return sign;
 };
