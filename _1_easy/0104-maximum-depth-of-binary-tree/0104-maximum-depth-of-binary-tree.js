@@ -11,10 +11,23 @@
  * @return {number}
  */
 var maxDepth = function(root) {
-    const dfs = (node) => {
-        if (!node) return 0;
+    if (!root) return 0;
+    
+    let max = -Infinity;
+    
+    const dfs = (node, depth) => {
+        if (!node) return;
         
-        return 1 + Math.max(dfs(node.left), dfs(node.right));
+        // leaf node
+        if (!node.left && !node.right) {
+            max = Math.max(max, depth);
+        }
+        
+        dfs(node.left, depth + 1);
+        dfs(node.right, depth + 1);
     }
-    return dfs(root)
+    
+    dfs(root, 1);
+    
+    return max;
 };

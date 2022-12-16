@@ -1,7 +1,8 @@
 # Write your MySQL query statement below
-SELECT name customers
+SELECT
+    name Customers
 FROM Customers
 WHERE id NOT IN (
-    SELECT DISTINCT customerId
+    SELECT customerId
     FROM Orders
-)    
+)

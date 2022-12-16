@@ -4,14 +4,13 @@
  * @return {number[]}
  */
 var twoSum = function(nums, target) {
-    const N = nums.length;
-    const hash = {};
+    const cache = {};
     
     for (const [ i, num ] of nums.entries()) {
-        if (hash[target - num] !== undefined) {
-            return [ hash[target-num], i ];
+        if (cache[target - num] !== undefined) { 
+             return [ cache[target - num], i ];
         } else {
-            hash[num] = i;
+            cache[num] = i;
         }
     }
 };
