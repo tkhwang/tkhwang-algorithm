@@ -37,25 +37,19 @@ var serialize = function(root) {
  * @return {TreeNode}
  */
 var deserialize = function(data) {
-    console.log(data);
-    
     const vals = data.split(",")
-    let i = 0;
-    
-    const dfs = () => {
-        if (vals[i] === NULL) {
-            i += 1;
-            return null;
-        }
-        
-        const node = new TreeNode(vals[i]);
-        i += 1;
-        node.left = dfs();
-        node.right = dfs();
+
+    const dfs = (vals) => {
+        const cur = vals.shift();
+        if (cur === NULL) return null;
+
+        const node = new TreeNode(cur);
+        node.left = dfs(vals);
+        node.right = dfs(vals);
         return node;
     }
     
-    return dfs()
+    return dfs(vals)
 };
 
 /**
