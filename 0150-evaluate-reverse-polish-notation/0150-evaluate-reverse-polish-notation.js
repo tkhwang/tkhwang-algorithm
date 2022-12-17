@@ -8,7 +8,7 @@ var evalRPN = function(tokens) {
         if (op === "+") return first + second;
         if (op === "-") return first - second;
         if (op === "*") return first * second;
-        if (op === "/") return ~~(first / second);
+        if (op === "/") return Math.trunc(first / second);
     }
     
     const stack = [];
