@@ -5,26 +5,19 @@
 var lengthOfLongestSubstring = function(s) {
     const N = s.length;
     
-    const window = {};
+    const freq = {};
     let max = -Infinity;
     
     let left = 0;
     for (let right = 0; right < N; right += 1) {
-        const ch = s[right];
-        
-        window[ch] = (window[ch] || 0) + 1;
-        
-        while (window[ch] > 1) {
-            const chLeft = s[left];
-            
-            window[chLeft] -= 1;
-            if (window[chLeft] === 0) delete window[chLeft];
-            
+        const cur = s[right];
+        freq[cur] = (freq[cur] || 0) + 1;
+        while (freq[cur] > 1) {
+            const leftNum = s[left];
+            freq[leftNum] -= 1;
             left += 1;
         }
-        
-        max = Math.max(max, right - left + 1);
+        if (max < right - left + 1) max = right - left + 1;    
     }
-    
     return max === -Infinity ? 0 : max;
 };

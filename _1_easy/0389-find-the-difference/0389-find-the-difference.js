@@ -4,20 +4,14 @@
  * @return {character}
  */
 var findTheDifference = function(s, t) {
-    const needs = {};
-    for (const ch of s) {
-        needs[ch] = (needs[ch] || 0) + 1;
-    }
-    
-    let res = "";
+    let sum = 0;
     for (const ch of t) {
-        if (needs[ch] !== undefined) {
-            needs[ch] -= 1;
-            if (needs[ch] === 0) delete needs[ch];
-        } else {
-            res += ch;
-        }
+        sum ^= (ch.charCodeAt(0) - 'a'.charCodeAt(0))
     }
     
-    return res;
+    for (const ch of s) {
+        sum ^= (ch.charCodeAt(0) - 'a'.charCodeAt(0));
+    }
+    
+    return String.fromCharCode(sum + 'a'.charCodeAt(0));
 };
