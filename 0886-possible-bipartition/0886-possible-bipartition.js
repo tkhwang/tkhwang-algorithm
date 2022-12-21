@@ -14,11 +14,11 @@ var possibleBipartition = function(N, dislikes) {
         graph[two].push(one);
     }
     
-    const NOT = -1;
+    const NONE = -1;
     const RED = 0;
     const BLUE= 1;
     
-    const colors = Array(N+1).fill(NOT);
+    const colors = Array(N+1).fill(NONE);
     
     const bfs = (start) => {
         const queue = [ start ];
@@ -35,7 +35,7 @@ var possibleBipartition = function(N, dislikes) {
                 for (const next of graph[cur]) {
                     if (colors[cur] === colors[next]) return false;
                     
-                    if (colors[next] === NOT) {
+                    if (colors[next] === NONE) {
                         colors[next] = 1 - colors[cur];
                         queue.push(next);
                     }
@@ -46,7 +46,7 @@ var possibleBipartition = function(N, dislikes) {
     }    
     
     for (let i = 1; i < N + 1; i += 1) {
-        if (colors[i] === NOT) {
+        if (colors[i] === NONE) {
             if (!bfs(i)) return false;
         }
     }
