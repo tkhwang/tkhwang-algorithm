@@ -21,8 +21,8 @@ if the below profile card is not shown properly, please reload this page again.
 
 building blocks for solving algorithm problems.
 
-- [binary search](./templates/binary-search)
-- [union find](./templates/union-find)
+- [binary search](./libraries/binary-search/)
+- [union find](./libraries/union-find/)
 
 ## template
 
