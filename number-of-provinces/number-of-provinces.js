@@ -29,10 +29,8 @@ class UnionFind {
   }
 
   find(node) {
-    while (node !== this.root[node]) {
-      node = this.root[node];
-    }
-    return node;
+    if (node === this.root[node]) return node;
+    return (this.root[node] = this.find(this.root[node]));
   }
 
   union(x, y) {
@@ -61,3 +59,4 @@ class UnionFind {
     return this.components;
   }
 }
+
