@@ -8,20 +8,26 @@ class UnionFind {
   }
 
   find(node) {
-    return this.root[node];
+    while (node !== this.root[node]) {
+      node = this.root[node];
+    }
+    return node;
   }
 
   union(x, y) {
     const rootX = this.find(x);
     const rootY = this.find(y);
 
-    if (rootX === rootY) return true;
+    if (rootX === rootY) return false;
 
-    // rootY -> rootX
-    for (let i = 0; i < this.root.length; i += 1) {
-      if (this.root[i] === rootY) {
-        this.root[i] = rootX;
-      }
+    // union by rank
+    if (this.rank[rootX] < this.rank[rootY]) {
+      this.root[rootX] = rootY;
+    } else if (this.rank[rootX] > this.rank[rootY]) {
+      this.root[rootY] = rootX;
+    } else {
+      this.root[rootY] = rootX;
+      this.rank[rootX] += 1;
     }
     this.components -= 1;
     return true;

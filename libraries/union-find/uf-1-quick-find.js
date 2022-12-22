@@ -3,14 +3,12 @@ class UnionFind {
     this.root = Array(n)
       .fill(null)
       .map((_, i) => i);
-    this.rank = Array(n).fill(1);
     this.components = n;
   }
 
   find(node) {
-    if (node === this.root[node]) return node;
-
-    return (this.root[node] = this.find(this.root[node]));
+    // quick find
+    return this.root[node];
   }
 
   union(x, y) {
@@ -19,7 +17,12 @@ class UnionFind {
 
     if (rootX === rootY) return true;
 
-    this.root[rootY] = rootX;
+    // rootY -> rootX
+    for (let i = 0; i < this.root.length; i += 1) {
+      if (this.root[i] === rootY) {
+        this.root[i] = rootX;
+      }
+    }
     this.components -= 1;
     return true;
   }
