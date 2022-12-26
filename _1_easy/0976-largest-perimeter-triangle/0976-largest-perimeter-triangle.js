@@ -7,12 +7,8 @@ var largestPerimeter = function(nums) {
     
     nums.sort((a,b) => a - b);
     
-    for (let i = N-1; i >= 2; i -= 1) {
-        const cur = nums[i];
-        const prv = nums[i-1];
-        const prvprv = nums[i-2];
-        
-        if (prv + prvprv > cur) return cur + prv + prvprv;
+    for (let i = N - 3; i >= 0; i -= 1) {
+        if (nums[i] + nums[i+1] > nums[i+2]) return nums[i] + nums[i+1] + nums[i+2];
     }
     
     return 0;

@@ -18,5 +18,5 @@ var answerQueries = function(nums, queries) {
         }
         result.push(width);
     }
-    return result;
+    return result;    
 };
