@@ -5,29 +5,22 @@
  * @return {number}
  */
 var maximumBags = function(capacity, rocks, additionalRocks) {
-    const n = capacity.length;
-    
-    const diff = Array(n).fill(0);
-    
-    for (let i = 0; i < n; i += 1) {
-        diff[i] = capacity[i] > rocks[i] ? capacity[i] - rocks[i] : 0;
-    }
+    const diff = capacity.map((v,i) => capacity[i] - rocks[i]);
     
     diff.sort((a,b) => a - b);
     
-    let cnt = 0;
+    const N = diff.length;
+    let i = 0;
+    let count = 0;
     
-    for (let i = 0; i < n && additionalRocks >= 0; i += 1) {
-        if (diff[i] === 0) continue;
-        
-        if (diff[i] <= additionalRocks) {
+    while (i < N && additionalRocks > 0) {
+        if (diff[i] > 0) {
+            if (diff[i] > additionalRocks) break;
             additionalRocks -= diff[i];
-            
-            if (additionalRocks === 0) return i+ 1;
-        } else {
-            return i;
         }
+        count += 1;
+        i += 1;
     }
     
-    return n;
+    return count;
 };
