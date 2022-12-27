@@ -9,8 +9,6 @@ var maximumBags = function(capacity, rocks, additionalRocks) {
     
     diff.sort((a,b) => a - b);
     
-    console.log(diff);
-    
     const N = diff.length;
     let i = 0;
     let count = 0;
