@@ -13,24 +13,20 @@
 var minDepth = function(root) {
     if (!root) return 0;
     
-    const queue = [ [ root, 1 ] ];
+    let min = Infinity;
     
-    while (queue.length) {
-        const len = queue.length;
-        
-        for (let i = 0; i < len; i += 1) {
-            let [ cur, depth ] = queue.shift();
-            
-            if (!cur.left && !cur.right) {
-                return depth;
-            }
-            
-            depth += 1;
-            
-            if (cur.left) queue.push([ cur.left, depth ]);
-            if (cur.right) queue.push([ cur.right, depth ]);
+    const dfs = (node, depth) => {
+        if (!node) return 0;
+
+        if (!node.left && !node.right) {
+            min = Math.min(min, depth);
         }
+        
+        dfs(node.left, 1 + depth);
+        dfs(node.right, 1 + depth);
     }
     
-    return -1;
+    dfs(root, 1);
+    
+    return min;
 };

@@ -4,23 +4,19 @@
  * @return {number}
  */
 var minStoneSum = function(piles, k) {
-    const maxHeap = new MaxPriorityQueue({ compare: (a,b) => b[1] - a[1] });
-    
-    for (const [ i, pile ] of piles.entries()) {
-        maxHeap.enqueue([ i, pile ])
+    const N = piles.length;
+
+    const maxHeap = new MaxPriorityQueue({ compare: (a,b) => b - a });
+
+    for (const pile of piles) {
+        maxHeap.enqueue(pile);
     }
     
-    while (k > 0 && maxHeap.size() > 0) {
-        const [ maxIndex, max ] = maxHeap.dequeue();
-        maxHeap.enqueue([maxIndex, max - Math.floor(max / 2) ]);
-        
-        k -= 1;
+    while (k > 0) {
+        const max = maxHeap.dequeue();
+        maxHeap.enqueue(max - Math.floor(max / 2));
+        k -= 1
     }
-    
-    let sum = 0;
-    while (maxHeap.size()) {
-        const [ index, max ] = maxHeap.dequeue();
-        sum += max;
-    }
-    return sum;
+
+    return maxHeap.toArray().reduce((a,b) => a + b, 0);
 };
