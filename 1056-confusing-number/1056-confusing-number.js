@@ -23,8 +23,5 @@ var confusingNumber = function(n) {
         rotated = obj[ch] + rotated;
     }
     
-    console.log(n);
-    console.log(rotated)
-    
     return String(n) !== rotated
 };
