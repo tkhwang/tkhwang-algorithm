@@ -29,7 +29,5 @@ var closestKValues = function(root, target, k) {
     
     res.sort((a,b) => Math.abs(a - target) - Math.abs(b - target));
     
-    console.log(res)
-    
     return res.slice(0, k);
 };
