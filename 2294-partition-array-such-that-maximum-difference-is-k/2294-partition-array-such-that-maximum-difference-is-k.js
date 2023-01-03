@@ -8,8 +8,6 @@ var partitionArray = function(nums, k) {
     
     nums.sort((a,b) => a - b);
     
-    console.log(nums);
-    
     let count = 0;
     let min = nums[0];
     for (let i = 1; i < N; i += 1) {
