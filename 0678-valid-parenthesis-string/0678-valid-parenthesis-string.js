@@ -3,19 +3,34 @@
  * @return {boolean}
  */
 var checkValidString = function(s) {
-    let leftMin = 0;
-    let leftMax = 0;
+    const N = s.length;
     
-    for (const ch of s) {
-        if (ch === "(") {
-            [leftMin, leftMax] = [leftMin + 1, leftMax + 1]
+    const opens = [];
+    const stars = [];
+    
+    for (const [ i, ch ] of s.split("").entries()) {
+        if (ch === "*") {
+            stars.push(i);
+        } else if (ch === "(") {
+            opens.push(i);
         } else if (ch === ")") {
-            [leftMin, leftMax] = [leftMin - 1, leftMax - 1];
-        } else if (ch === "*") {
-            [leftMin, leftMax] = [leftMin - 1, leftMax + 1];
+            if (opens.length > 0) opens.pop();
+            else if (stars.length > 0) stars.pop();
+            else return false;
         }
-        if (leftMax < 0) return false;
-        if (leftMin < 0) leftMin = 0;
     }
-    return leftMin === 0;
+  
+    while (opens.length > 0) {
+        if (stars.length === 0) return false;
+        else {
+            if (opens.at(-1) < stars.at(-1)) {
+                opens.pop();
+                stars.pop();
+            } else {
+                return false;
+            }
+        }
+    }
+    
+    return true;
 };
