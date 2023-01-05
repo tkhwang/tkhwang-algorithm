@@ -6,19 +6,22 @@ var minSetSize = function(arr) {
     const N = arr.length;
     
     const freq = {};
-    for (const n of arr) {
-        freq[n] = (freq[n] || 0) + 1;
+    for (const num of arr) {
+        freq[num] = (freq[num] || 0) + 1;
     }
     
+    console.log(freq)
+    
     const keys = Object.keys(freq);
+    keys.sort((a,b) => freq[b] - freq[a]);
     
-    keys.sort((a,b) => freq[b] - freq[a])
-    
-    let remain = N;
     let count = 0;
-    
-    while (remain > N/2) {
-        remain -= freq[keys[count]];
+    let size = N;
+    let i = 0;
+    while (size > Math.floor(N/2)) {
+        size -= freq[keys[i]];
+            
+        i += 1;
         count += 1;
     }
     
