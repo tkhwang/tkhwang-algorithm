@@ -17,16 +17,12 @@ if the below profile card is not shown properly, please reload this page again.
 
 ![Leetcode Stats](https://leetcard.jacoblin.cool/tkhwang)
 
-## library
-
-building blocks for solving algorithm problems.
-
-- [binary search](./libraries/binary-search/)
-- [union find](./libraries/union-find/)
-
 ## template
 
 typical code snippet for solving algorithm problems
+
+- [binary search](./templates/binary-search/)
+- [union find](./templates/union-find/)
 
 ## others
 
