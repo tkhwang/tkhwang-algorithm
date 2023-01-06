@@ -11,11 +11,14 @@ var minMeetingRooms = function(intervals) {
     minHeap.enqueue(intervals[0][1]);
     
     for (let i = 1; i < N; i += 1) {
-        const [ begin, end ] = intervals[i];
+        const [ start, end ] = intervals[i];
+        const earliestEnd = minHeap.front();
         
-        if (minHeap.front() <= begin) minHeap.dequeue();
+        if (earliestEnd <= start) {
+            minHeap.dequeue();
+        }
         minHeap.enqueue(end);
     }
-    
+
     return minHeap.size();
 };
