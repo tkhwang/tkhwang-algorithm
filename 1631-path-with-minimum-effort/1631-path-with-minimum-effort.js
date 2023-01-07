@@ -39,11 +39,11 @@ var minimumEffortPath = function(heights) {
     
     const bfs = (limit) => {
         const queue = [ [ 0, 0 ] ];
-        // const seen = new Set();
-        // seen.add(genKey(0, 0));
+        const seen = new Set();
+        seen.add(genKey(0, 0));
         
-        const visited = Array(ROWS).fill(null).map((_) => Array(COLS).fill(false));
-        visited[0][0] = true;
+        // const visited = Array(ROWS).fill(null).map((_) => Array(COLS).fill(false));
+        // visited[0][0] = true;
         
         while (queue.length) {
             const len = queue.length;
@@ -58,12 +58,12 @@ var minimumEffortPath = function(heights) {
                     const newC = c + dC;
                     
                     if (!isValid(newR, newC)) continue;
-                    // if (seen.has(genKey(newR, newC))) continue;
-                    if (visited[newR][newC]) continue;
+                    if (seen.has(genKey(newR, newC))) continue;
+                    // if (visited[newR][newC]) continue;
                     if (Math.abs(heights[newR][newC] - heights[r][c]) > limit) continue;
                     
-                    // seen.add(genKey(newR, newC));
-                    visited[newR][newC] = true;
+                    seen.add(genKey(newR, newC));
+                    // visited[newR][newC] = true;
                     queue.push([ newR, newC ]);
                 }
             }
