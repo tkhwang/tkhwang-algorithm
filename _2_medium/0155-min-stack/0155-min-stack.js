@@ -8,35 +8,43 @@ var MinStack = function() {
  * @return {void}
  */
 MinStack.prototype.push = function(val) {
-    this.stack.push([ val, Math.min(val, this.getMin() )]);
+    if (this.stack.length === 0) {
+        this.stack.push([ val, val ]);
+        return;
+    }
+    
+    const min = this.stack.at(-1)[1];
+    this.stack.push([
+        val,
+        Math.min(min, val)
+    ])
 };
 
 /**
  * @return {void}
  */
 MinStack.prototype.pop = function() {
-    const [ last, min ] = this.stack.pop();
-    return last;
+    if (this.stack.length === 0) return -1;
+    
+    return this.stack.pop()[0];
 };
 
 /**
  * @return {number}
  */
 MinStack.prototype.top = function() {
-    if (this.stack.length === 0) return null;
+    if (this.stack.length === 0) return -1;
     
-    const [ last, min ] = this.stack[this.stack.length - 1] ;
-    return last;
+    return this.stack.at(-1)[0];
 };
 
 /**
  * @return {number}
  */
 MinStack.prototype.getMin = function() {
-    if (this.stack.length === 0) return Infinity;
+    if (this.stack.length === 0) return -1;
     
-    const [ last, min ] = this.stack[this.stack.length - 1];
-    return min;
+    return this.stack.at(-1)[1]
 };
 
 /** 
