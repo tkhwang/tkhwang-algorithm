@@ -8,8 +8,9 @@ var maxProfit = function(prices) {
     let min = Infinity;
     let max = -Infinity;
     for (const [ i, price ] of prices.entries()) {
-        if (min > price) min = Math.min(min, price);
-        else {
+        if (min > price) {
+            min = price;
+        } else {
             const profit = price - min;
             max = Math.max(max, profit);
         }
