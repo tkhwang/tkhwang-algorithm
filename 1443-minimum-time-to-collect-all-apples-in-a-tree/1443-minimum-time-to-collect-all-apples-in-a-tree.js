@@ -11,8 +11,10 @@ var minTime = function(N, edges, hasApple) {
         graph[s].push(e);
         graph[e].push(s);
     }
-    
+     
     const dfs = (cur, parent) => {
+        if (graph[cur].length === 0) return 0;
+        
         let time = 0;
         for (const child of graph[cur]) {
             if (child === parent) continue;
