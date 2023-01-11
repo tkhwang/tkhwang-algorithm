@@ -4,7 +4,7 @@
  * @return {number}
  */
 var shipWithinDays = function(weights, days) {
-    let left = Math.max(...weights)
+    let left = Math.max(...weights);
     let right = weights.reduce((a,b) => a + b, 0);
     
     const isOK = (limit) => {
@@ -12,8 +12,8 @@ var shipWithinDays = function(weights, days) {
         let count = 1;
         for (const weight of weights) {
             if (sum + weight > limit) {
-                sum = weight;
                 count += 1;
+                sum = weight;
                 if (count > days) return false;
             } else {
                 sum += weight;
@@ -25,9 +25,11 @@ var shipWithinDays = function(weights, days) {
     while (left < right) {
         const mid = Math.floor((left + right) / 2);
         
-        if (isOK(mid)) right = mid;
-        else left = mid + 1;
+        if (isOK(mid)) {
+            right = mid;
+        } else {
+            left = mid + 1;
+        }
     }
-    
     return left;
 };

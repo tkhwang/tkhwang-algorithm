@@ -3,28 +3,23 @@
  * @return {number}
  */
 var trap = function(height) {
-    const N = height.length;
-    
-    let left = 0;
-    let right = N - 1;
+let res = 0;
+  let i = 0;
+  const st = [];
 
-    let maxL = height[0];
-    let maxR = height[N-1];
-    
-    let res = 0;
-    
-    while (left < right) {
-        maxL = Math.max(maxL, height[left]);
-        maxR = Math.max(maxR, height[right]);
-        
-        if (maxL < maxR) {
-            res += maxL - height[left];
-            left += 1;
-        } else {
-            res += maxR - height[right];
-            right -= 1;
-        }
+  while (i < height.length) {
+    while (st.length !== 0 && height[i] > height[st[st.length - 1]]) {
+      const top = st[st.length - 1];
+      st.pop();
+
+      if (st.length === 0) break;
+
+      const dist = i - st[st.length - 1] - 1;
+      const h = Math.min(height[i], height[st[st.length - 1]]) - height[top];
+      res += dist * h;
     }
-    
-    return res;
+    st.push(i);
+    i++;
+  }
+  return res;
 };
