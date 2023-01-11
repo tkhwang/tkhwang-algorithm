@@ -3,17 +3,12 @@
  * @return {number}
  */
 var numberOfSubstrings = function(s) {
-    const obj = {};
-    for (const [ i, ch ] of s.split("").entries()) {
-        if (obj[ch] === undefined) obj[ch] = [];
-        obj[ch].push(i);
-    }
-    
+    const freq = {};
     let res = 0;
     
-    for (const ch in obj) {
-        const len = obj[ch].length;
-        res += len * (len + 1) / 2;
+    for (const ch of s) {
+        freq[ch] = (freq[ch] || 0) + 1;
+        res += freq[ch];
     }
     
     return res;
