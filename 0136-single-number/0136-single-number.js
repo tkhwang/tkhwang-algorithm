@@ -5,11 +5,11 @@
 var singleNumber = function(nums) {
     const N = nums.length;
     
-    let res = nums[0];
-    
-    for (let i = 1; i < N; i += 1) {
-        res = res ^ nums[i];
+    let res = 0;
+
+    for (const num of nums) {
+        res = res ^ num;
     }
-    
+
     return res;
 };
