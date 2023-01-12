@@ -14,7 +14,7 @@ var diameterOfBinaryTree = function(root) {
     let max = -Infinity;
     
     const dfs = (node) => {
-        if (!node) return 0
+        if (!node) return 0;
         
         const left = dfs(node.left);
         const right = dfs(node.right);
