@@ -45,9 +45,10 @@ var minAbsDifference = function(nums, goal) {
             
             min = Math.min(min, Math.abs(num1 + num2 - goal));
             
-            if (num1 + num2 - goal < 0) {
+            if (num1 + num2 === goal) break;
+            else if (num1 + num2 < goal) {
                 left = mid + 1;
-            } else {
+            } else if (num1 + num2 > goal) {
                 right = mid - 1;
             }
         }
