@@ -16,8 +16,7 @@ var getLonelyNodes = function(root) {
     const dfs = (node, isLonely) => {
         if (!node) return;
 
-        if (isLonely) res.push(node.val);
-        
+        if (isLonely) res.push(node.val);        
         const isLocalLonely = (node.left && !node.right || !node.left && node.right);
 
         dfs(node.left, isLocalLonely);
