@@ -30,8 +30,6 @@ var distanceK = function(root, target, k) {
     
     dfs(root, null);
     
-    // console.log(graph);
-    
     const res = [];
     
     const bfs = (start, seen) => {
@@ -43,8 +41,6 @@ var distanceK = function(root, target, k) {
             
             for (let i = 0; i < len; i += 1) {
                 const cur = queue.shift();
-                
-                // console.log(cur, steps);
                 
                 if (steps === k) {
                     res.push(cur);
