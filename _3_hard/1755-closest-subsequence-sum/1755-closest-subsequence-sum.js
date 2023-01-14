@@ -10,9 +10,6 @@ var minAbsDifference = function(nums, goal) {
     const part1 = nums.slice(0, mid);
     const part2 = nums.slice(mid);
     
-    console.log(part1);
-    console.log(part2);
-    
     const findSubsetSum = (array, i, sum, total) => {
         if (i >= array.length) {
             total.add(sum);
@@ -47,9 +44,11 @@ var minAbsDifference = function(nums, goal) {
             const num2 = arr2[mid];
             
             min = Math.min(min, Math.abs(num1 + num2 - goal));
-            if (num1 + num2 - goal < 0) {
+            
+            if (num1 + num2 === goal) break;
+            else if (num1 + num2 < goal) {
                 left = mid + 1;
-            } else {
+            } else if (num1 + num2 > goal) {
                 right = mid - 1;
             }
         }

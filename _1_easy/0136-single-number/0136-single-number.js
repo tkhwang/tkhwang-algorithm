@@ -3,11 +3,13 @@
  * @return {number}
  */
 var singleNumber = function(nums) {
-    let sum = 0;
+    const N = nums.length;
     
+    let res = 0;
+
     for (const num of nums) {
-        sum ^= num;
+        res = res ^ num;
     }
-    
-    return sum;
+
+    return res;
 };
