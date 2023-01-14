@@ -19,8 +19,6 @@ var killProcess = function(pid, ppid, kill) {
         graph[parent].push(cur);
     }
     
-    console.log(graph);
-  
     const res = [];
     
     const dfs = (cur) => {
