@@ -3,16 +3,17 @@
  * @return {number}
  */
 var smallestCommonElement = function(mat) {
+    const N = mat.length;
     const freq = {};
     
-    for (const array of mat) {
-        for (const num of array) {
-            freq[num] = (freq[num] || 0) + 1;
+    for (const arr of mat) {
+        for (const n of arr) {
+            freq[n] = (freq[n] || 0) + 1;
         }
     }
     
     for (const key in freq) {
-        if (freq[key] === mat.length) return key;
+        if (freq[key] === N) return key
     }
     return -1;
 };
