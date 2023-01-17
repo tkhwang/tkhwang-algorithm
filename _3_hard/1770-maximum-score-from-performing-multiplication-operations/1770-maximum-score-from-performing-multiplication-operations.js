@@ -8,22 +8,21 @@ var maximumScore = function(nums, multipliers) {
     const NM = multipliers.length;
     
     const cache = {};
-    const genKey = (left, times) => `${left}:${times}`;
-
-    const dfs = (left, times) => {
-        const key = genKey(left, times);
-        
-        if (times >= NM) return 0;
-        if (cache[key] !== undefined) return cache[key];
-        
-        const right = N - 1 - (times - left);
-        
-        const leftValue = nums[left] * multipliers[times] + dfs(left + 1, times + 1);
-        const rightValue = nums[right] * multipliers[times] + dfs(left, times + 1);
-        
-        return cache[key] = Math.max(leftValue, rightValue);
-    }
-
+    const genKey = (left, op) => `${left}:${op}`;
     
-    return dfs(0, 0);
+    const dp = (left, op) => {
+        if (op >= NM) return 0;
+        if (cache[genKey(left, op)] !== undefined) return cache[genKey(left, op)];
+            
+        const right = N - 1 - op + left;
+        
+        return cache[genKey(left, op)] = Math.max(
+            // left
+            nums[left] * multipliers[op] + dp(left + 1, op + 1),
+            // right
+            nums[right] * multipliers[op] + dp(left, op + 1)            
+        )
+    }
+    
+    return dp(0, 0)
 };
