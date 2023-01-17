@@ -6,19 +6,21 @@
 var coinChange = function(coins, amount) {
     const cache = {};
     
-    const dp = (n) => {
-        if (n === 0) return 0;
-        if (n < 0) return -1;
-        if (cache[n] !== undefined) return cache[n];
+    const dp = (amount) => {
+        if (amount === 0) return 0;
+        if (amount < 0) return -1;
+        if (cache[amount] !== undefined) return cache[amount];
         
         let res = Infinity;
         for (const coin of coins) {
-            const sub = dp(n - coin);
-            if (sub === -1) continue;
+            const subProblem = dp(amount - coin);
+            if (subProblem === -1) continue;
             
-            res = Math.min(res, sub + 1);
+            res = Math.min(res, 1 + subProblem);
         }
-        return cache[n] = (res === Infinity) ? -1 : res;
+        
+        res = (res === Infinity) ? -1 : res;
+        return cache[amount] = res;
     }
     
     return dp(amount)
