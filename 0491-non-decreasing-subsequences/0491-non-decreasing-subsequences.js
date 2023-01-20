@@ -19,28 +19,16 @@ var findSubsequences = function(nums) {
         }
         
         if (index >= N) return;
+   
+        const current = nums[index];
         
-        if (cur.length === 0) {
-            for (let i = index; i < N; i += 1) {
-                const current = nums[i];
-                
-                cur.push(current);
-                dfs(cur, i + 1);
-                cur.pop();
-            }
-        } else {
-            const last = cur.at(-1);
-
-            for (let i = index; i < N; i += 1) {
-                const current = nums[i];
-                
-                if (last > current) continue;
-                
-                cur.push(current);
-                dfs(cur, i + 1);
-                cur.pop();
-            }
+        if (cur.length === 0 || (cur.length > 0 && cur.at(-1) <= current)) {
+            cur.push(current);
+            dfs(cur, index + 1);
+            cur.pop();
         }
+        
+        dfs(cur, index + 1);
     }
     
     dfs([], 0);
