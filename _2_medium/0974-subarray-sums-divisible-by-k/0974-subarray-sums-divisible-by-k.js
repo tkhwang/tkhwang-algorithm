@@ -5,18 +5,16 @@
  */
 var subarraysDivByK = function(nums, k) {
     const N = nums.length;
-
-    let prefixSum = 0;
-    let count = 0;
-    let obj = { 0: 1 };
     
-    for (let i = 0; i < N; i += 1) {
-        prefixSum = (prefixSum + nums[i]) % k;
-        if (prefixSum < 0) prefixSum = prefixSum + k;
-        
-        if (obj[prefixSum] !== undefined )count += obj[prefixSum]
-        obj[prefixSum] = (obj[prefixSum] || 0) + 1;
+    const obj = { 0: 1 };
+    let prefix = 0;
+    let res = 0;
+    
+    for (const num of nums) {
+        prefix = (k + prefix + num % k) % k;
+        res += obj[prefix] || 0;
+        obj[prefix] = (obj[prefix] || 0) + 1;
     }
     
-    return count;
- };
+    return res;
+};
