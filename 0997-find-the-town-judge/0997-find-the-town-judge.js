@@ -18,15 +18,9 @@ var findJudge = function(n, trust) {
         outorders[u] += 1;
     }
     
-    console.log(inorders, outorders)
+    for (let i = 1; i <= n; i += 1) {
+        if (inorders[i] === n -1 && outorders[i] === 0) return i;
+    }
     
-    const candidates = Object.keys(inorders).filter((key) => inorders[key] === n - 1);
-    
-    console.log(candidates);
-    
-    if (candidates.length === 0) return -1;
-    
-    const m = candidates.filter((key) => outorders[key] === 0)    
-
-    return m.length === 0 ? -1 : m[0];
+    return -1;
 };
