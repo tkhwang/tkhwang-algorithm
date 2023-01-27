@@ -12,6 +12,7 @@ var minimumCost = function(n, connections) {
     }
     
     const visited = new Set();
+    
     let res = 0;
     
     const minHeap = new MinPriorityQueue({ compare: (a,b) => a[0] - b[0] });
@@ -21,7 +22,7 @@ var minimumCost = function(n, connections) {
         const [ cost, cur ] = minHeap.dequeue();
 
         if (visited.has(cur)) continue;
-
+        
         res += cost;
         visited.add(cur);
         
