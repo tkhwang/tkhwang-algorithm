@@ -13,10 +13,7 @@ var findAllConcatenatedWordsInADict = function(words) {
         node["word"] = word
     }
     
-    // console.log(JSON.stringify(trie));
-    
     const dfs = (word, count = 0) => {
-        console.log(word, count);
         if (!word) return count > 1;
         
         let node = trie;
@@ -35,7 +32,6 @@ var findAllConcatenatedWordsInADict = function(words) {
     const res = [];
     
     for (const word of words) {
-        console.log("word => ", word);
         if (dfs(word)) res.push(word);
     }     
     
