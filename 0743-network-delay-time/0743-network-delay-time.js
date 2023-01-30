@@ -22,7 +22,7 @@ var networkDelayTime = function(times, n, k) {
     while (minHeap.size()) {
         const [ cur, cost ] = minHeap.dequeue();
         
-        if (costs[cur] !== cost) continue;
+        // if (costs[cur] !== cost) continue;
         if (graph[cur] === undefined) continue;
         
         for (const [ next, nextCost ] of graph[cur]) {
