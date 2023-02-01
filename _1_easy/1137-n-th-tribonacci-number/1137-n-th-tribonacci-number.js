@@ -3,14 +3,15 @@
  * @return {number}
  */
 var tribonacci = function(n) {
-    const dp = Array(n + 1).fill(0);
-    dp[0] = 0;
-    dp[1] = 1;
-    dp[2] = 1;
+    const cache = {}
     
-    for (let i = 3; i <= n; i += 1) {
-        dp[i] = dp[i-1] + dp[i-2] + dp[i-3];
+    const dp = (n) => {
+        if (n === 0) return 0;
+        if (n === 1) return 1;
+        if (n === 2) return 1;
+        if (cache[n] !== undefined) return cache[n];
+        
+        return cache[n] = dp(n-1) + dp(n-2) + dp(n-3);
     }
-    
-    return dp[n];
+    return dp(n)
 };
