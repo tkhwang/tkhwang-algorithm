@@ -4,8 +4,7 @@
  */
 var triangleNumber = function(nums) {
     const N = nums.length;
-    nums.sort((a,b) => a - b);
-
+    
     const bisectLeft = (array, target) => {
         const N = array.length;
         
@@ -30,16 +29,15 @@ var triangleNumber = function(nums) {
         return left;
     }
     
-    // [ a, b, c] => a + b > c
-    const isTriangle = (a, b, c) => (a + b > c);
-
+    nums.sort((a,b) => a - b);
     let sum = 0;
     
     for (let i = 0; i < N - 2; i += 1) {
         for (let j = i + 1; j < N - 1; j += 1) {
-            const index = bisectLeft(nums.slice(j+1), nums[i] + nums[j]);
-            sum += index;
+            const left = bisectLeft(nums.slice(j+1), nums[i] + nums[j]);
+            sum += left;
         }
     }
+    
     return sum;
 };
