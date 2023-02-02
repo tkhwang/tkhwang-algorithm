@@ -10,9 +10,10 @@ var minimumLength = function(s) {
     let ch;
     while (left < right && s[left] === s[right]) {
         ch = s[left];
-        while (left < right && ch === s[left]) left += 1;
-        while (left < right && ch === s[right]) right -= 1;
+        while (left <= right && ch === s[left]) left += 1;
+        while (left <= right && ch === s[right]) right -= 1;
     }
     
-    return s[left] === ch ? 0 : right - left + 1;
+    // return s[left] === ch ? 0 : right - left + 1;
+    return right - left + 1;
 };
