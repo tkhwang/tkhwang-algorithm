@@ -8,10 +8,7 @@ var maxScore = function(nums1, nums2, k) {
     const N = nums1.length;
     
     const merged = nums1.map((v,i) => [ nums1[i], nums2[i] ]);
-
     merged.sort((a,b) => b[1] - a[1]);
-    
-    console.log(merged);
     
     const minHeap = new MinPriorityQueue({ compare: (a, b) => a[0] - b[0] });
     
