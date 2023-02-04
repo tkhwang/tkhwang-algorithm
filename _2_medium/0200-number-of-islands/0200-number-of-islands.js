@@ -7,18 +7,19 @@ var numIslands = function(grid) {
     
     let count = 0;
     
-    const isValid = (r, c) => !(r < 0 || r >= ROWS || c < 0 || c >= COLS);
     const directions = [ [1,0], [-1,0], [0,1], [0,-1] ];
+    const isValid = (r, c) => !(r < 0 || r >= ROWS || c < 0 || c >= COLS);
     
     const dfs = (r, c) => {
-        if (!isValid(r, c)) return;
-        if (grid[r][c] !== "1") return;
         
         grid[r][c] = "0";
         
         for (const [ dR, dC ] of directions) {
             const newR = r + dR;
             const newC = c + dC;
+            
+            if (!isValid(newR, newC)) continue;
+            if (grid[newR][newC] !== "1") continue;
             
             dfs(newR, newC);
         }

@@ -5,8 +5,9 @@
  */
 var checkInclusion = function(s1, s2) {
     const N = s2.length;
-    
+
     const needs = {};
+    const window = {};
     for (const ch of s1) {
         needs[ch] = (needs[ch] || 0) + 1;
     }
@@ -14,25 +15,27 @@ var checkInclusion = function(s1, s2) {
     const isMatching = (window, needs) => {
         if (Object.keys(window).length !== Object.keys(needs).length) return false;
         
-        const keys = Object.keys(needs);
-        return keys.every((key) => window[key] && needs[key] === window[key])
+        for (const key in needs) {
+            if (needs[key] !== window[key]) return false;
+        }
+        return true;
     }
-    
-    const window = {};
-    
+
     let left = 0;
     for (let right = 0; right < N; right += 1) {
         const cur = s2[right];
         window[cur] = (window[cur] || 0) + 1;
         
         while (right - left + 1 > s1.length) {
-            const leftNum = s2[left];
-            window[leftNum] -= 1;
-            if (window[leftNum] === 0) delete window[leftNum];
+            const leftCh = s2[left];
+            window[leftCh] -= 1;
+            if (window[leftCh] === 0) delete window[leftCh];
             left += 1;
         }
         
-        if (isMatching(window, needs)) return true;
+        if (right - left + 1 === s1.length) {
+            if (isMatching(window, needs)) return true;
+        }
     }
     
     return false;
