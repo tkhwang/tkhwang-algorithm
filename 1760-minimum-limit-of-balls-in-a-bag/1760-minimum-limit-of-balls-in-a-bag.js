@@ -6,10 +6,17 @@
 var minimumSize = function(nums, maxOperations) {
     
     /*
-                     ------------
-                     |
-        -------------| 
-                      left   ... right
+         ---------
+                 |
+                 |
+                 ----------
+     [left right] 
+       
+                ----------
+                |
+                |
+       ----------
+                [left, right]
      */
     
     let left = 1;
@@ -32,5 +39,5 @@ var minimumSize = function(nums, maxOperations) {
             left = mid + 1;
         }
     }
-    return left
+    return right
 };
