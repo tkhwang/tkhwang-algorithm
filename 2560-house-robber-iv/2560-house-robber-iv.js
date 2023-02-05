@@ -9,21 +9,21 @@ var minCapability = function(nums, k) {
     let left = Math.min(...nums);
     let right = Math.max(...nums);
     
-    const check = (max) => {
-        let count = 0;
+    const check = (max, remain) => {
         for (let i = 0; i < N; i += 1) {
             if (nums[i] <= max) {
-                count += 1;
+                remain -= 1;
                 i += 1;
             } 
+            if (remain === 0) return true;
         }
-        return count >= k;
+        return remain === 0;
     }
     
     while (left < right) {
         const mid = Math.floor((left + right) / 2);
         
-        if (check(mid)) {
+        if (check(mid, k)) {
             right = mid;
         } else {
             left = mid + 1;
