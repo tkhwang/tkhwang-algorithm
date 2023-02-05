@@ -6,11 +6,14 @@
 var minCost = function(basket1, basket2) {
     const freq = {};
 
+    let min = Infinity;
     for (const num of basket1) {
         freq[num] = (freq[num] || 0) + 1;
+        if (min > num) min = num;
     }
     for (const num of basket2) {
         freq[num] = (freq[num] || 0) - 1;
+        if (min > num) min = num;
     }
     
     const last = [];
@@ -22,8 +25,6 @@ var minCost = function(basket1, basket2) {
             last.push(+num);
         }
     }
-    
-    const min = Math.min(...basket1, ...basket2);
     
     let res = 0;
     for (let i = 0; i < last.length / 2; i += 1) {
