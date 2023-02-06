@@ -5,24 +5,25 @@
  */
 var minEatingSpeed = function(piles, h) {
     let left = 1;
-    let right = Math.max(...piles);
+    let right = 10 ** 9;
     
-    const isOK = (speed) => {
-        let sum = 0;
+    const check = (speed) => {
+        let time = 0;
         for (const pile of piles) {
-            sum += Math.ceil(pile/speed) 
+            time += Math.ceil(pile / speed);
         }
-        return sum <= h;
+        return time <= h;
     }
     
     while (left < right) {
-        const mid = Math.floor((left + right)/2);
+        const mid = Math.floor((left + right) / 2);
         
-        if (isOK(mid)) {
+        if (check(mid)) {
             right = mid;
         } else {
             left = mid + 1;
         }
     }
+    
     return left;
 };
