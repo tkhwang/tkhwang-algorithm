@@ -13,31 +13,31 @@ var maxDistance = function(position, m) {
     const N = position.length;
     position.sort((a,b) => a - b);
     
-    let left = 1;
-    let right = position.at(-1) - position.at(0);
+    let left = 0;
+    let right = position.at(-1) - position.at(0) + 1;
         
-    const check = (distance) => {
+    const isFail = (distance) => {
         let prv = position[0];
         let count = 1;
         for (let i = 1; i < N; i += 1) {
             if (prv + distance <= position[i]) {
                 count += 1;                
-                if (count >= m) return true;
+                if (count >= m) return false;
                 prv = position[i];
             }
         }
-        return false;
+        return count < m;
     }
     
-    while (left <= right) {
+    while (left < right) {
         const mid = Math.floor((left + right) / 2);
         
-        if (check(mid)) {
-            left = mid + 1;
+        if (isFail(mid)) {
+            right = mid;
         } else {
-            right = mid - 1;
+            left = mid + 1;
         }
     }
     
-    return right;
+    return left - 1;
 };
