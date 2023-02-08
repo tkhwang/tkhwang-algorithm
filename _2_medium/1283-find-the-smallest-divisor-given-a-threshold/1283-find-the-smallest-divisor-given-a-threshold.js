@@ -4,26 +4,26 @@
  * @return {number}
  */
 var smallestDivisor = function(nums, threshold) {
-    const n = nums.length;
-    const sum = nums.reduce((a,b) => a + b, 0);
-    
     let left = 1;
-    let right = Math.max(...nums);
+    let right = 10 ** 6;
     
-    const isOK = (num) => {
-        let sum = 0;
-        for (const n of nums) {
-            sum += Math.ceil(n / num)
+    const isOK = (value) => {
+        let res = 0;
+        for (const num of nums) {
+            res += Math.ceil(num / value);
         }
-        return sum 
-            <= threshold;
+        
+        return res <= threshold;
     }
-
+    
     while (left < right) {
         const mid = Math.floor((left + right) / 2);
         
-        if (isOK(mid)) right = mid;
-        else left = mid + 1;
+        if (isOK(mid)) {
+            right = mid;
+        } else {
+            left = mid + 1;
+        }
     }
     
     return left;

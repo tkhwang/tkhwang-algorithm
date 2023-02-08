@@ -6,34 +6,33 @@ var threeSum = function(nums) {
     const N = nums.length;
     
     nums.sort((a,b) => a - b);
-    
+
     const res = [];
     
-    const twoSum = (left, right, target) => {
+    const twoSum = (mid, left, target) => {
+        let right = N - 1;
+        
         while (left < right) {
-            const leftValue = nums[left];
-            const rightValue = nums[right];
+            const sum = nums[left] + nums[right];
             
-            const sum = leftValue + rightValue;
-            
-            if (sum > target) {
-                while (left < right && nums[right] === rightValue) right -= 1;
-            } else if (sum < target) {
-                while (left < right && nums[left] === leftValue) left += 1;
-            } else if (sum === target) {
-                res.push([ -target, nums[left], nums[right] ]);
-                while (left < right && nums[right] === rightValue) right -= 1;
-                while (left < right && nums[left] === leftValue) left += 1;
+            if (sum < target) {
+                left += 1;
+            } else if (sum > target) {
+                right -= 1;
+            } else {
+                res.push([ nums[mid], nums[left], nums[right] ]) ;
+                left += 1;
+                right -= 1;
+                while (left < right && nums[left] === nums[left - 1]) left += 1;
             }
         }
     }
-    
     for (let i = 0; i < N; i += 1) {
         const cur = nums[i];
         
-        twoSum(i+1, N-1, -cur);
-        
-        while (i < N && nums[i] === nums[i+1]) i += 1;
+        if (i === 0 || nums[i-1] !== nums[i]) {
+            twoSum(i, i + 1, -cur);
+        }
     }
     
     return res;

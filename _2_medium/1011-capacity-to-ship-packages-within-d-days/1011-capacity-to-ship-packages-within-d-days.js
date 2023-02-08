@@ -7,19 +7,19 @@ var shipWithinDays = function(weights, days) {
     let left = Math.max(...weights);
     let right = weights.reduce((a,b) => a + b, 0);
     
-    const isOK = (limit) => {
+    const isOK = (capacity) => {
         let sum = 0;
-        let count = 1;
+        let took = 1;
         for (const weight of weights) {
-            if (sum + weight > limit) {
-                count += 1;
+            if (sum + weight > capacity) {
+                took += 1;
+                if (took > days) return false;
                 sum = weight;
-                if (count > days) return false;
             } else {
                 sum += weight;
             }
         }
-        return count <= days;
+        return took <= days;
     }
     
     while (left < right) {
