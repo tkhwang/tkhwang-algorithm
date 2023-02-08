@@ -1,15 +1,10 @@
+// https://tkhwang.me/snippets/how-to-use-binary-search-to-find-minimum-or-maximum-in-javascript
+
 const bisectGeneralMin = (array) => {
   let left = MIN_SEARCH_SPACE;
-  let right = MAX_SEARCH_SPACE;
+  let right = MAX_SEARCH_SPACE + 1;
 
-  // Minimize such that isOK(k) is True
-  //                --------------
-  //                |
-  //                |
-  //      -----------
-  // ...    left - 1, [left, ..., right ]
-  //
-  const isOK = (n) => {
+  const isOK = (value) => {
     // decision logic
     return true;
   };

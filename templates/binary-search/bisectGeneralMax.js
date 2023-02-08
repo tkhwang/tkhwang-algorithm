@@ -1,14 +1,10 @@
+// https://tkhwang.me/snippets/how-to-use-binary-search-to-find-minimum-or-maximum-in-javascript
+
 const bisectGeneralMax = (array) => {
   let left = MIN_SEARCH_SPACE;
-  let right = MAX_SEARCH_SPACE;
+  let right = MAX_SEARCH_SPACE + 1;
 
-  // Maximize such that isOK(k) is True.
-  //  ----------------
-  //                 |
-  //                 |
-  //                 |
-  //  [ left, right ], right + 1
-  const isOK = (n) => {
+  const isFail = (value) => {
     // decision logic
     return true;
   };
@@ -16,16 +12,17 @@ const bisectGeneralMax = (array) => {
   while (left < right) {
     const mid = Math.floor((left + right) / 2);
 
-    if (isOK(mid)) {
-      // Because mid is checked to be OK, now mid should be the lower bound. [mid, ...]
-      left = mid;
+    if (isFail(mid)) {
+      // Because mid is checked to be OK, now mid should be the upper bound. [..., mid]
+      right = mid;
     } else {
-      // Now mid is not OK, so that we need to check the below [..., mid - 1]
-      right = mid - 1;
+      // Now mid is not OK, so that we need to check from [mid + 1, ...].
+      left = mid + 1;
     }
   }
 
   // After exiting the while loop,
-  // right is the maximum k​ satisfying the condition function;
-  return right;
+  // left is the minimal k​ satisfying the condition isFail() function.
+  // Therefore the final answer is left - 1, which is the maximum that meets the original condition.
+  return left - 1;
 };
