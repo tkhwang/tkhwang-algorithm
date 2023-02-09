@@ -5,19 +5,19 @@
  */
 var chalkReplacer = function(chalk, k) {
     const N = chalk.length;
+    const all = chalk.reduce((a,b) => a + b, 0);
     
-    const sum = chalk.reduce((a,b) => a + b, 0);
+    let n = k;
+    let i = 0;
     
-    while (k > 0) {
-        k -= sum;
+    while (n > 0) {
+        while (n - all > 0) n -= all;
+        
+        if (n - chalk[i] < 0) return i;
+        
+        n -= chalk[i];
+        i = (i + 1) % N;
     }
     
-    if (k === 0) return 0;
-    
-    k += sum;
-
-    for (let i = 0; i < N; i += 1) {
-        if (k < chalk[i]) return i;
-        k -= chalk[i];
-    }
+    return i;
 };
