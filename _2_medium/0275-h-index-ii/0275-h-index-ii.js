@@ -4,20 +4,25 @@
  */
 var hIndex = function(citations) {
     const N = citations.length;
+    const totalSum = citations.reduce((a,b) => a + b, 0);
+    
+    citations.sort((a,b) => a - b);
     
     let left = 0;
-    let right = N - 1;
+    let right = N + 1
     
-    while (left <= right) {
-        const mid = Math.floor((left + right)/2);
+    const check = (index) => {
+        return citations[N-index] < index;
+    }
+    
+    while (left < right) {
+        const mid = Math.floor((left + right) / 2);
         
-        if (citations[mid] === N - mid) {
-            return N - mid;
-        } else if (citations[mid] > N - mid) {
-            right = mid - 1;
-        } else if (citations[mid] < N - mid) {
+        if (check(mid)) {
+            right = mid;
+        } else {
             left = mid + 1;
         }
     }
-    return N - left;
+    return left - 1
 };
