@@ -6,10 +6,12 @@
 var validTree = function(n, edges) {
     if (n !== edges.length + 1) return false;
     
-    const unionFind = new UnionFind(n);
+    const uf = new UnionFind(n);
     
-    for (const [ begin, end ] of edges) {
-        if (!unionFind.union(begin, end)) return false;
+    for (const [ u, v ] of edges) {
+        if (uf.connected(u, v)) return false;
+        
+        uf.union(u, v);
     }
     
     return true;

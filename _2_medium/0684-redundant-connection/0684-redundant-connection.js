@@ -5,13 +5,21 @@
 var findRedundantConnection = function(edges) {
     const N = edges.length;
     
-    const unionFind = new UnionFind(N);
+    const uf = new UnionFind(N);
     
-    for (const [ begin, end ] of edges) {
-        if (!unionFind.union(begin, end)) return [ begin, end ];
+    const res = [];
+    
+    for (const [ u, v ] of edges) {
+        if (uf.connected(u, v)) {
+            res.push(u);
+            res.push(v);
+            return res;
+        }
+        
+        uf.union(u, v);
     }
     
-    return [];
+    return res;
 };
 
 class UnionFind {
