@@ -3,31 +3,19 @@
  * @return {number}
  */
 var lengthOfLIS = function(nums) {
-    const bisectLeft = (array, target, left = 0, right = array.length) => {
-      // [left, right) half inclusive range
-
-      while (left < right) {
-        const mid = Math.floor((left + right) / 2)
-
-        // left-most
-        if (array[mid] >= target) {
-          right = mid
-        } else {
-          left = mid + 1
-        }
-      }
-      return left
-    }
-    
     const N = nums.length;
-    const piles = [];
-
-    for (const num of nums) {
-        const index = bisectLeft(piles, num);
-        
-        if (index === piles.length) piles.push(num);
-        else piles[index] = num;
+    
+    const dp = Array(N).fill(1);
+    let max = 1;
+    
+    for (let i = 0; i < N; i += 1) {
+        for (let j = 0; j < i; j += 1) {
+            if (nums[j] < nums[i]) {
+                dp[i] = Math.max(dp[i], dp[j] + 1)
+            }
+            max = Math.max(max, dp[i]);
+        }
     }
     
-    return piles.length;
+    return max;
 };
