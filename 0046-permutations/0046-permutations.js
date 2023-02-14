@@ -7,18 +7,18 @@ var permute = function(nums) {
     
     const res = [];
     
-    const dfs = (index) => {
-        if (index >= N) {
+    const dfs = (first) => {
+        if (first >= N) {
             res.push([...nums]);
             return;
         }
         
-        for (let i = index; i < N; i += 1) {
-            [ nums[index], nums[i] ] = [ nums[i], nums[index] ];
+        for (let i = first; i < N; i += 1) {
+            [ nums[first], nums[i] ] = [ nums[i], nums[first] ];
             
-            dfs(index + 1);
+            dfs(first + 1);
             
-            [ nums[index], nums[i] ] = [ nums[i], nums[index] ];
+            [ nums[first], nums[i] ] = [ nums[i], nums[first] ];
         }
     }
     
