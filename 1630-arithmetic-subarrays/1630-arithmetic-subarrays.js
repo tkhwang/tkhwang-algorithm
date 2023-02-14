@@ -15,8 +15,6 @@ var checkArithmeticSubarrays = function(nums, l, r) {
         const sub = nums.slice(left, right + 1);
         sub.sort((a,b) => a - b);
         
-        console.log(sub);
-        
         const delta = sub[1] - sub[0];
         let local = true;
         for (let i = 2; i < sub.length; i += 1) {
