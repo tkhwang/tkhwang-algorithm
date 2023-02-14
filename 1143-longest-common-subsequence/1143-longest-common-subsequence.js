@@ -7,23 +7,21 @@ var longestCommonSubsequence = function(text1, text2) {
     const N1 = text1.length;
     const N2 = text2.length;
     
-    const cache = {};
-    const genKey = (index1, index2) => `${index1}:${index2}`;
-
-    const dp = (index1, index2) => {
-        if (index1 < 0 || index2 < 0) return 0;
-        if (cache[genKey(index1, index2)]) return cache[genKey(index1, index2)];
-        
-        if (text1[index1] === text2[index2]) {
-            cache[genKey(index1, index2)] = 1 + dp(index1 - 1, index2 - 1)
-        } else {
-            cache[genKey(index1, index2)] = Math.max(
-                dp(index1 - 1, index2),
-                dp(index1, index2 - 1)
-            )
+    // dp[i][j] = text1[0:i-1] and text2[0:j-1]
+    const dp = Array(N1 + 1).fill(null).map((_) => Array(N2 + 1).fill(0));
+    
+    for (let i = 1; i <= N1; i += 1) {
+        for (let j = 1; j <= N2; j += 1) {
+            if (text1[i-1] === text2[j-1]) {
+                dp[i][j] = dp[i-1][j-1] + 1
+            } else {
+                dp[i][j] = Math.max(
+                    dp[i-1][j],
+                    dp[i][j-1]
+                )
+            }
         }
-        return cache[genKey(index1, index2)];
     }
     
-    return dp(N1 - 1, N2 - 1);
+    return dp[N1][N2];
 };
