@@ -7,22 +7,22 @@ var numDistinct = function(s, t) {
     const NS = s.length;
     const NT = t.length;
     
-    const cache = {};
-    const genKey = (is, it) => `${is}:${it}`;
-    
-    const dp = (is, it) => {
-        if (it >= NT) return 1;
-        if (is >= NS) return 0;
-        if (cache[genKey(is, it)] !== undefined) return cache[genKey(is, it)];
-        
-        let local = 0;
-        local += dp(is + 1, it)
-        if (s[is] === t[it]) {
-            local += dp(is + 1, it + 1);
-            
-        }
-        return cache[genKey(is, it)] = local;
+    // dp[is][it] => s[0:is-1] t[0:it-1]
+    const dp = Array(NS + 1).fill(null).map((_) => Array(NT + 1).fill(0));
+
+    for (let is = 0; is <= NS; is += 1) {
+        dp[is][0] = 1;
     }
     
-    return dp(0, 0)
+    for (let is = 1; is <= NS; is += 1) {
+        for (let it = 1; it <= NT; it += 1) {
+            if (s[is-1] === t[it-1]) {
+                dp[is][it] = dp[is-1][it-1] + dp[is-1][it];
+            } else {
+                dp[is][it] = dp[is-1][it];
+            }
+        }
+    }
+    
+    return dp[NS][NT]
 };
