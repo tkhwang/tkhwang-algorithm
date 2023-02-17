@@ -11,16 +11,16 @@
  * @return {number}
  */
 var minDiffInBST = function(root) {
-    let precessor = null;
+    let precessor = Infinity;
     let min = Infinity;
     
     const dfs = (node) => {
         if (!node) return;
 
         dfs(node.left);
-        
-        if (precessor) min = Math.min(min, node.val - precessor.val);
-        precessor = node;
+
+        min = Math.min(min, Math.abs(node.val - precessor));
+        precessor = node.val;
 
         dfs(node.right);
     }
