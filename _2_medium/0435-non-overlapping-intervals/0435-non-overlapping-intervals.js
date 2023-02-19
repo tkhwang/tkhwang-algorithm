@@ -5,23 +5,23 @@
 var eraseOverlapIntervals = function(intervals) {
     const N = intervals.length;
     
-    intervals.sort((a,b) => a[0] - b[0]);
-    console.log(intervals);
+    intervals.sort((a,b) => a[0] - b[0] || a[1]- b[1]);
     
-    let [ prvStart, prvEnd ] = intervals[0];
+    console.log(intervals);
+  
+    let [ _, prvEnd ] = intervals[0];
     let count = 0;
     
     for (let i = 1; i < N; i += 1) {
-        const [ start, end ] = intervals[i];
+        const [ curStart, curEnd ] = intervals[i];
         
-        // [ prvStart, prvEnd ] [ start, end ]
-        if (prvEnd <= start) {
-            prvEnd = end;
-        //  [ start  ... prvEnd ]
+        if (prvEnd <= curStart) {
+            prvEnd = curEnd;
         } else {
             count += 1;
-            prvEnd = Math.min(prvEnd, end);
+            prvEnd = Math.min(prvEnd, curEnd);
         }
     }
+    
     return count;
- };
+};

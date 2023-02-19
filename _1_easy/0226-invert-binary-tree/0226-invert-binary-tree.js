@@ -16,9 +16,11 @@ var invertTree = function(root) {
         
         const left = dfs(node.left);
         const right = dfs(node.right);
+        
         node.left = right;
         node.right = left;
-        return node;        
+        
+        return node;
     }
     
     return dfs(root)
