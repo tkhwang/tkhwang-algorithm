@@ -1,3 +1,9 @@
 {
-  "conventionalCommits.scopes": ["arrange", "templates"]
+  "conventionalCommits.scopes": [
+    "arrange",
+    "templates",
+    "programmers",
+    "leetcode",
+    "common"
+  ]
 }
