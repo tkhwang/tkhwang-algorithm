@@ -23,5 +23,5 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 
 ## 🚀 others
 
-- [프로그래머스](./__others/programmers/)
-- [codewars](./__others/codewars/) : I starts with this.
+- [프로그래머스](./_programmers/)
+- [codewars](./__others/codewars/) : I start with this.
