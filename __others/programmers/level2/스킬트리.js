@@ -2,6 +2,33 @@
 // Level 2
 // https://school.programmers.co.kr/learn/courses/30/lessons/49993
 
+// 2nd try using queue
+function solution(_skill, skill_trees) {
+  const skill = _skill.split("");
+  const set = new Set(skill);
+
+  let count = 0;
+
+  for (const skill_tree of skill_trees) {
+    const queue = [...skill];
+    let isMatching = true;
+    for (const ch of skill_tree) {
+      if (!set.has(ch)) continue;
+
+      if (ch === queue[0]) {
+        queue.shift();
+        if (queue.length === 0) break;
+      } else {
+        isMatching = false;
+        break;
+      }
+    }
+    if (isMatching) count += 1;
+  }
+  return count;
+}
+
+// 1st try using just logic
 function solution(skill, skill_trees) {
   const inorders = {};
   for (const [i, ch] of skill.split("").entries()) {
