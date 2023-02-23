@@ -9,8 +9,6 @@ var findMaximizedCapital = function(k, w, profits, capital) {
     const N = profits.length;
     
     const projects = Array(N).fill(null).map((v,i) => ([ i, profits[i] ]));
-    console.log(projects)
-
     const maxHeap = new MaxPriorityQueue({ compare: (a,b) => b[1] - a[1] || capital[a[0]] - capital[a[0]] });
 
     for (let i = 0; i < N; i += 1) {
