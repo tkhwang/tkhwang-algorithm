@@ -7,8 +7,13 @@ var maxProfit = function(prices) {
     let maxProfit = -Infinity;
     
     for (const price of prices) {
-        if (minPrice > price) minPrice = price;
-        if (maxProfit < price - minPrice) maxProfit = price - minPrice;
+        if (minPrice > price) {
+            minPrice = price;
+        } else {
+            if (maxProfit < price - minPrice) {
+                maxProfit = price - minPrice;
+            }
+        }
     }
-    return maxProfit;
+    return maxProfit === -Infinity ? 0 : maxProfit;
 };
