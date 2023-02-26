@@ -13,8 +13,6 @@ var maxNumOfMarkedIndices = function(nums) {
     let count = 0;
     
     while (left >= 0 && Math.floor(N/2) - 1 < right) {
-        console.log(left, right, nums[left], nums[right]);
-        
         if (nums[left] * 2 <= nums[right]) {
             count += 2;
             right -= 1;
