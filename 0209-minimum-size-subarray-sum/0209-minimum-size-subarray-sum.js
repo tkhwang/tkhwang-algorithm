@@ -10,8 +10,8 @@ var minSubArrayLen = function(target, nums) {
     const queue = new Queue();
     let sum = 0;
 
-    for (let i = 0; i < N; i += 1) {
-        const cur = nums[i];
+    for (let right = 0; right < N; right += 1) {
+        const cur = nums[right];
         queue.enqueue(cur);
         sum += cur;
         
