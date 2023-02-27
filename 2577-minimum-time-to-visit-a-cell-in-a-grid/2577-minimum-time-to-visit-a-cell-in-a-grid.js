@@ -21,8 +21,8 @@ var minimumTime = function(grid) {
         let [ time, r, c ] = minHeap.dequeue();
 
         if (r === ROWS - 1 && c === COLS - 1) return time;
-        if (seen.has(genKey(r, c))) continue;
         
+        if (seen.has(genKey(r, c))) continue;
         seen.add(genKey(r, c));
         time += 1;
         
@@ -31,6 +31,7 @@ var minimumTime = function(grid) {
             const newC = c + dC;
             
             if (!isValid(newR, newC)) continue;
+            // if (seen.has(genKey(newR, newC))) continue;
 
             if (grid[newR][newC] <= time) {
                 minHeap.enqueue([ time, newR, newC ]);
