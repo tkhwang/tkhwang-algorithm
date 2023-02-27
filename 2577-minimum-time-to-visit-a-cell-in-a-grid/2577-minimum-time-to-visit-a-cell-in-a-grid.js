@@ -20,8 +20,6 @@ var minimumTime = function(grid) {
     while (minHeap.size()) {
         let [ time, r, c ] = minHeap.dequeue();
 
-        // console.log(r, c, time);
-        
         if (r === ROWS - 1 && c === COLS - 1) return time;
         if (seen.has(genKey(r, c))) continue;
         
