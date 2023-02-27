@@ -2,22 +2,21 @@
  * @param {number[]} arr
  * @return {number}
  */
-var sumSubarrayMins = function(arr) {
-    const N = arr.length;
-    const MOD = 7 + 10 ** 9;
-
+var sumSubarrayMins = function(nums) {
+    const N = nums.length;
     const stack = [];
-    let sum = 0;
+    const MOD = 7 + 10 ** 9;
     
+    let res = 0;
     for (let i = 0; i <= N; i += 1) {
-        while (stack.length && (i === N || arr[stack.at(-1)] >= arr[i])) {
+        while (stack.length && (i === N || nums[stack.at(-1)] >= nums[i])) {
             const mid = stack.pop();
-            const left = stack.length ? stack.at(-1) : -1;
             
-            sum += arr[mid] * (i - mid) * (mid - left) % MOD;
+            const before = stack.length === 0 ? -1 : stack.at(-1);
+
+            res += nums[mid] * (mid - before) * (i - mid) % MOD;
         }
         stack.push(i)
     }
-
-    return sum % MOD;
+    return res % MOD;
 };
