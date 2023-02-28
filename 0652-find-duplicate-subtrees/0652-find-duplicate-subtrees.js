@@ -21,6 +21,8 @@ var findDuplicateSubtrees = function(root) {
         const right = dfs(node.right);
         
         const key = `${node.val}:${left}:${right}`;
+        // const key = `${left}${node.val}::${right}`
+
         seen[key] = (seen[key] || 0) + 1;
         
         if (seen[key] === 2) res.push(node);
