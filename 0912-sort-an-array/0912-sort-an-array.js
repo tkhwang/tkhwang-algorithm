@@ -36,7 +36,12 @@ var sortArray = function(nums) {
             i2 += 1;
         }
         
-        return res;
+        // return res;
+        return [
+            ...res,
+            ...arr1.slice(i1),
+            ...arr2.slice(i2)
+        ]
     }
     
     const mergeSort = (nums) => {
