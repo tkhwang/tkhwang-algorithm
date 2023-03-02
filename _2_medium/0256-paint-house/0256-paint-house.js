@@ -5,29 +5,22 @@
 var minCost = function(costs) {
     const N = costs.length;
     
-    const red = 0;
-    const blue = 1;
-    const green = 2;
+    const RED = 0;
+    const BLUE = 1;
+    const GREEN = 2;
     
-    // dp[i][color] : 해당 color 선택 시 cost
     const dp = Array(N).fill(null).map((_) => Array(3).fill(0));
-    for (let c = 0; c < 3; c += 1) {
-        dp[0][c] = costs[0][c];
-    }
+    dp[0][RED] = costs[0][RED];
+    dp[0][BLUE] = costs[0][BLUE];
+    dp[0][GREEN] = costs[0][GREEN];
     
-    for (let i = 1;i < N; i += 1) {
-        dp[i][red] = Math.min(
-            dp[i-1][blue] + costs[i][red],
-            dp[i-1][green] + costs[i][red]
-        );
-        dp[i][blue] = Math.min(
-            dp[i-1][red] + costs[i][blue],
-            dp[i-1][green] + costs[i][blue]
-        );
-        dp[i][green] = Math.min(
-            dp[i-1][red] + costs[i][green],
-            dp[i-1][blue] + costs[i][green]
-        )
+    for (let i = 1; i < N; i += 1) {
+        dp[i][RED] = costs[i][RED] + 
+                     Math.min(dp[i-1][BLUE], dp[i-1][GREEN]);
+        dp[i][BLUE] = costs[i][BLUE] +
+                      Math.min(dp[i-1][RED], dp[i-1][GREEN]);
+        dp[i][GREEN] = costs[i][GREEN] +
+                       Math.min(dp[i-1][RED], dp[i-1][BLUE]);
     }
     
     return Math.min(...dp[N-1]);

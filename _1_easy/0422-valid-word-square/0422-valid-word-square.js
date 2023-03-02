@@ -5,14 +5,13 @@
 var validWordSquare = function(words) {
     const [ ROWS, COLS ] = [ words.length, words[0].length ];
     
-    for (let c = 0; c < COLS; c += 1) {
-        let t = "";
+    for (const [ c, word ] of words.entries()) {
+        let cols = "";
         for (let r = 0; r < ROWS; r += 1) {
-            if (words[r][c] === undefined) break;
-            t += words[r][c];
+            if (!words[r][c]) break;
+            cols += words[r][c]
         }
-        if (words[c] !== t) return false;
+        if (word !== cols) return false;
     }
-    
     return true;
 };
