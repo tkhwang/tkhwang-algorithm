@@ -15,7 +15,6 @@ var compress = function(chars) {
         if (prv === cur) {
             count += 1;
         } else {
-            // prvIndex, [prvIndex + 1, ..., i - 1], i
             if (prv !== -1) {
                 chars.splice(prvIndex + 1, (i-1) - (prvIndex + 1) + 1);
                 if (count > 1) {
@@ -24,7 +23,6 @@ var compress = function(chars) {
                     i = prvIndex + 1 + willAdd.length;
                 }
             }
-            //
             count = 1;
             prvIndex = i;
         }
