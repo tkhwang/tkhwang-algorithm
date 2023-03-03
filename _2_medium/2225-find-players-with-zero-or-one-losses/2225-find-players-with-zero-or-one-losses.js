@@ -3,19 +3,24 @@
  * @return {number[][]}
  */
 var findWinners = function(matches) {
-    const athletes = {};
+    const winners = {};
+    const losers = {};
     
     for (const [ winner, loser ] of matches) {
-        if (athletes[winner] === undefined) athletes[winner] = { "win" : 0, "lose": 0 };
-        athletes[winner]["win"] += 1;
-        if (athletes[loser] === undefined) athletes[loser] = { "win" : 0, "lose": 0 };
-        athletes[loser]["lose"] += 1;
+        if (winners[winner] === undefined) winners[winner] = 0;
+        if (losers[loser] === undefined) losers[loser] = 0;
+        if (winners[loser] === undefined) winners[loser] = 0;
+        if (losers[winner] === undefined) losers[winner] = 0;
+        winners[winner] += 1;
+        losers[loser] += 1;
     }
 
-    const keys = Object.keys(athletes);
+    const keys = Object.keys(losers);
+    const zeroLoses = keys.filter((key) => losers[key] === 0)
+    const oneLoses = keys.filter((key) => losers[key] === 1);
     
     return [
-        keys.filter((key) => athletes[key]["lose"] === 0),
-        keys.filter((key) => athletes[key]["lose"] === 1)
+        zeroLoses,
+        oneLoses
     ]
 };
