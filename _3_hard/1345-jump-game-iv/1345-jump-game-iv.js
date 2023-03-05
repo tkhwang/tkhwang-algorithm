@@ -5,48 +5,48 @@
 var minJumps = function(arr) {
     const N = arr.length;
     
-    const graph = {};
+    const obj = {};
     for (const [ i, num ] of arr.entries()) {
-        if (graph[num] === undefined) graph[num] = [];
-        graph[num].push(i);
+        if (obj[num] === undefined) obj[num] = [];
+        obj[num].push(i);
     }
+    
+    const isValid = (num) => !(num < 0 || num >= N);
 
-    const queue = [ 0 ];
     const seen = new Set();
     seen.add(0);
 
-    let steps = 0;
-    
-    while (queue.length) {
-        const len = queue.length;
+    const bfs = (start) => {
+        const queue = [ [ start, 0 ] ];
         
-        for (let i = 0; i < len; i += 1) {
-            const cur = queue.shift();
+        while (queue.length) {
+            const len = queue.length;
             
-            if (cur === N - 1) return steps;
-            
-            for (const next of graph[arr[cur]]) {
-                if (seen.has(next)) continue;
+            for (let i = 0; i < len; i += 1) {
+                const [ cur, cost ] = queue.shift();
                 
-                seen.add(next);
-                queue.push(next);
+                if (cur === N - 1) return cost;
+                
+                for (const next of obj[arr[cur]] || []) {
+                    if (seen.has(next)) continue;
+                    seen.add(next);
+                    queue.push([ next, cost + 1 ]);
+                }
+                for (const next of [ cur + 1, cur - 1 ]) {
+                    if (!isValid(next)) continue;
+                    if (seen.has(next)) continue;
+                    
+                    seen.add(next);
+                    queue.push([ next, cost + 1 ]);
+                }
+                if (obj[arr[cur]] && obj[arr[cur]].length > 0) {
+                    obj[arr[cur]].length = 0;
+                }
             }
-            
-            if (cur + 1 < N && !seen.has(cur + 1)) {
-                seen.add(cur+1);
-                queue.push(cur + 1);
-            }
-            
-            if (0 <= cur - 1 && !seen.has(cur - 1)) {
-                seen.add(cur - 1);
-                queue.push(cur - 1);
-            }
-            
-            graph[arr[cur]].length = 0;
         }
         
-        steps += 1;
+        return -1;
     }
     
-    return -1;
+    return bfs(0);
 };
