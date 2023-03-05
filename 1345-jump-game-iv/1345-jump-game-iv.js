@@ -39,7 +39,7 @@ var minJumps = function(arr) {
                     seen.add(next);
                     queue.push([ next, cost + 1 ]);
                 }
-                if (obj[arr[cur]] && obj[arr[cur]].length >0) {
+                if (obj[arr[cur]] && obj[arr[cur]].length > 0) {
                     obj[arr[cur]].length = 0;
                 }
             }
