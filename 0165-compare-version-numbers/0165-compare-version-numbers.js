@@ -26,8 +26,6 @@ var compareVersion = function(version1, version2) {
     while (true) {
         const [ first, second] = [ firstNums[i], secondNums[i] ];
         
-        console.log(i, first, second);
-        
         if (first === undefined && second === undefined) return 0;
         
         const result = comp(trim(first), trim(second));
