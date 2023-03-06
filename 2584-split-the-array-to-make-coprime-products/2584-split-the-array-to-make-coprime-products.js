@@ -27,7 +27,6 @@ var findValidSplit = function(nums) {
         }
     }
     
-    console.log(farIndex);
     let max = 0;
     let i = 0;
     
