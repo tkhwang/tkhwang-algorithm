@@ -4,15 +4,17 @@
  * @return {number}
  */
 var minimumTime = function(time, totalTrips) {
+    const N = time.length;
+    
     let left = 1;
     let right = Number.MAX_SAFE_INTEGER;
     
-    const isOK = (n) => {
-        let trips = 0;
+    const isOK = (length) => {
+        let sum = 0;
         for (const t of time) {
-            trips += Math.floor(n / t);
+            sum += Math.floor((length / t))
         }
-        return trips >= totalTrips;
+        return sum >= totalTrips;
     }
     
     while (left < right) {

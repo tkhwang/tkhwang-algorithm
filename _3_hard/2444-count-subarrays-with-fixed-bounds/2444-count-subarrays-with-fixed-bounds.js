@@ -4,25 +4,41 @@
  * @param {number} maxK
  * @return {number}
  */
-var countSubarrays = function(nums, minK, maxK) {
-    const N = nums.length;
-    
-    let minIndex = -1;
-    let maxIndex = -1;
-    let badIndex = -1;
-    
-    let res = 0;
-    
-    for (const [ i, num ] of nums.entries()) {
-        if (num < minK || maxK < num) badIndex = i;
-        if (minK === num) minIndex = i;
-        if (maxK === num) maxIndex = i;
-    
-        res += Math.max(
-               0,
-               Math.min(minIndex, maxIndex) - badIndex
-        )
+var countSubarrays = function (nums, minK, maxK) {
+  const N = nums.length
+
+  let minFound = false
+  let maxFound = false
+  let minCurIndex = -1
+  let maxCurIndex = -1
+
+  let res = 0
+
+  let left = 0
+  for (let right = 0; right < N; right += 1) {
+    const cur = nums[right]
+
+    if (cur === minK) {
+      minFound = true
+      minCurIndex = right
     }
-    
-    return res;
-};
+    if (cur === maxK) {
+      maxFound = true
+      maxCurIndex = right
+    }
+
+    if (cur < minK || cur > maxK) {
+      left = right + 1
+      minFound = false
+      maxFound = false
+      minCurIndex = -1
+      maxCurIndex = -1
+    }
+
+    if (minFound && maxFound) {
+      res += Math.min(minCurIndex, maxCurIndex) - left + 1
+    }
+  }
+
+  return res
+}
