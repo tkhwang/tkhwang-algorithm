@@ -11,7 +11,7 @@ var getPermutation = function(n, k) {
 
       const dfs = (cur, remain) => {
         if (cur.length === length) {
-          res.push(cur.join(""));
+            if (res.length < k) res.push(cur.join(""));
           return
         }
 
@@ -28,7 +28,6 @@ var getPermutation = function(n, k) {
     }
 
     const permutations = generatePermutations(nums);
-    
     return permutations[k-1];
     
 };
