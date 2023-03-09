@@ -9,7 +9,7 @@ var nthUglyNumber = function(n) {
     const res = [];
     const set = new Set();
     
-    while (res.length < n + 2) {
+    while (res.length < n) {
         const min = minHeap.dequeue();
         if (set.has(min)) continue;
         
