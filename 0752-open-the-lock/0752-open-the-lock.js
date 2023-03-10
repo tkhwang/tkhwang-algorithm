@@ -32,6 +32,7 @@ var openLock = function(deadends, target) {
                     for (const next of change(+num)) {
                         const nextNum = cur.slice(0, i) + String(next) + cur.slice(i + 1);
                         if (seen.has(nextNum)) continue;
+                        // if (set.has(nextNum)) continue;
 
                         seen.add(nextNum);
                         queue.push(nextNum)                        
