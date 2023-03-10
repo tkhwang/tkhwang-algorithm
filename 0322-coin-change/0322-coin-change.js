@@ -4,21 +4,23 @@
  * @return {number}
  */
 var coinChange = function(coins, amount) {
-    // dp[i] : money i 일때 교환 가능한 코인의 수
-    // dp[amount]
-    const dp = Array(amount + 1).fill(Infinity);
-    dp[0] = 0;
+    const cache = {};
     
-    for (let i = 1; i < amount + 1; i += 1) {
+    const dp = (remain) => {
+        if (remain < 0) return -1;
+        if (remain === 0) return 0;
+        if (cache[remain] !== undefined) return cache[remain];
+        
+        let min = Infinity;
         for (const coin of coins) {
-            if (i - coin < 0) continue;
+            if (remain - coin < 0) continue;
             
-            dp[i] = Math.min(
-                dp[i],
-                dp[i - coin] + 1
-            )
+            const res = dp(remain - coin);
+            if (res === -1) continue;
+            min = Math.min(min, 1 + res);
         }
+        return cache[remain] = min === Infinity ? -1 : min;
     }
     
-    return dp[amount] === Infinity ? -1 : dp[amount]
+    return dp(amount)
 };
