@@ -24,8 +24,6 @@ var longestDupSubstring = function(s) {
         const mid = Math.floor((left + right) / 2);
         const result = isOK(mid);
 
-        console.log(mid, result)
-        
         if (result) {
             res = result;
             left = mid + 1;
