@@ -11,10 +11,9 @@
  * @return {boolean}
  */
 var isValidBST = function(root) {
-    
     const dfs = (node, left, right) => {
         if (!node) return true;
-        
+
         if (!(left < node.val && node.val < right)) return false;
         
         return dfs(node.left, left, node.val) && dfs(node.right, node.val, right);

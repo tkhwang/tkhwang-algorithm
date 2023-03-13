@@ -5,24 +5,23 @@
  */
 var change = function(amount, coins) {
     const N = coins.length;
-    const W = amount;
-
-    // dp[c][w] : [1..c] 코인을 사용해서 금액 w 을 만들 수 있는 방법의 수
-    const dp = Array(N+1).fill(null).map((_) => Array(W+1).fill(0));
+    const cache = {};
+    const genKey = (index, money) => `${index}:${money}`;
     
-    for (let c = 1; c <= N; c += 1) {
-        dp[c][0] = 1;
+    const dfs = (index, money) => {
+        if (money === amount) return 1;
+        if (money > amount) return 0;
+        if (index >= N) return 0;
+        if (cache[genKey(index, money)] !== undefined) return cache[genKey(index, money)];
+        
+        let res = 0;
+        // use
+        res += dfs(index, money + coins[index]);
+        // not use
+        res += dfs(index + 1, money)
+            
+        return cache[genKey(index, money)] = res;
     }
     
-    for (let c = 1; c <= N; c += 1) {
-        for (let w = 1; w <= W; w += 1) {
-            if (w < coins[c-1]) {
-                dp[c][w] = dp[c-1][w];
-            } else {
-                dp[c][w] = dp[c-1][w] + dp[c][w - coins[c-1]];
-            }
-        }
-    }
-    
-    return dp[N][W];
+    return dfs(0, 0)
 };

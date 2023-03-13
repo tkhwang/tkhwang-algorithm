@@ -4,40 +4,45 @@
  * @return {number}
  */
 var openLock = function(deadends, target) {
-    const queue = [ [ "0000", 0 ] ];
-    const visited = new Set();
-    visited.add("0000");
-
-    while (queue.length) {
-        const len = queue.length;
-        
-        const change = (num) => {
-            return [
-                (+num + 1) % 10,
-                (10 + +num - 1) % 10
-            ]
-        }
-        
-        for (let i = 0; i < len; i += 1) {
-            const [ cur, count ] = queue.shift();
-            
-            if (cur === target) return count;
-            
-            if (deadends.includes(cur)) continue;
-            
-            for (let i = 0; i < cur.length; i += 1) {
-                const [up,down] = change(cur[i]);
-                
-                for (const changed of [ up, down ]) {
-                    const next = "" + cur.slice(0, i) + changed + cur.slice(i+1);
-                    if (visited.has(next)) continue;
-                    
-                    visited.add(next);
-                    queue.push([ next, count + 1 ]);
-                }
-            }
-        }
+    const set = new Set(deadends);
+    const seen = new Set();
+    
+    const change = (num) => {
+        return [
+            (+num + 1) % 10,
+            (10 + +num - 1) % 10
+        ]
     }
     
-    return -1;
+    const bfs = (start) => {
+        const queue = [ start ];
+        let steps = 0;
+        seen.add(start);
+        
+        while (queue.length) {
+            const len = queue.length;
+            
+            for (let i = 0; i < len; i += 1) {
+                const cur = queue.shift();
+
+                if (set.has(cur)) continue;
+                if (cur === target) return steps;
+                
+                for (const [ i, num ] of cur.split("").entries()) {
+                    for (const next of change(+num)) {
+                        const nextNum = cur.slice(0, i) + String(next) + cur.slice(i + 1);
+                        if (seen.has(nextNum)) continue;
+                        // if (set.has(nextNum)) continue;
+
+                        seen.add(nextNum);
+                        queue.push(nextNum)                        
+                    }
+                }
+            }            
+            steps += 1;
+        }        
+        return -1;
+    }
+    
+    return bfs("0000")
 };

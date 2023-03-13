@@ -16,14 +16,14 @@ var minDepth = function(root) {
     let min = Infinity;
     
     const dfs = (node, depth) => {
-        if (!node) return 0;
+        if (!node) return;
 
         if (!node.left && !node.right) {
             min = Math.min(min, depth);
         }
         
-        dfs(node.left, 1 + depth);
-        dfs(node.right, 1 + depth);
+        dfs(node.left, depth + 1);
+        dfs(node.right, depth + 1);
     }
     
     dfs(root, 1);
