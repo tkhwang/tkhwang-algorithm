@@ -13,16 +13,19 @@
  */
 var buildTree = function(inorder, postorder) {
     const dfs = (inorder, postorder) => {
-        if (inorder.length === 0 && postorder.length === 0) return null;
-        
-        const root = new TreeNode(postorder.at(-1));
-        
-        const mid = inorder.indexOf(postorder.at(-1));
+        if ((!inorder || inorder.length === 0) &&
+            (!postorder || postorder.length === 0)) return null;
 
-        root.left = dfs(inorder.slice(0, mid), postorder.slice(0, mid));
-        root.right = dfs(inorder.slice(mid + 1), postorder.slice(mid, postorder.length - 1))
+        const rootVal = postorder.at(-1);
+        const node = new TreeNode(rootVal);
+        const index = inorder.indexOf(rootVal);
         
-        return root;
+        node.left = dfs(inorder.slice(0, index),
+                        postorder.slice(0, index));
+        node.right = dfs(inorder.slice(index + 1),
+                         postorder.slice(index, postorder.length - 1));
+        return node;
     }
+    
     return dfs(inorder, postorder)
 };
