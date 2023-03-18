@@ -10,10 +10,10 @@ var Trie = function() {
 Trie.prototype.insert = function(word) {
     let node = this.trie;
     for (const ch of word) {
-        if (node[ch] === undefined) node[ch] = {};
+        if (node[ch] === undefined) node[ch]= {};
         node = node[ch];
     }
-    node.isWord = word;
+    node["word"] = word;
 };
 
 /** 
@@ -26,7 +26,7 @@ Trie.prototype.search = function(word) {
         if (node[ch] === undefined) return false;
         node = node[ch];
     }
-    return node.isWord === word
+    return !!node["word"]
 };
 
 /** 
@@ -37,7 +37,7 @@ Trie.prototype.startsWith = function(prefix) {
     let node = this.trie;
     for (const ch of prefix) {
         if (node[ch] === undefined) return false;
-        node = node[ch]
+        node = node[ch];
     }
     return true;
 };
