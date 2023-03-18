@@ -22,7 +22,7 @@ BrowserHistory.prototype.visit = function(url) {
  * @return {string}
  */
 BrowserHistory.prototype.back = function(steps) {
-    while (steps > 0 && this.history.length > 0) {
+    while (steps >0 && this.history.length > 0) {
         this.future.push(this.current);
         this.current = this.history.pop();
         steps -= 1;
