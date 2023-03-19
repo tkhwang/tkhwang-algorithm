@@ -11,7 +11,8 @@ var findSmallestInteger = function(nums, value) {
     
     const conv = (num) => {
         if (num >= 0) return num % value;
-        return Math.ceil(-num/value)*value + num;
+        return ((num % value) + value) % value;
+        
     }
     
     for (const num of nums) {
