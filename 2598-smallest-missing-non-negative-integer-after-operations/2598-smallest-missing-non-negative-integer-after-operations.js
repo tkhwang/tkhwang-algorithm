@@ -19,8 +19,6 @@ var findSmallestInteger = function(nums, value) {
         obj[key] = (obj[key] || 0) + 1;
     }
     
-    console.log(obj);
-    
     let target = 0;
     while (true) {
         const key = target % value;
