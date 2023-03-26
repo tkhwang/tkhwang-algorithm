@@ -4,36 +4,38 @@
  * @return {number}
  */
 var minReorder = function(n, connections) {
-    const graph = {};
-    const roads = new Set();
-    const genKey = (a,b) => `${a}:${b}`;
+    const adj = {};
+    const set = new Set();
+    const genKey = (begin, end) => `${begin}:${end}`;
     
-    for (const [ start, end ] of connections) {
-        if (graph[start] === undefined) graph[start] = [];
-        if (graph[end] === undefined) graph[end] = [];
-        graph[start].push(end);
-        graph[end].push(start);
-        roads.add(genKey(start, end));
+    for (const [ begin, end ] of connections) {
+        if (adj[begin] === undefined) adj[begin] = [];
+        if (adj[end] === undefined) adj[end] = [];
+        adj[begin].push(end);
+        adj[end].push(begin);
+        set.add(genKey(begin, end));
     }
 
+    const seen = new Array(n).fill(false);
+    
+    let res = 0;
+    
     const dfs = (cur) => {
         let count = 0;
 
-        if (graph[cur] === undefined) return count;
+        if (adj[cur] === undefined) return count;
         
-        for (const next of graph[cur]) {
-            if (visited.has(next)) continue;
+        for (const next of adj[cur]) {
+            if (seen[next]) continue;
             
-            if (roads.has(genKey(cur, next))) count += 1;
-            visited.add(next);
+            if (set.has(genKey(cur, next))) count += 1;
+            seen[next] = true;
             count += dfs(next);
         }
         
         return count;
     }
     
-    const visited = new Set();
-    visited.add(0);
-    
+    seen[0] = true;
     return dfs(0)
 };
