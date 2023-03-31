@@ -10,15 +10,16 @@
  * @return {ListNode}
  */
 var reverseList = function(head) {
-    const dfs = (node) => {
-        if (!node || !node.next) return node;
-        
-        const last = dfs(node.next);
-        
-        node.next.next = node;
-        node.next = null;
-        return last;
-    }
-    
-    return dfs(head)
+  let prv = null
+  let cur = head
+
+  while (cur) {
+    const next = cur.next
+    cur.next = prv
+
+    prv = cur
+    cur = next
+  }
+
+  return prv
 };
