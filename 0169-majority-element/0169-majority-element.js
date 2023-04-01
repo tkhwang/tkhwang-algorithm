@@ -3,9 +3,14 @@
  * @return {number}
  */
 var majorityElement = function(nums) {
-    nums.sort((a,b) => a - b);
+    const freq = {};
     
-    const mid = Math.floor(nums.length / 2);
+    for (const num of nums) {
+        freq[num] = (freq[num] || 0) + 1
+    }
     
-    return nums[mid];
+    const keys = Object.keys(freq);
+    keys.sort((a,b) => freq[b] - freq[a]);
+    
+    return keys[0];
 };
