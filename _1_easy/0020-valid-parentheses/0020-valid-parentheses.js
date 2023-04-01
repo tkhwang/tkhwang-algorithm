@@ -3,24 +3,20 @@
  * @return {boolean}
  */
 var isValid = function(s) {
-    const paren = {
-        ")": "(",
-        "}": "{",
-        "]": "["
-    }
-    
     const stack = [];
     
+    const parens = {
+        ")" : "(",
+        "]" : "[",
+        "}" : "{"
+    }
+    
     for (const ch of s) {
-        // closing
-        if (Object.values(paren).includes(ch)) {
-            stack.push(ch)
-        // opening
-        } else {
-            const pop = stack.pop();
-            if (pop !== paren[ch]) return false;      
+        if (Object.values(parens).includes(ch)) stack.push(ch);
+        else if (Object.keys(parens).includes(ch)) {
+            const last = stack.pop();
+            if (last !== parens[ch]) return false;
         }
     }
-
     return stack.length === 0;
 };

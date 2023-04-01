@@ -4,11 +4,8 @@
  * @param {string[]} strs
  * @return {string}
  */
-
-const SEP = String.fromCharCode(0)
-
 var encode = function(strs) {
-    this.data = strs.join(SEP);
+    this.str = strs.join("\n");
 };
 
 /**
@@ -18,7 +15,7 @@ var encode = function(strs) {
  * @return {string[]}
  */
 var decode = function(s) {
-    return this.data.split(SEP)
+    return this.str.split("\n");
 };
 
 /**
