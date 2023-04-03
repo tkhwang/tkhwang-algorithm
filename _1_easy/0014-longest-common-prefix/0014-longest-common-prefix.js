@@ -3,16 +3,21 @@
  * @return {string}
  */
 var longestCommonPrefix = function(strs) {
-    const N = Math.min(...strs.map((str) => str.length));
-
-    let i = 0;
+    const lengths = strs.map((str) => str.length);
+    const min = Math.min(...lengths);
     
-    while (i < N) {
+    let common = "";
+    for (let i = 0; i <= min; i += 1) {
+        const prefix = strs[0].slice(0, i + 1);
+        let isMatching = true;
         for (const str of strs) {
-            if (strs[0][i] !== str[i]) return strs[0].slice(0, i);
+            if (!str.startsWith(prefix)) {
+                isMatching = false;
+                break;
+            }
         }
-        i += 1;
+        if (!isMatching) return common;
+        common = prefix;
     }
-    
-    return strs[0].slice(0, N);
-};
+    return common;
+}
