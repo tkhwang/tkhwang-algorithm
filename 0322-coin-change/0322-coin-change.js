@@ -14,9 +14,10 @@ var coinChange = function(coins, amount) {
             
             dp[i] = Math.min(
                 dp[i],
-                dp[i-coin] + 1
+                1 + dp[i-coin]
             )
         }
     }
+    
     return dp[amount] === Infinity ? -1 : dp[amount];
 };
