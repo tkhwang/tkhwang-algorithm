@@ -10,10 +10,10 @@ var minimizeArrayValue = function(_nums) {
                |
      */
     
-    const isOK = (max) => {
-        const nums = [..._nums];
-        if (nums[0] > max) return false;
+    const isOK = (max) => {        
+        if (_nums[0] > max) return false;
         
+        const nums = [..._nums];
         for (let i = N - 1; i >= 1; i -= 1) {
             let prv = nums[i-1];
             let cur = nums[i];
