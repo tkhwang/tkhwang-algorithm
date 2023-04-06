@@ -5,13 +5,14 @@
 var canJump = function(nums) {
     const N = nums.length;
 
-    let arrived = N - 1;
+    const dp = Array(N).fill(false);
+    dp[0] = true;
     
-    for (let i = N - 2; i >= 0; i -= 1) {
-        if (i + nums[i] >= arrived) {
-            arrived = i;
+    for (let i = 0; i < N; i += 1) {
+        if (!dp[i]) return false;
+        for (let j = i; j <= i + nums[i]; j += 1) {
+            dp[j] = true;
         }
     }
-    
-    return arrived === 0;
+    return dp[N-1];
 };
