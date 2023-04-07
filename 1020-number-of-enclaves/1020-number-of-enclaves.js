@@ -38,8 +38,6 @@ var numEnclaves = function(grid) {
         }
     }
     
-    console.log(grid);
-    
     // check
     for (let r = 0; r < ROWS; r += 1) {
         for (let c = 0; c < COLS; c += 1) {
