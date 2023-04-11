@@ -6,12 +6,9 @@ var removeStars = function(s) {
     const stack = [];
     
     for (const ch of s) {
-        if (ch === "*") {
-            stack.pop();
-        } else {
-            stack.push(ch);
-        }
+        if (ch === "*") stack.pop();
+        else stack.push(ch);
     }
     
-    return stack.join("");    
+    return stack.join("");
 };
