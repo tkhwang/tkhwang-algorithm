@@ -13,8 +13,6 @@ var isPossibleDivide = function(nums, k) {
     const { fist } = map;
     
     while (map.size > 0) {
-        console.log(map)
-        
         let [ cur, _ ] = map.entries().next().value;
         let remain = k;
         while (remain > 0) {
