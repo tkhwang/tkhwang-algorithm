@@ -10,8 +10,6 @@ var isPossibleDivide = function(nums, k) {
         map.set(num, (map.get(num) || 0) + 1);
     }
     
-    const { fist } = map;
-    
     while (map.size > 0) {
         let [ cur, _ ] = map.entries().next().value;
         let remain = k;
