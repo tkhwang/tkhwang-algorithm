@@ -4,17 +4,20 @@
  */
 var PredictTheWinner = function(nums) {
     const N = nums.length;
-    
-    const dfs = (left, right, turn) => {
-        if (left == right) {
-            return turn * nums[left];
+ 
+    const dp = Array(N).fill(null).map((_) => Array(N).fill(0));
+
+    for (let left = N; left >= 0; left -= 1) {
+        for (let right = left; right < N; right += 1) {
+            if (left === right) {
+                dp[left][right] = nums[left];
+            } else {
+                const a = nums[left] - dp[left + 1][right];
+                const b = nums[right] - dp[left][right - 1];
+                dp[left][right] = Math.max(a, b);
+            }
         }
-        
-        const a = turn * nums[left] + dfs(left + 1, right, -turn);
-        const b = turn * nums[right] + dfs(left, right - 1, -turn);
-        
-        return turn * Math.max(turn * a, turn * b);
     }
     
-    return dfs(0, N-1, 1) >= 0;
-};
+    return dp[0][N - 1] >= 0;
+}
