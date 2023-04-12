@@ -18,8 +18,6 @@ var countNicePairs = function(nums) {
         obj[diff].push(i);
     }
 
-    console.log(obj);
-    
     const keys = Object.keys(obj);
     keys.filter((key) => obj[key].length > 1);
     
