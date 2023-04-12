@@ -22,7 +22,5 @@ var findPairs = function(nums, k) {
         obj[num].push(num);
     }
     
-    console.log(set);
-    
     return set.size;
 };
