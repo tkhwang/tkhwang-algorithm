@@ -3,17 +3,12 @@
  * @return {string}
  */
 var frequencySort = function(s) {
+    const chs = s.split("");
     const freq = {};
-    for (const ch of s.split("")) {
-        freq[ch] = (freq[ch] || 0) + 1
+    for (const ch of chs) {
+        freq[ch] = (freq[ch] || 0) + 1;
     }
     
-    console.log(freq);
-    
-    const keys = Object.keys(freq);
-    
-    return keys
-        .sort((a,b) => freq[b] - freq[a])
-        .map((key) => key.repeat(freq[key]))
-        .join('');
+    const keys = Object.keys(freq).sort((a,b) => freq[b] - freq[a]);
+    return keys.map((key) => key.repeat(freq[key])).join("");
 };

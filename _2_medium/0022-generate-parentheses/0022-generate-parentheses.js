@@ -6,16 +6,16 @@ var generateParenthesis = function(n) {
     const res = [];
     
     const dfs = (cur, left, right) => {
-        if (left === 0 && right === 0) {
+        if (left === n && right === n) {
             res.push(cur);
             return;
-        }    
+        }
         
-        if (left > 0) dfs(cur + "(", left - 1, right);
-        if (left < right) dfs(cur + ")", left, right - 1);
+        if (left < n) dfs(cur + "(", left + 1, right);
+        if (right < left) dfs(cur + ")", left, right + 1);
     }
     
-    dfs("", n, n);
+    dfs("", 0, 0);
     
     return res;
 };
