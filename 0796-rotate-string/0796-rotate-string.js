@@ -15,7 +15,6 @@ var rotateString = function(_s, goal) {
     let cur = s.join("");
     while (!set.has(cur)) {
         set.add(cur);
-        console.log(cur);
         if (cur === goal) return true;
         shift(s);
         cur = s.join("");
