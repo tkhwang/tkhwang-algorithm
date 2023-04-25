@@ -3,18 +3,22 @@
  * @return {number}
  */
 var lastStoneWeight = function(stones) {
-    const mpq = new MaxPriorityQueue({ compare: (a,b) => b - a });
+    const maxHeap = new MaxPriorityQueue({ compare: (a,b) => b - a });
     
     for (const stone of stones) {
-        mpq.enqueue(stone)
+        maxHeap.enqueue(stone);
     }
     
-    while (mpq.size() > 1) {
-        const first = mpq.dequeue();
-        const second = mpq.dequeue();
+    while (maxHeap.size() > 1) {
+        const first = maxHeap.dequeue();
+        const second = maxHeap.dequeue();
         
-        if (first !== second) mpq.enqueue(first - second);
+        if(first === second) continue;
+        else {
+            const diff = first - second;
+            maxHeap.enqueue(diff);
+        }
     }
     
-    return mpq.front();
+    return maxHeap.front();
 };
