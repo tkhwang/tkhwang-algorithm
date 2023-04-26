@@ -27,7 +27,8 @@ var triangleNumber = function(nums) {
     
     for (let i = 0; i < N - 2; i += 1) {
         for (let j = i + 1; j < N - 1; j += 1) {
-            const index = bisectLeft(nums.slice(j+1), nums[i] + nums[j]);
+            let index = bisectLeft(nums, nums[i] + nums[j], j + 1);
+            index -= (j + 1);
             sum += index;
         }
     }
