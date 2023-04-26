@@ -3,7 +3,7 @@
  * @return {number}
  */
 var addDigits = function(num) {
-    while(String(num).length > 1) {
+    while (Math.floor(num/10) > 0) {
         const nums = String(num).split("").map(Number);
         num = nums.reduce((a,b) => a + b, 0);
     }
