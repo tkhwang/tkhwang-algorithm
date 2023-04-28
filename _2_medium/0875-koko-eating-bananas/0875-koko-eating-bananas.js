@@ -4,26 +4,28 @@
  * @return {number}
  */
 var minEatingSpeed = function(piles, h) {
+    /*
+     *       |--------
+     *       | left, right
+     */
     let left = 1;
     let right = 10 ** 9;
     
-    const check = (speed) => {
-        let time = 0;
+    const isOK = (speed) => {
+        let times = 0;
         for (const pile of piles) {
-            time += Math.ceil(pile / speed);
+            times += Math.ceil(pile/speed);
         }
-        return time <= h;
+        return times <= h;
     }
     
-    while (left < right) {
+    while (left <= right) {
         const mid = Math.floor((left + right) / 2);
-        
-        if (check(mid)) {
-            right = mid;
+        if (isOK(mid)) {
+            right = mid - 1;
         } else {
             left = mid + 1;
         }
     }
-    
     return left;
 };
