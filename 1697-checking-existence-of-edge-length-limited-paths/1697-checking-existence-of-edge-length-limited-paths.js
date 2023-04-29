@@ -12,9 +12,6 @@ var distanceLimitedPathsExist = function(N, edgeList, queries) {
     queries = queries.map((v,i) => [ ...v, i ]);
     queries.sort((a,b) => a[2] - b[2]);
     
-    console.log(edgeList);
-    console.log(queries);
-    
     const minHeap = new MinPriorityQueue({ compare: (a,b) => a[2] - b[2] });
     for (const [ u, v, cost ] of edgeList) {
         minHeap.enqueue([ u, v, cost]);
