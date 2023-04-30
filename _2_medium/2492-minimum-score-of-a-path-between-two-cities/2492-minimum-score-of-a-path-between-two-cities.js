@@ -3,23 +3,19 @@
  * @param {number[][]} roads
  * @return {number}
  */
-var minScore = function(n, roads) {
-    const uf = new UnionFind(n+1);
-    const dp = Array(n+1).fill(Infinity);
+var minScore = function(N, roads) {
+    const uf = new UnionFind(N + 1);
     
-    for (const [ begin, end, cost ] of roads) {
-        dp[begin] = Math.min(dp[begin], cost);
-        dp[end] = Math.min(dp[end], cost);
-        
-        uf.union(begin, end);
+    for (const [ u, v, cost ] of roads) {
+        uf.union(u, v);    
     }
     
     let min = Infinity;
-    for (let i = 1; i <= n; i += 1) {
-        if (uf.find(1) === uf.find(i)) {
-            min = Math.min(min, dp[i]);
+    for (const [ u, v, cost ] of roads) {
+        if (uf.find(1) === uf.find(u)) {
+            min = Math.min(min, cost)
         }
-    }
+    }    
     
     return min;
 };

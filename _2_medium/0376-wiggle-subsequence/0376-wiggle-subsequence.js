@@ -5,9 +5,6 @@
 var wiggleMaxLength = function(nums) {
     const N = nums.length;
     
-    // dp[i][j] : nums[i:j]
-    // dp[0][N-1]
-    
     const dp = Array(N + 1).fill(null).map((_) => Array(2).fill(1));
     const POS = 0;
     const NEG = 1;
