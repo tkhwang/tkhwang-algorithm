@@ -5,35 +5,16 @@
  */
 var indexPairs = function(text, words) {
     const N = text.length;
-
-    const trie = {};
-    
-    for (const word of words) {
-        let node = trie;
-        for (const ch of word) {
-            if (node[ch] === undefined) node[ch] = {};
-            node = node[ch];
-        }
-        node["word"] = word;
-    }
-    
     const res = [];
-
+    
     for (let i = 0; i < N; i += 1) {
-        if (trie[text[i]] === undefined) continue;
-        
-        let j = i;
-        let node = trie;
-        
-        while (j < N) {
-            if (node[text[j]] === undefined) break;
-            if (node[text[j]]["word"]) {
-                res.push([ i, j]);
+        for (const word of words) {
+            const len = word.length;
+            if (text.slice(i, i + len) === word) {
+                res.push([ i, i + len - 1]);
             }
-            node = node[text[j]];
-            j += 1;
         }
     }
     
-    return res;
+    return res.sort((a,b) => a[0] - b[0] || a[1] - b[1]);
 };

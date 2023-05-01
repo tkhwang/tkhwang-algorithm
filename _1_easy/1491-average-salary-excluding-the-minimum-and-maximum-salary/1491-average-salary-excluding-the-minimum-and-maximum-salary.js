@@ -3,11 +3,9 @@
  * @return {number}
  */
 var average = function(salary) {
-    const N = salary.length;
-    
     salary.sort((a,b) => a - b);
+    salary.pop();
+    salary.shift();
     
-    const mid = salary.slice(1, N-1);
-    
-    return mid.reduce((acc, cur) => acc + cur, 0)/mid.length;
+    return salary.reduce((a,b) => a + b, 0) / salary.length;
 };
