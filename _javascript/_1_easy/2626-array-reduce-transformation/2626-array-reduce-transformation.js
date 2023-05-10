@@ -5,5 +5,11 @@
  * @return {number}
  */
 var reduce = function(nums, fn, init) {
-    return nums.reduce((a,b) => fn(a, b), init)
+    let cur = init;
+    
+    for (const [ i, num ] of nums.entries()) {
+        cur = fn(cur, num);
+    }
+    
+    return cur;
 };
