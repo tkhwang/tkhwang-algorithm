@@ -22,5 +22,5 @@ var maxUncrossedLines = function(nums1, nums2) {
             }
         }
     }
-    return dp[N1][N2];
+    return dp[N1][N2];    
 };
