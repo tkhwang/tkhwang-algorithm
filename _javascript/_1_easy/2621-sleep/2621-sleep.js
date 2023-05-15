@@ -3,10 +3,8 @@
  */
 async function sleep(millis) {
     return new Promise((resolve, reject) => {
-        const old = new Date();
         setTimeout(() => {
-            const now = new Date();
-            resolve(now - old);
+            resolve();
         }, millis)
     })
 }
