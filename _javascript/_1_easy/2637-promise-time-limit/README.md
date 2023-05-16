@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/promise-time-limit/">2637. Promise Time Limit</a></h2><h3>Easy</h3><hr><div><p>Write a&nbsp;function that accepts an&nbsp;asyncronous function&nbsp;<code>fn</code>&nbsp;and a time <code>t</code>&nbsp;in milliseconds. It should return&nbsp;a new&nbsp;<strong>time limited</strong>&nbsp;version of the input function.</p>
+<h2><a href="https://leetcode.com/problems/promise-time-limit/">2637. Promise Time Limit</a></h2><h3>Easy</h3><hr><div><p>Given an&nbsp;asyncronous function&nbsp;<code>fn</code>&nbsp;and a time <code>t</code>&nbsp;in milliseconds, return&nbsp;a new&nbsp;<strong>time limited</strong>&nbsp;version of the input function.</p>
 
 <p>A&nbsp;<strong>time limited</strong>&nbsp;function is a function that is identical to the original unless it takes longer than&nbsp;<code>t</code>&nbsp;milliseconds to fullfill. In that case, it will reject with&nbsp;<code>"Time Limit Exceeded"</code>.&nbsp; Note that it should reject with a string, not an&nbsp;<code>Error</code>.</p>
 
