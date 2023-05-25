@@ -27,5 +27,5 @@ var maxScore = function(nums1, nums2, k) {
             if (max < sums * min) max = sums * min;
         }
     }
-    return max;
-}
+    return max;    
+};
