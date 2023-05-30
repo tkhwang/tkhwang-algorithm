@@ -3,20 +3,12 @@
  * @param {number} medium
  * @param {number} small
  */
-const BIG = 1;
-const MEDIUM = 2;
-const SMALL = 3;
-
 var ParkingSystem = function(big, medium, small) {
-    this.sizes = Array(3+1).fill(0);
-    this.sizes[BIG] = big;
-    this.sizes[MEDIUM] = medium;
-    this.sizes[SMALL] = small;
-    
-    this.used = Array(3+1).fill(0);
-    this.used[BIG] = 0;
-    this.used[MEDIUM] = 0;
-    this.used[SMALL] = 0;
+    this.parking = {
+        1: { max: big, cur: 0 },
+        2: { max: medium, cur: 0 },
+        3: { max: small, cur: 0 }
+    }    
 };
 
 /** 
@@ -24,9 +16,10 @@ var ParkingSystem = function(big, medium, small) {
  * @return {boolean}
  */
 ParkingSystem.prototype.addCar = function(carType) {
-    if (this.sizes[carType] === 0 || this.used[carType] >= this.sizes[carType]) return false;
+    const { max, cur } = this.parking[carType];
+    if (cur === max) return false;
     
-    this.used[carType] += 1;
+    this.parking[carType].cur += 1;
     return true;
 };
 
