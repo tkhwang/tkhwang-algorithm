@@ -12,8 +12,7 @@ var numOfMinutes = function(n, headID, manager, informTime) {
         
         if (graph[boss] === undefined) graph[boss] = [];
         graph[boss].push(user);
-    }
-    
+    }    
 
     let max = 0;
     
@@ -38,5 +37,5 @@ var numOfMinutes = function(n, headID, manager, informTime) {
     
     bfs(headID);
     
-    return max;
+    return max;    
 };
