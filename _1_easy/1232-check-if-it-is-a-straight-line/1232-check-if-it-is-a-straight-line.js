@@ -17,5 +17,5 @@ var checkStraightLine = function(coordinates) {
         if((curr[0] - p[0]) * (q[1] - p[1]) !== (curr[1] - p[1]) * (q[0] - p[0])) return false;
     }
     
-    return true;
+    return true;    
 };

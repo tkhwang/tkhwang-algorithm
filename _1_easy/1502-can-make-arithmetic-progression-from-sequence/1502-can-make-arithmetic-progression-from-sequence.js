@@ -13,5 +13,5 @@ var canMakeArithmeticProgression = function(arr) {
         if (arr[i] - arr[i-1] !== diff) return false;
     }
     
-    return true;
+    return true;    
 };
