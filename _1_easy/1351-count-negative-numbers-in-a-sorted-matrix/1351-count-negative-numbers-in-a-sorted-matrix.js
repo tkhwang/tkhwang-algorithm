@@ -11,5 +11,5 @@ var countNegatives = function(grid) {
             if (grid[r][c] < 0) count += 1;
         }
     }
-    return count;
+    return count;    
 };
