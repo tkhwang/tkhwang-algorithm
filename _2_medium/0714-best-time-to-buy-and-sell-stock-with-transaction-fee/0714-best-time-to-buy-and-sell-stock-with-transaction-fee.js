@@ -14,5 +14,5 @@ var maxProfit = function(prices, fee) {
         hold = Math.max(hold, cash - prices[i]);
     }
     
-    return cash;
+    return cash;    
 };
