@@ -4,27 +4,32 @@
  * @return {number}
  */
 var distributeCookies = function(cookies, k) {
-    const n = cookies.length;
-    const children = Array(k).fill(0);
-    let min = Infinity;
+    const N = cookies.length;
     
-    const dfs = (num) => {
-        if (num >= n) {
-            const max = Math.max(...children);
-            min = Math.min(min, max);
-            return;
+    const cur = new Array(k).fill(0);
+    let minUnfairness = Infinity;
+
+    const dfs = (i, count) => {
+        if(N - i < count) return
+
+        if(i === N){
+            const maxCookies = Math.max(...cur)
+            minUnfairness = Math.min(minUnfairness, maxCookies)
+            return
         }
         
-        for (let i = 0; i < k; i += 1) {
-            children[i] += cookies[num];
+        for(let j = 0; j< k; j++){
+            count -= cur[j] === 0 ? 1 : 0
+            cur[j] += cookies[i]
             
-            dfs(num + 1);
+            dfs(i+1, count)
             
-            children[i] -= cookies[num];
+            cur[j] -= cookies[i]
+            count += cur[j] === 0 ? 1 : 0
         }
     }
     
-    dfs(0);
+    dfs(0, k)
     
-    return min;
+    return minUnfairness
 };
