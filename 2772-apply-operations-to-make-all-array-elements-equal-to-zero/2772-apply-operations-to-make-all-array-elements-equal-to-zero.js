@@ -6,17 +6,19 @@
 var checkArray = function(nums, k) {
     const N = nums.length;
 
-    let cur = 0;
-    for (const [ i, num ] of nums.entries()) {
-        if (cur > num) return false;
+    while (true) {
+
+        while (nums.length && nums.at(-1) === 0) nums.pop();
         
-        nums[i] -= cur;
-        cur += nums[i];
+        if (nums.length === 0) return true;
+
+        if (nums.length < k) return false;
         
-        if (i >= k - 1) {
-            cur -= nums[i - k + 1];
+        if (nums.at(-1) < 0) return false;
+        
+        const last = nums.at(-1);
+        for (let i = 0; i < k; i += 1) {
+            nums[nums.length - 1 - i] -= last;
         }
     }
-    
-    return cur === 0;
 };
