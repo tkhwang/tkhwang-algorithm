@@ -2,14 +2,16 @@
  * @param {number} n
  * @return {number}
  */
-var fib = function(n) {
-    const dp = Array(n+1).fill(0);
-    dp[0] = 0;
-    dp[1] = 1;
+var fib = function(N) {
+    if (N === 0) return 0;
+    if (N === 1) return 1;
     
-    for (let i = 2; i <= n; i += 1) {
-        dp[i] = dp[i-1] + dp[i-2]
+    const dp = Array(N).fill(0);
+    dp[1] = 1;
+
+    for (let i = 2; i <= N; i += 1) {
+        dp[i] = dp[i-1] + dp[i-2];
     }
     
-    return dp[n];
+    return dp[N];
 };

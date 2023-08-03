@@ -6,20 +6,17 @@
 var combine = function(N, k) {
     const res = [];
     
-    const dfs = (cur, start) => {
-        if (cur.length === k) {
-            res.push([...cur]);
+    const dfs = (paths, start) => {
+        if (paths.length === k) {
+            if (res.push([...paths]));
             return;
         }
         
         for (let i = start; i <= N; i += 1) {
-            cur.push(i);
-            
-            dfs(cur, i + 1);
-            
-            cur.pop();
+            paths.push(i);
+            dfs(paths, i + 1);
+            paths.pop();
         }
-        
     }
     
     dfs([], 1);
