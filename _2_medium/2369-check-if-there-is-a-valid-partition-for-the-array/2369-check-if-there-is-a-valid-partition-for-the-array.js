@@ -17,21 +17,5 @@ var validPartition = function(nums) {
         if (nums[n] + 1 === nums[n+1] && nums[n+1] + 1 === nums[n+2]) dp[n] |= dp[n+3];
     }
     
-    return dp[0];
-    
-//     const dp = (n) => {
-//         if (n === N-2) return nums[n] === nums[n+1];
-//         if (n === N-3) {
-//             if (nums[n] == nums[n+1] && nums[n+1] === nums[n+2]) return true;
-//             if (nums[n] + 1 === nums[n+1] && nums[n+1] + 1 === nums[n+2]) return true;
-//             return false;
-//         }
-        
-//         if (nums[n] === nums[n+1]) return dp(n+2);
-//         if (nums[n] === nums[n+1] && nums[n+1] === nums[n+2]) return dp(n+3);
-//         if (nums[n] + 1 === nums[n+1] && nums[n+1] + 1 === nums[n+2]) return dp(n+3);
-//         return false;
-//     }
-
-//     return dp(0)
+    return dp[0];    
 };
