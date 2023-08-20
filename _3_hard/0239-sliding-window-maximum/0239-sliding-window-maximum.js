@@ -6,24 +6,29 @@
 var maxSlidingWindow = function(nums, k) {
     const N = nums.length;
     
-    const queue = [];
-    const res = [];
+    const maxHeap = new MaxPriorityQueue({ compare: (a,b) => b[0] - a[0] });
     
-    let left = 0;
-    for (let right = 0; right < N; right += 1) {
-        const cur = nums[right];
-        while (queue.length && queue.at(-1) < cur) queue.pop();
-        queue.push(cur);
-        
-        if (right - left + 1 > k) {
-            const leftNum = nums[left];
-            if (queue.at(0) === leftNum) queue.shift();
-            left += 1;
-        }
-        
-        if (right >= k - 1) {
-            res.push(queue.at(0));
-        }
+    for (let i = 0; i < k; i += 1) {
+        maxHeap.enqueue([ nums[i], i ]);
     }
+
+    const res = [];
+    res.push(maxHeap.front()[0]);
+    
+    for (let i = k; i < N; i += 1) {
+        maxHeap.enqueue([ nums[i], i ]);
+        
+        let [ max, maxIndex ] = maxHeap.front();
+        
+        while (Math.abs(maxIndex - i) >= k) {
+            maxHeap.dequeue();
+            
+            [ max, maxIndex ] = maxHeap.front();
+        }
+        
+        const curMax = maxHeap.front()[0];
+        res.push(curMax);
+    }
+
     return res;
 };
