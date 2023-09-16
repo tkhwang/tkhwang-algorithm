@@ -27,7 +27,6 @@ var minimumEffortPath = function(heights) {
         
         while (queue.length) {
             const [ r, c ] = queue.shift();
-            // seen[r][c] = true;
             
             if (r === ROWS - 1 && c === COLS - 1) return true;
             
