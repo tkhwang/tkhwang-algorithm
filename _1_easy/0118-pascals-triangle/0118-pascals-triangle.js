@@ -3,7 +3,7 @@
  * @return {number[][]}
  */
 var generate = function(numRows) {
-
+    
     // 1-indexed
     const dp = Array(numRows + 1).fill(null).map((_) => []);
     dp[1].push(1);
