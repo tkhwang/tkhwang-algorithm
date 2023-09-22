@@ -3,10 +3,11 @@
  * @return {number}
  */
 var findDuplicate = function(nums) {
-    const freq = {};
+    const set = new Set();
     
     for (const num of nums) {
-        if (freq[num] !== undefined) return num;
-        freq[num] = num;
+        if (set.has(num)) return num;
+        
+        set.add(num);
     }
 };
