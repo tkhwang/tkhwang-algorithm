@@ -4,60 +4,51 @@
  * @return {number[]}
  */
 var searchRange = function(nums, target) {
-    const N = nums.length;
+    const leftBound = (array, target, left = 0, right = array.length) => {
+      // [left, right)
 
-    const bisectLeft = (array, target) => {
-        const N = array.length;
-        
-        // [0, N)
-        let left = 0;
-        let right = N;
-        
-        while (left < right) {
-            const mid = Math.floor((left + right)/2);
-            
-            // => [left, mid)
-            if (array[mid] === target) {
-                right = mid;
-            // select left space => [left, mid)
-            } else if (array[mid] > target) {
-                right = mid;
-            // select right space => [mid + 1, right)
-            } else if (array[mid] < target) {
-                left = mid + 1;
-            }
+      while (left < right) {
+        const mid = Math.floor((left + right) / 2)
+
+        if (array[mid] >= target) {
+          right = mid
+        } else {
+          left = mid + 1
         }
-        return left;
-    }    
+      }
+      // index
+      // return left
 
-    const bisectRight = (array, target) => {
-        const N = array.length;
-        
-        // [0, N)
-        let left = 0;
-        let right = N;
-        
-        while (left < right) {
-            const mid = Math.floor((left + right)/2);
-            
-            // [mid+1, right)
-            if (array[mid] === target) {
-                left = mid + 1;
-            // select left space => 
-            } else if (array[mid] > target) {
-                right = mid;
-            // select right space => 
-            } else if (array[mid] < target) {
-                left = mid + 1;
-            }
+      // check whether array[left] === target
+      if (left === array.length) return -1
+      return array[left] === target ? left : -1
+    }
+    
+    const rightBound = (array, target, left = 0, right = array.length) => {
+      // [left, right) half inclusive range
+      while (left < right) {
+        const mid = Math.floor((left + right) / 2)
+
+        // right-most
+        if (array[mid] > target) {
+          right = mid
+        } else {
+          left = mid + 1
         }
-        return left - 1;
-    }    
+      }
+      // right-most
+      // return left - 1
 
-    const left = bisectLeft(nums, target);
-    const right = bisectRight(nums, target);
+      // check whether array[left -1] === target
+      if (left === 0) return -1;
+      return array[left-1] === target ? left -1 : -1
+    }
     
-    if (nums[left] !== target || nums[right] !== target) return [ -1, -1 ];
-    
-    return [ left, right ];
+    for (const num of nums) {
+        const left = leftBound(nums, target);
+        const right = rightBound(nums, target);
+        
+        if (left !== -1 && right !== -1) return [ left, right ];
+    }
+    return [ -1, -1 ];
 };
