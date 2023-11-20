@@ -19,5 +19,5 @@ var maxFrequency = function(nums, k) {
         }
         if (max < right - left + 1) max = right - left + 1;
     }
-    return max;    
+    return max;      
 };
