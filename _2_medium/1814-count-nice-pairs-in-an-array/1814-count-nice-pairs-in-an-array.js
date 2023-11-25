@@ -28,5 +28,5 @@ var countNicePairs = function(nums) {
         res %= MOD;
     })
     
-    return res % MOD;
+    return res % MOD;    
 };
