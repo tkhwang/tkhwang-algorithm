@@ -9,8 +9,6 @@ var largestOddNumber = function(num) {
 
     while (right >= 0 && num[right] % 2 === 0) right -= 1;
     
-    console.log(right);
-    
     if (right === -1) return "";
     
     return num.slice(0, right + 1);
