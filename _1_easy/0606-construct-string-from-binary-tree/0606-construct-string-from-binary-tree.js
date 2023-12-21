@@ -27,5 +27,5 @@ var tree2str = function(root) {
         return res;
     }
     
-    return dfs(root)
+    return dfs(root)    
 };
