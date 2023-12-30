@@ -14,8 +14,6 @@ var makeEqual = function(words) {
         }
     }
     
-    console.log(dp);
-    
     for (let i = 0 ; i < 26; i += 1) {
         if (dp[i] % N !== 0) return false;
     }
