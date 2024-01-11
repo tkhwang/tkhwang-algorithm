@@ -26,5 +26,5 @@ var numRollsToTarget = function(n, k, target) {
         return cache[key] = res % MOD;
     }
     
-    return dfs(target, n)
+    return dfs(target, n)    
 };
