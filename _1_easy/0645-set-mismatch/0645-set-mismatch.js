@@ -21,5 +21,5 @@ var findErrorNums = function(nums) {
         else if (array[i] === 2) res[DUP] = i;
     }
     
-    return res;
+    return res;    
 };

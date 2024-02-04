@@ -1,7 +1,7 @@
 
 var MyQueue = function() {
-    this.stackF = [];
-    this.stackB = [];
+    this.stack = [];
+    this.sub = [];
 };
 
 /** 
@@ -9,49 +9,40 @@ var MyQueue = function() {
  * @return {void}
  */
 MyQueue.prototype.push = function(x) {
-    this.stackF.push(x);
+    while (this.stack.length > 0) {
+        this.sub.push(this.stack.pop())
+    }
+    
+    this.stack.push(x);
+    
+    while (this.sub.length > 0) {
+        this.stack.push(this.sub.pop())
+    }
 };
 
 /**
  * @return {number}
  */
 MyQueue.prototype.pop = function() {
-    // F -> B
-    while (this.stackF.length > 0) {
-        this.stackB.push(this.stackF.pop());
-    }
+    if (this.stack.length === 0) return -1;
     
-    const pop = this.stackB.pop();
-    
-    while (this.stackB.length > 0) {
-        this.stackF.push(this.stackB.pop());
-    }
-    
-    return pop;
+    return this.stack.pop();
 };
 
 /**
  * @return {number}
  */
 MyQueue.prototype.peek = function() {
-    while (this.stackF.length > 0) {
-        this.stackB.push(this.stackF.pop());
-    }
+    if (this.stack.length === 0) return -1;
     
-    const front = this.stackB.at(-1);
-    
-    while (this.stackB.length > 0) {
-        this.stackF.push(this.stackB.pop());
-    }
-    
-    return front;
+    return this.stack.at(-1);
 };
 
 /**
  * @return {boolean}
  */
 MyQueue.prototype.empty = function() {
-    return this.stackF.length === 0 && this.stackB.length === 0
+    return this.stack.length === 0;
 };
 
 /** 

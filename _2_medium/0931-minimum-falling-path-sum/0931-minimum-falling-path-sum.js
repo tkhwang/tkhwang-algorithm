@@ -22,5 +22,6 @@ var minFallingPathSum = function(matrix) {
         }
     }
     
-    return Math.min(...dp[ROWS-1]);
+    const min = Math.min(...dp[ROWS-1]);
+    return min === Infinity ? -1 : min;
 };
