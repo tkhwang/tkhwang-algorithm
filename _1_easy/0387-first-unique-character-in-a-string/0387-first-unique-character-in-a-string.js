@@ -3,8 +3,16 @@
  * @return {number}
  */
 var firstUniqChar = function(s) {
-    for (const [ i, ch ] of s.split("").entries()) {
-        if (s.indexOf(ch) === s.lastIndexOf(ch)) return i;
+    const N = s.length;
+    
+    for (let i = 0; i < N; i += 1) {
+        const cur = s[i];
+        
+        const leftIndex = s.indexOf(cur);
+        const rightIndex = s.lastIndexOf(cur);
+        
+        if (leftIndex === rightIndex) return i;
     }
+    
     return -1;
 };

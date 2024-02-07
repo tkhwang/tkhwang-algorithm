@@ -5,19 +5,18 @@
 var lengthOfLastWord = function(s) {
     const N = s.length;
     
-    let r = N - 1;
+    // find start
+    let left = 0;
+    while (left < N && s[left] === " ") left += 1;
+           
+    // find end
+    let right = N - 1;
+    while (0 <= right && s[right] === " ") right -= 1;
     
-    while (r >= 0 && s[r] === " ") {
-        r -= 1;
-    }
+
+    const valid = s.slice(left, right + 1);
     
-    let start = r;
+    const words = valid.split(" ");
     
-    while (r >= 0 && s[r] !== " ") {
-        r -= 1;
-    }
-    
-    let end = r;
-    
-    return start - end;
+    return words.at(-1).length;
 };
