@@ -19,11 +19,12 @@ var furthestBuilding = function(heights, bricks, ladders) {
         mpq.enqueue(diff);
         bricks -= diff;
         
-        if (ladders === 0 && bricks < 0) return i - 1;
-        
         if (bricks < 0) {
-            bricks += mpq.dequeue();
-            ladders -= 1;
+            if (ladders === 0) return i - 1;
+            else {
+                bricks += mpq.dequeue();
+                ladders -= 1;
+            }
         }
     }    
     
