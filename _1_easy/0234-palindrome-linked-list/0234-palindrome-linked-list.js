@@ -19,5 +19,5 @@ var isPalindrome = function(head) {
         cur = cur.next;
     }
     
-    return [...arr].join("") === [...arr].reverse().join("");
+    return [...arr].join("") === [...arr].reverse().join("");    
 };
