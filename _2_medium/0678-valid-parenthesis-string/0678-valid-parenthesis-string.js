@@ -32,5 +32,5 @@ var checkValidString = function(s) {
         }
     }
     
-    return true;
+    return true;    
 };

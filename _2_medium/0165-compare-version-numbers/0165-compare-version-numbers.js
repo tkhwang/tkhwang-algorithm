@@ -32,5 +32,5 @@ var compareVersion = function(version1, version2) {
         if (result === 1 || result === -1) return result;
         
         i += 1;
-    }
+    }    
 };
