@@ -3,21 +3,18 @@
  * @return {boolean}
  */
 var canAttendMeetings = function(intervals) {
-    if (!intervals || intervals.length === 0) return true;
-    
     const N = intervals.length;
-    
-    intervals.sort((a,b) => a[0] - b[0]);
-    
-    let prv = intervals[0][1];
-    
+
+    intervals.sort((a,b) => a[0] - b[0] || a[1] - b[1]);
+
+    if (intervals.length === 0) return true;
+    let prvEnd = intervals[0][1];
+
     for (let i = 1; i < N; i += 1) {
         const [ start, end ] = intervals[i];
-        
-        if (start < prv) return false;
-        
-        prv = end;
+        if (prvEnd > start) return false;
+        prvEnd = end;
     }
-    
+
     return true;
 };
