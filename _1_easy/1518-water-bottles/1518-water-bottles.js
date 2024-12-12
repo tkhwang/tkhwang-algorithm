@@ -18,5 +18,5 @@ var numWaterBottles = function(numBottles, numExchange) {
         numBottles = bonus + n;
     }
     
-    return count;
+    return count;    
 };
