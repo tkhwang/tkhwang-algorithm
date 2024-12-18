@@ -59,6 +59,7 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 ## Array
 |  |
 | ------- |
+| [1570-final-prices-with-a-special-discount-in-a-shop](https://github.com/tkhwang/tkhwang-algorithm/tree/master/1570-final-prices-with-a-special-discount-in-a-shop) |
 | [3555-final-array-state-after-k-multiplication-operations-i](https://github.com/tkhwang/tkhwang-algorithm/tree/master/3555-final-array-state-after-k-multiplication-operations-i) |
 ## Math
 |  |
@@ -72,4 +73,12 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 |  |
 | ------- |
 | [3555-final-array-state-after-k-multiplication-operations-i](https://github.com/tkhwang/tkhwang-algorithm/tree/master/3555-final-array-state-after-k-multiplication-operations-i) |
+## Stack
+|  |
+| ------- |
+| [1570-final-prices-with-a-special-discount-in-a-shop](https://github.com/tkhwang/tkhwang-algorithm/tree/master/1570-final-prices-with-a-special-discount-in-a-shop) |
+## Monotonic Stack
+|  |
+| ------- |
+| [1570-final-prices-with-a-special-discount-in-a-shop](https://github.com/tkhwang/tkhwang-algorithm/tree/master/1570-final-prices-with-a-special-discount-in-a-shop) |
 <!---LeetCode Topics End-->
