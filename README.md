@@ -31,10 +31,12 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 ## Tree
 |  |
 | ------- |
+| [2493-reverse-odd-levels-of-binary-tree](https://github.com/tkhwang/tkhwang-algorithm/tree/master/2493-reverse-odd-levels-of-binary-tree) |
 | [2646-kth-largest-sum-in-a-binary-tree](https://github.com/tkhwang/tkhwang-algorithm/tree/master/2646-kth-largest-sum-in-a-binary-tree) |
 ## Breadth-First Search
 |  |
 | ------- |
+| [2493-reverse-odd-levels-of-binary-tree](https://github.com/tkhwang/tkhwang-algorithm/tree/master/2493-reverse-odd-levels-of-binary-tree) |
 | [2646-kth-largest-sum-in-a-binary-tree](https://github.com/tkhwang/tkhwang-algorithm/tree/master/2646-kth-largest-sum-in-a-binary-tree) |
 ## Sorting
 |  |
@@ -43,6 +45,7 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 ## Binary Tree
 |  |
 | ------- |
+| [2493-reverse-odd-levels-of-binary-tree](https://github.com/tkhwang/tkhwang-algorithm/tree/master/2493-reverse-odd-levels-of-binary-tree) |
 | [2646-kth-largest-sum-in-a-binary-tree](https://github.com/tkhwang/tkhwang-algorithm/tree/master/2646-kth-largest-sum-in-a-binary-tree) |
 ## Two Pointers
 |  |
@@ -81,4 +84,8 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 |  |
 | ------- |
 | [1570-final-prices-with-a-special-discount-in-a-shop](https://github.com/tkhwang/tkhwang-algorithm/tree/master/1570-final-prices-with-a-special-discount-in-a-shop) |
+## Depth-First Search
+|  |
+| ------- |
+| [2493-reverse-odd-levels-of-binary-tree](https://github.com/tkhwang/tkhwang-algorithm/tree/master/2493-reverse-odd-levels-of-binary-tree) |
 <!---LeetCode Topics End-->
