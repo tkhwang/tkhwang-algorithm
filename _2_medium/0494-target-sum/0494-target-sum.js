@@ -5,19 +5,17 @@
  */
 var findTargetSumWays = function(nums, target) {
     const N = nums.length;
-    let count = 0;
     
     const dfs = (remain, index) => {
         if (index >= N) {
-            if (remain === 0) count += 1;
-            return;
+            return remain === 0 ? 1 :0;
         }
 
-        dfs(remain - nums[index], index + 1);
-        dfs(remain + nums[index], index + 1);
+        let res = 0;
+        res += dfs(remain + nums[index], index + 1);
+        res += dfs(remain - nums[index], index + 1);
+        return res;
     }
     
-    dfs(target, 0)
-    
-    return count;
+    return dfs(target, 0);    
 };
