@@ -5,14 +5,22 @@
  */
 var pivotArray = function(nums, pivot) {
     const N = nums.length;
-
-    const smaller = nums.filter((num) => num < pivot);
-    const larger = nums.filter((num) => num > pivot);
-    const same = nums.filter((num) => num === pivot);
-
+    
+    const lowers = [];
+    const same = [];
+    const highers = [];
+    
+    for (let i = 0; i < N; i += 1) {
+        const cur = nums[i];
+        
+        if (cur > pivot) highers.push(cur);
+        else if (cur < pivot) lowers.push(cur);
+        else if (cur === pivot) same.push(cur);
+    }
+    
     return [
-        ...smaller,
+        ...lowers,
         ...same,
-        ...larger
+        ...highers
     ]
 };
