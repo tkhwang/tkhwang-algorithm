@@ -37,10 +37,19 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 ## Math
 |  |
 | ------- |
+| [0231-power-of-two](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0231-power-of-two) |
 | [1889-check-if-number-is-a-sum-of-powers-of-three](https://github.com/tkhwang/tkhwang-algorithm/tree/master/1889-check-if-number-is-a-sum-of-powers-of-three) |
 | [2610-closest-prime-numbers-in-range](https://github.com/tkhwang/tkhwang-algorithm/tree/master/2610-closest-prime-numbers-in-range) |
 ## Number Theory
 |  |
 | ------- |
 | [2610-closest-prime-numbers-in-range](https://github.com/tkhwang/tkhwang-algorithm/tree/master/2610-closest-prime-numbers-in-range) |
+## Bit Manipulation
+|  |
+| ------- |
+| [0231-power-of-two](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0231-power-of-two) |
+## Recursion
+|  |
+| ------- |
+| [0231-power-of-two](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0231-power-of-two) |
 <!---LeetCode Topics End-->
