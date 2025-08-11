@@ -52,4 +52,20 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 |  |
 | ------- |
 | [0231-power-of-two](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0231-power-of-two) |
+## Array
+|  |
+| ------- |
+| [2331-intersection-of-multiple-arrays](https://github.com/tkhwang/tkhwang-algorithm/tree/master/2331-intersection-of-multiple-arrays) |
+## Hash Table
+|  |
+| ------- |
+| [2331-intersection-of-multiple-arrays](https://github.com/tkhwang/tkhwang-algorithm/tree/master/2331-intersection-of-multiple-arrays) |
+## Sorting
+|  |
+| ------- |
+| [2331-intersection-of-multiple-arrays](https://github.com/tkhwang/tkhwang-algorithm/tree/master/2331-intersection-of-multiple-arrays) |
+## Counting
+|  |
+| ------- |
+| [2331-intersection-of-multiple-arrays](https://github.com/tkhwang/tkhwang-algorithm/tree/master/2331-intersection-of-multiple-arrays) |
 <!---LeetCode Topics End-->
