@@ -70,4 +70,12 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 |  |
 | ------- |
 | [2331-intersection-of-multiple-arrays](https://github.com/tkhwang/tkhwang-algorithm/tree/master/2331-intersection-of-multiple-arrays) |
+## Two Pointers
+|  |
+| ------- |
+| [1894-merge-strings-alternately](https://github.com/tkhwang/tkhwang-algorithm/tree/master/1894-merge-strings-alternately) |
+## String
+|  |
+| ------- |
+| [1894-merge-strings-alternately](https://github.com/tkhwang/tkhwang-algorithm/tree/master/1894-merge-strings-alternately) |
 <!---LeetCode Topics End-->
