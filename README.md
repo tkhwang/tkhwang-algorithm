@@ -38,6 +38,7 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 |  |
 | ------- |
 | [0231-power-of-two](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0231-power-of-two) |
+| [0326-power-of-three](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0326-power-of-three) |
 | [1889-check-if-number-is-a-sum-of-powers-of-three](https://github.com/tkhwang/tkhwang-algorithm/tree/master/1889-check-if-number-is-a-sum-of-powers-of-three) |
 | [2610-closest-prime-numbers-in-range](https://github.com/tkhwang/tkhwang-algorithm/tree/master/2610-closest-prime-numbers-in-range) |
 ## Number Theory
@@ -52,6 +53,7 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 |  |
 | ------- |
 | [0231-power-of-two](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0231-power-of-two) |
+| [0326-power-of-three](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0326-power-of-three) |
 ## Array
 |  |
 | ------- |
