@@ -11,22 +11,16 @@ var mergeAlternately = function(word1, word2) {
     let i2 = 0;
     let result = "";
 
-    while (i1 < N1 && i2 < N2) {
-        result += word1[i1];
-        i1 += 1;
-        result += word2[i2];
-        i2 += 1;
+    while (i1 < N1 || i2 < N2) {
+        if (i1 < N1) {
+            result += word1[i1];
+            i1 += 1;
+        }
+        if (i2 < N2) {
+            result += word2[i2];
+            i2 += 1;
+        }
     }
-
-    while (i1 < N1) {
-        result += word1[i1]
-        i1 += 1;
-    }
-
-    while (i2 < N2) {
-        result += word2[i2];
-        i2 += 1;
-    }
-
+    
     return result;
 };
