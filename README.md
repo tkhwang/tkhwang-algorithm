@@ -38,6 +38,7 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 |  |
 | ------- |
 | [2346-largest-3-same-digit-number-in-string](https://github.com/tkhwang/tkhwang-algorithm/tree/master/2346-largest-3-same-digit-number-in-string) |
+| [2470-removing-stars-from-a-string](https://github.com/tkhwang/tkhwang-algorithm/tree/master/2470-removing-stars-from-a-string) |
 ## Tree
 |  |
 | ------- |
@@ -54,4 +55,12 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 |  |
 | ------- |
 | [0104-maximum-depth-of-binary-tree](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0104-maximum-depth-of-binary-tree) |
+## Stack
+|  |
+| ------- |
+| [2470-removing-stars-from-a-string](https://github.com/tkhwang/tkhwang-algorithm/tree/master/2470-removing-stars-from-a-string) |
+## Simulation
+|  |
+| ------- |
+| [2470-removing-stars-from-a-string](https://github.com/tkhwang/tkhwang-algorithm/tree/master/2470-removing-stars-from-a-string) |
 <!---LeetCode Topics End-->
