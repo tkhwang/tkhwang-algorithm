@@ -43,6 +43,7 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 |  |
 | ------- |
 | [0104-maximum-depth-of-binary-tree](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0104-maximum-depth-of-binary-tree) |
+| [0783-search-in-a-binary-search-tree](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0783-search-in-a-binary-search-tree) |
 ## Depth-First Search
 |  |
 | ------- |
@@ -55,6 +56,7 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 |  |
 | ------- |
 | [0104-maximum-depth-of-binary-tree](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0104-maximum-depth-of-binary-tree) |
+| [0783-search-in-a-binary-search-tree](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0783-search-in-a-binary-search-tree) |
 ## Stack
 |  |
 | ------- |
@@ -63,4 +65,8 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 |  |
 | ------- |
 | [2470-removing-stars-from-a-string](https://github.com/tkhwang/tkhwang-algorithm/tree/master/2470-removing-stars-from-a-string) |
+## Binary Search Tree
+|  |
+| ------- |
+| [0783-search-in-a-binary-search-tree](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0783-search-in-a-binary-search-tree) |
 <!---LeetCode Topics End-->
