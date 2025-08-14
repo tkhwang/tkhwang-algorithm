@@ -12,19 +12,13 @@
  * @return {TreeNode}
  */
 var searchBST = function(root, val) {
-    let found = null;
+    if (!root) return null;
 
-    const dfs = (node) => {
-        if (!node) return;
-
-        dfs(node.left);
-
-        if (node.val === val) found = node;
-
-        dfs(node.right);
+    if (root.val === val) {
+        return root;
+    } else if (root.val > val) {
+        return searchBST(root.left, val)
+    } else {
+        return searchBST(root.right, val)
     }
-
-    dfs(root);
-
-    return found;
 };
