@@ -69,4 +69,16 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 |  |
 | ------- |
 | [0783-search-in-a-binary-search-tree](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0783-search-in-a-binary-search-tree) |
+## Math
+|  |
+| ------- |
+| [0342-power-of-four](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0342-power-of-four) |
+## Bit Manipulation
+|  |
+| ------- |
+| [0342-power-of-four](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0342-power-of-four) |
+## Recursion
+|  |
+| ------- |
+| [0342-power-of-four](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0342-power-of-four) |
 <!---LeetCode Topics End-->
