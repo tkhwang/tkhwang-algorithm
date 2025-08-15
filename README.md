@@ -37,6 +37,7 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 ## String
 |  |
 | ------- |
+| [0392-is-subsequence](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0392-is-subsequence) |
 | [2346-largest-3-same-digit-number-in-string](https://github.com/tkhwang/tkhwang-algorithm/tree/master/2346-largest-3-same-digit-number-in-string) |
 | [2470-removing-stars-from-a-string](https://github.com/tkhwang/tkhwang-algorithm/tree/master/2470-removing-stars-from-a-string) |
 ## Tree
@@ -81,4 +82,12 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 |  |
 | ------- |
 | [0342-power-of-four](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0342-power-of-four) |
+## Two Pointers
+|  |
+| ------- |
+| [0392-is-subsequence](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0392-is-subsequence) |
+## Dynamic Programming
+|  |
+| ------- |
+| [0392-is-subsequence](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0392-is-subsequence) |
 <!---LeetCode Topics End-->
