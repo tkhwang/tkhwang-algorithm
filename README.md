@@ -90,4 +90,16 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 |  |
 | ------- |
 | [0392-is-subsequence](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0392-is-subsequence) |
+## Array
+|  |
+| ------- |
+| [0036-valid-sudoku](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0036-valid-sudoku) |
+## Hash Table
+|  |
+| ------- |
+| [0036-valid-sudoku](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0036-valid-sudoku) |
+## Matrix
+|  |
+| ------- |
+| [0036-valid-sudoku](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0036-valid-sudoku) |
 <!---LeetCode Topics End-->
