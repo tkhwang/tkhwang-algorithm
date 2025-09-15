@@ -38,6 +38,7 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 |  |
 | ------- |
 | [0392-is-subsequence](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0392-is-subsequence) |
+| [1264-maximum-number-of-words-you-can-type](https://github.com/tkhwang/tkhwang-algorithm/tree/master/1264-maximum-number-of-words-you-can-type) |
 | [2346-largest-3-same-digit-number-in-string](https://github.com/tkhwang/tkhwang-algorithm/tree/master/2346-largest-3-same-digit-number-in-string) |
 | [2470-removing-stars-from-a-string](https://github.com/tkhwang/tkhwang-algorithm/tree/master/2470-removing-stars-from-a-string) |
 ## Tree
@@ -100,6 +101,7 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 | ------- |
 | [0036-valid-sudoku](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0036-valid-sudoku) |
 | [0037-sudoku-solver](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0037-sudoku-solver) |
+| [1264-maximum-number-of-words-you-can-type](https://github.com/tkhwang/tkhwang-algorithm/tree/master/1264-maximum-number-of-words-you-can-type) |
 ## Matrix
 |  |
 | ------- |
