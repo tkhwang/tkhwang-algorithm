@@ -31,3 +31,15 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 
 - [leethub v2](https://chromewebstore.google.com/detail/leethub-v2/mhanfgfagplhgemhjfeolkkdidbakocm)
 - [백준허브](https://chromewebstore.google.com/detail/%EB%B0%B1%EC%A4%80%ED%97%88%EB%B8%8Cbaekjoonhub/ccammcjdkpgjmcpijpahlehmapgmphmk)
+
+<!---LeetCode Topics Start-->
+# LeetCode Topics
+## Hash Table
+|  |
+| ------- |
+| [1264-maximum-number-of-words-you-can-type](https://github.com/tkhwang/tkhwang-algorithm/tree/master/1264-maximum-number-of-words-you-can-type) |
+## String
+|  |
+| ------- |
+| [1264-maximum-number-of-words-you-can-type](https://github.com/tkhwang/tkhwang-algorithm/tree/master/1264-maximum-number-of-words-you-can-type) |
+<!---LeetCode Topics End-->
