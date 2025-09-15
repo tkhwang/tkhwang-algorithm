@@ -67,5 +67,5 @@ var solveSudoku = function(board) {
     
     backtrack(0, 0);
     
-    return board;
+    return board;    
 };

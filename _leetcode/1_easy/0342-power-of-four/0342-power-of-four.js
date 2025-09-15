@@ -8,5 +8,5 @@ var isPowerOfFour = function(num) {
         num = num / 4
     }
 
-    return num === 1   
+    return num === 1  
 };
