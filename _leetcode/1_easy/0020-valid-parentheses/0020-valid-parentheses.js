@@ -4,19 +4,24 @@
  */
 var isValid = function(s) {
     const stack = [];
-    
-    const parens = {
-        ")" : "(",
-        "]" : "[",
-        "}" : "{"
+
+    const chs = {
+        ")": "(",
+        "}": "{",
+        "]": "["
     }
-    
+
+    const opens = Object.values(chs);
+    const closes = Object.keys(chs);
+
     for (const ch of s) {
-        if (Object.values(parens).includes(ch)) stack.push(ch);
-        else if (Object.keys(parens).includes(ch)) {
-            const last = stack.pop();
-            if (last !== parens[ch]) return false;
+        if (opens.includes(ch)) {
+            stack.push(ch)
+        } else {
+            const saved = stack.pop();
+            if (saved !== chs[ch]) return false;
         }
     }
+
     return stack.length === 0;
 };

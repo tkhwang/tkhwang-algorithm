@@ -4,15 +4,18 @@
  * @return {number}
  */
 var canBeTypedWords = function(text, brokenLetters) {
-    const brokens = brokenLetters.split("");
-    let count = 0;
+  const broken = new Set(brokenLetters);
+  let count = 0;
 
-    for (const word of text.split(" ")) {
-        for (const [ i, ch ] of word.split("").entries()) {
-            if (brokens.includes(ch)) break;
-            if (i === word.length - 1) count += 1;
-        }
+  for (const word of text.split(' ')) {
+    let ok = true;
+    for (const ch of word) {
+      if (broken.has(ch)) { 
+        ok = false; 
+        break; 
+      }
     }
-
-    return count;
+    if (ok) count++;
+  }
+  return count;
 };
