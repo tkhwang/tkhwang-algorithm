@@ -41,5 +41,10 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 ## String
 |  |
 | ------- |
+| [0020-valid-parentheses](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0020-valid-parentheses) |
 | [1264-maximum-number-of-words-you-can-type](https://github.com/tkhwang/tkhwang-algorithm/tree/master/1264-maximum-number-of-words-you-can-type) |
+## Stack
+|  |
+| ------- |
+| [0020-valid-parentheses](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0020-valid-parentheses) |
 <!---LeetCode Topics End-->
