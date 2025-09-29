@@ -50,4 +50,12 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 |  |
 | ------- |
 | [0874-backspace-string-compare](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0874-backspace-string-compare) |
+## Array
+|  |
+| ------- |
+| [0001-two-sum](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0001-two-sum) |
+## Hash Table
+|  |
+| ------- |
+| [0001-two-sum](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0001-two-sum) |
 <!---LeetCode Topics End-->
