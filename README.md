@@ -51,4 +51,16 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 |  |
 | ------- |
 | [2324-find-triangular-sum-of-an-array](https://github.com/tkhwang/tkhwang-algorithm/tree/master/2324-find-triangular-sum-of-an-array) |
+## Stack
+|  |
+| ------- |
+| [0232-implement-queue-using-stacks](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0232-implement-queue-using-stacks) |
+## Design
+|  |
+| ------- |
+| [0232-implement-queue-using-stacks](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0232-implement-queue-using-stacks) |
+## Queue
+|  |
+| ------- |
+| [0232-implement-queue-using-stacks](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0232-implement-queue-using-stacks) |
 <!---LeetCode Topics End-->
