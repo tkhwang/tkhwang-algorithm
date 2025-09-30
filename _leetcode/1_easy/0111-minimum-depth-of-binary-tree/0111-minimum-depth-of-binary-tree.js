@@ -11,20 +11,16 @@
  * @return {number}
  */
 var minDepth = function(root) {
-    let min = Infinity;
-    
-    const dfs = (node, depth) => {
-        if (!node) return;
-        
-        if (!node.left && !node.right) {
-            if (min > depth) min = depth
-        }
-        
-        dfs(node.left, depth + 1);
-        dfs(node.right, depth + 1);
+    if (!root) return 0
+
+    const queue = [ [root, 1] ];
+
+    while (queue.length) {
+        const [ node, depth ] = queue.shift();
+
+        if (!node.left && !node.right) return depth;
+
+        if (node.left) queue.push([ node.left, depth + 1]);
+        if (node.right) queue.push([ node.right, depth + 1]);
     }
-    
-    dfs(root, 1);
-    
-    return min === Infinity ? 0 : min;
 };
