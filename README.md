@@ -39,10 +39,12 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 |  |
 | ------- |
 | [0001-two-sum](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0001-two-sum) |
+| [0189-rotate-array](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0189-rotate-array) |
 | [2324-find-triangular-sum-of-an-array](https://github.com/tkhwang/tkhwang-algorithm/tree/master/2324-find-triangular-sum-of-an-array) |
 ## Math
 |  |
 | ------- |
+| [0189-rotate-array](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0189-rotate-array) |
 | [2324-find-triangular-sum-of-an-array](https://github.com/tkhwang/tkhwang-algorithm/tree/master/2324-find-triangular-sum-of-an-array) |
 ## Simulation
 |  |
@@ -81,4 +83,8 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 |  |
 | ------- |
 | [0242-valid-anagram](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0242-valid-anagram) |
+## Two Pointers
+|  |
+| ------- |
+| [0189-rotate-array](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0189-rotate-array) |
 <!---LeetCode Topics End-->
