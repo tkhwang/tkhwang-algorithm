@@ -68,4 +68,13 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 |  |
 | ------- |
 | [0020-valid-parentheses](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0020-valid-parentheses) |
+| [0242-valid-anagram](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0242-valid-anagram) |
+## Hash Table
+|  |
+| ------- |
+| [0242-valid-anagram](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0242-valid-anagram) |
+## Sorting
+|  |
+| ------- |
+| [0242-valid-anagram](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0242-valid-anagram) |
 <!---LeetCode Topics End-->
