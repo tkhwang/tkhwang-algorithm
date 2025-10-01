@@ -3,14 +3,14 @@
  */
 function rotate(nums: number[], k: number): void {
     const N = nums.length;
+    const M = k % N;
 
-    const rotated = Array(N).fill(0);
+    const temp = [
+        ...nums.slice(-M),
+        ...nums.slice(0, -M)
+    ]
 
     for (let i = 0; i < N; i += 1) {
-        rotated[(i + k) % N] = nums[i];
-    }
-
-    for (let i = 0; i < N; i += 1) {
-        nums[i] = rotated[i];
+        nums[i] = temp[i];
     }
 };
