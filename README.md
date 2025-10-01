@@ -54,6 +54,7 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 ## Stack
 |  |
 | ------- |
+| [0020-valid-parentheses](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0020-valid-parentheses) |
 | [0232-implement-queue-using-stacks](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0232-implement-queue-using-stacks) |
 ## Design
 |  |
@@ -63,4 +64,8 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 |  |
 | ------- |
 | [0232-implement-queue-using-stacks](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0232-implement-queue-using-stacks) |
+## String
+|  |
+| ------- |
+| [0020-valid-parentheses](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0020-valid-parentheses) |
 <!---LeetCode Topics End-->
