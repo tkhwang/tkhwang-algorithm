@@ -38,6 +38,7 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 ## Array
 |  |
 | ------- |
+| [0001-two-sum](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0001-two-sum) |
 | [2324-find-triangular-sum-of-an-array](https://github.com/tkhwang/tkhwang-algorithm/tree/master/2324-find-triangular-sum-of-an-array) |
 ## Math
 |  |
@@ -72,6 +73,7 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 ## Hash Table
 |  |
 | ------- |
+| [0001-two-sum](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0001-two-sum) |
 | [0242-valid-anagram](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0242-valid-anagram) |
 ## Sorting
 |  |
