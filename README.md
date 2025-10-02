@@ -58,6 +58,7 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 ## Array
 |  |
 | ------- |
+| [0300-longest-increasing-subsequence](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0300-longest-increasing-subsequence) |
 | [0347-top-k-frequent-elements](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0347-top-k-frequent-elements) |
 ## Hash Table
 |  |
@@ -87,4 +88,12 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 |  |
 | ------- |
 | [0347-top-k-frequent-elements](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0347-top-k-frequent-elements) |
+## Binary Search
+|  |
+| ------- |
+| [0300-longest-increasing-subsequence](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0300-longest-increasing-subsequence) |
+## Dynamic Programming
+|  |
+| ------- |
+| [0300-longest-increasing-subsequence](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0300-longest-increasing-subsequence) |
 <!---LeetCode Topics End-->
