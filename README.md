@@ -59,6 +59,7 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 |  |
 | ------- |
 | [0300-longest-increasing-subsequence](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0300-longest-increasing-subsequence) |
+| [0322-coin-change](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0322-coin-change) |
 | [0347-top-k-frequent-elements](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0347-top-k-frequent-elements) |
 ## Hash Table
 |  |
@@ -96,4 +97,9 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 |  |
 | ------- |
 | [0300-longest-increasing-subsequence](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0300-longest-increasing-subsequence) |
+| [0322-coin-change](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0322-coin-change) |
+## Breadth-First Search
+|  |
+| ------- |
+| [0322-coin-change](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0322-coin-change) |
 <!---LeetCode Topics End-->
