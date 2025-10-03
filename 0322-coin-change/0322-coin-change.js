@@ -9,16 +9,12 @@ var coinChange = function(coins, amount) {
 
     for (let i = 1; i <= amount; i += 1) {
         for (const coin of coins) {
-            if (i < coin) {
-                continue;
-            } else {
-                dp[i] = Math.min(
-                    // not use
-                    dp[i],
-                    // use
-                    1 + dp[i-coin]
-                )
-            }
+            if (i - coin < 0) continue;
+
+            dp[i] = Math.min(
+                dp[i],
+                1 + dp[i-coin]
+            )
         }
     }
 
