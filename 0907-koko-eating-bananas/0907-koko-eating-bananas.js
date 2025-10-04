@@ -4,10 +4,6 @@
  * @return {number}
  */
 var minEatingSpeed = function(piles, h) {
-    piles.sort((a,b) => a - b);
-
-    console.log(piles);
-
     const isOK = (speed) => {
         let times = 0;
         for (const pile of piles) {
