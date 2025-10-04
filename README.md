@@ -43,4 +43,12 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 |  |
 | ------- |
 | [0151-reverse-words-in-a-string](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0151-reverse-words-in-a-string) |
+## Array
+|  |
+| ------- |
+| [0907-koko-eating-bananas](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0907-koko-eating-bananas) |
+## Binary Search
+|  |
+| ------- |
+| [0907-koko-eating-bananas](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0907-koko-eating-bananas) |
 <!---LeetCode Topics End-->
