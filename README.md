@@ -43,6 +43,7 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 |  |
 | ------- |
 | [0151-reverse-words-in-a-string](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0151-reverse-words-in-a-string) |
+| [0208-implement-trie-prefix-tree](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0208-implement-trie-prefix-tree) |
 ## Array
 |  |
 | ------- |
@@ -56,4 +57,16 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 |  |
 | ------- |
 | [1833-find-the-highest-altitude](https://github.com/tkhwang/tkhwang-algorithm/tree/master/1833-find-the-highest-altitude) |
+## Hash Table
+|  |
+| ------- |
+| [0208-implement-trie-prefix-tree](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0208-implement-trie-prefix-tree) |
+## Design
+|  |
+| ------- |
+| [0208-implement-trie-prefix-tree](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0208-implement-trie-prefix-tree) |
+## Trie
+|  |
+| ------- |
+| [0208-implement-trie-prefix-tree](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0208-implement-trie-prefix-tree) |
 <!---LeetCode Topics End-->
