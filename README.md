@@ -69,4 +69,20 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 |  |
 | ------- |
 | [0208-implement-trie-prefix-tree](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0208-implement-trie-prefix-tree) |
+## Tree
+|  |
+| ------- |
+| [0104-maximum-depth-of-binary-tree](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0104-maximum-depth-of-binary-tree) |
+## Depth-First Search
+|  |
+| ------- |
+| [0104-maximum-depth-of-binary-tree](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0104-maximum-depth-of-binary-tree) |
+## Breadth-First Search
+|  |
+| ------- |
+| [0104-maximum-depth-of-binary-tree](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0104-maximum-depth-of-binary-tree) |
+## Binary Tree
+|  |
+| ------- |
+| [0104-maximum-depth-of-binary-tree](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0104-maximum-depth-of-binary-tree) |
 <!---LeetCode Topics End-->
