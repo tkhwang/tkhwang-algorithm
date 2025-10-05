@@ -47,8 +47,13 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 |  |
 | ------- |
 | [0907-koko-eating-bananas](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0907-koko-eating-bananas) |
+| [1833-find-the-highest-altitude](https://github.com/tkhwang/tkhwang-algorithm/tree/master/1833-find-the-highest-altitude) |
 ## Binary Search
 |  |
 | ------- |
 | [0907-koko-eating-bananas](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0907-koko-eating-bananas) |
+## Prefix Sum
+|  |
+| ------- |
+| [1833-find-the-highest-altitude](https://github.com/tkhwang/tkhwang-algorithm/tree/master/1833-find-the-highest-altitude) |
 <!---LeetCode Topics End-->
