@@ -42,6 +42,7 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 ## String
 |  |
 | ------- |
+| [0020-valid-parentheses](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0020-valid-parentheses) |
 | [0022-generate-parentheses](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0022-generate-parentheses) |
 | [0151-reverse-words-in-a-string](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0151-reverse-words-in-a-string) |
 | [0208-implement-trie-prefix-tree](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0208-implement-trie-prefix-tree) |
@@ -112,4 +113,8 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 |  |
 | ------- |
 | [0022-generate-parentheses](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0022-generate-parentheses) |
+## Stack
+|  |
+| ------- |
+| [0020-valid-parentheses](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0020-valid-parentheses) |
 <!---LeetCode Topics End-->
