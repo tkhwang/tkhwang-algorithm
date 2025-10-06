@@ -11,20 +11,15 @@
  * @return {number}
  */
 var sumNumbers = function(root) {
-    let result = 0;
-
     const dfs = (node, sum) => {
-        if (!node) return;
+        if (!node) return 0;
 
-        sum += String(node.val);
+        sum = sum * 10 + node.val;
 
-        if (!node.left && !node.right) result += Number(sum);
+        if (!node.left && !node.right) return sum;
 
-        dfs(node.left, sum);
-        dfs(node.right, sum);
+        return dfs(node.left, sum) + dfs(node.right, sum);
     }
 
-    dfs(root, "");
-
-    return result;
+    return dfs(root, 0)
 };
