@@ -69,6 +69,7 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 | [0039-combination-sum](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0039-combination-sum) |
 | [0053-maximum-subarray](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0053-maximum-subarray) |
 | [0209-minimum-size-subarray-sum](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0209-minimum-size-subarray-sum) |
+| [0215-kth-largest-element-in-an-array](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0215-kth-largest-element-in-an-array) |
 ## Binary Search
 |  |
 | ------- |
@@ -99,6 +100,7 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 |  |
 | ------- |
 | [0053-maximum-subarray](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0053-maximum-subarray) |
+| [0215-kth-largest-element-in-an-array](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0215-kth-largest-element-in-an-array) |
 ## Dynamic Programming
 |  |
 | ------- |
@@ -111,4 +113,16 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 |  |
 | ------- |
 | [0039-combination-sum](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0039-combination-sum) |
+## Sorting
+|  |
+| ------- |
+| [0215-kth-largest-element-in-an-array](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0215-kth-largest-element-in-an-array) |
+## Heap (Priority Queue)
+|  |
+| ------- |
+| [0215-kth-largest-element-in-an-array](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0215-kth-largest-element-in-an-array) |
+## Quickselect
+|  |
+| ------- |
+| [0215-kth-largest-element-in-an-array](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0215-kth-largest-element-in-an-array) |
 <!---LeetCode Topics End-->
