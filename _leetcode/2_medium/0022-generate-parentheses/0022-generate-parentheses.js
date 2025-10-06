@@ -3,19 +3,19 @@
  * @return {string[]}
  */
 var generateParenthesis = function(n) {
-    const res = [];
-    
-    const dfs = (cur, left, right) => {
-        if (left === n && right === n) {
-            res.push(cur);
+    const result = [];
+
+    const dfs = (paren, openCount, closeCount) => {
+        if (openCount === n && closeCount === n) {
+            result.push(paren);
             return;
         }
-        
-        if (left < n) dfs(cur + "(", left + 1, right);
-        if (right < left) dfs(cur + ")", left, right + 1);
+
+        if (openCount < n) dfs(paren + "(", openCount + 1, closeCount);
+        if (closeCount < openCount) dfs(paren + ")", openCount, closeCount + 1);
     }
-    
+
     dfs("", 0, 0);
-    
-    return res;
+
+    return result;
 };

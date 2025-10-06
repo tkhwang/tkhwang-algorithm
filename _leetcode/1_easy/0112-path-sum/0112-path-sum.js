@@ -12,16 +12,16 @@
  * @return {boolean}
  */
 var hasPathSum = function(root, targetSum) {
-  
-    const dfs = (node, remain) => {
-        if (!node) return false;
-        
-         remain -= node.val;
-        
-        if (!node.left && !node.right) return remain === 0;
-        
-        return dfs(node.left, remain) || dfs(node.right, remain);
-    }
     
-    return dfs(root, targetSum)
+    const dfs = (node, sum) => {
+        if (!node) return false;
+
+        sum += node.val;
+
+        if (!node.left && !node.right) return sum === targetSum;
+
+        return dfs(node.left, sum) || dfs(node.right, sum);
+    }
+
+    return dfs(root, 0)
 };
