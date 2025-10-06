@@ -51,12 +51,14 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 ## Array
 |  |
 | ------- |
+| [0035-search-insert-position](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0035-search-insert-position) |
 | [0200-number-of-islands](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0200-number-of-islands) |
 | [0907-koko-eating-bananas](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0907-koko-eating-bananas) |
 | [1833-find-the-highest-altitude](https://github.com/tkhwang/tkhwang-algorithm/tree/master/1833-find-the-highest-altitude) |
 ## Binary Search
 |  |
 | ------- |
+| [0035-search-insert-position](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0035-search-insert-position) |
 | [0907-koko-eating-bananas](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0907-koko-eating-bananas) |
 ## Prefix Sum
 |  |
