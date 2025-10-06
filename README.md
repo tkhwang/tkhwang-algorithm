@@ -62,6 +62,7 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 ## Array
 |  |
 | ------- |
+| [0053-maximum-subarray](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0053-maximum-subarray) |
 | [0209-minimum-size-subarray-sum](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0209-minimum-size-subarray-sum) |
 ## Binary Search
 |  |
@@ -89,4 +90,12 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 |  |
 | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0003-longest-substring-without-repeating-characters) |
+## Divide and Conquer
+|  |
+| ------- |
+| [0053-maximum-subarray](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0053-maximum-subarray) |
+## Dynamic Programming
+|  |
+| ------- |
+| [0053-maximum-subarray](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0053-maximum-subarray) |
 <!---LeetCode Topics End-->
