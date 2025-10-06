@@ -47,6 +47,7 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 ## Array
 |  |
 | ------- |
+| [0200-number-of-islands](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0200-number-of-islands) |
 | [0907-koko-eating-bananas](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0907-koko-eating-bananas) |
 | [1833-find-the-highest-altitude](https://github.com/tkhwang/tkhwang-algorithm/tree/master/1833-find-the-highest-altitude) |
 ## Binary Search
@@ -81,15 +82,25 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 | [0104-maximum-depth-of-binary-tree](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0104-maximum-depth-of-binary-tree) |
 | [0112-path-sum](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0112-path-sum) |
 | [0129-sum-root-to-leaf-numbers](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0129-sum-root-to-leaf-numbers) |
+| [0200-number-of-islands](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0200-number-of-islands) |
 ## Breadth-First Search
 |  |
 | ------- |
 | [0104-maximum-depth-of-binary-tree](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0104-maximum-depth-of-binary-tree) |
 | [0112-path-sum](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0112-path-sum) |
+| [0200-number-of-islands](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0200-number-of-islands) |
 ## Binary Tree
 |  |
 | ------- |
 | [0104-maximum-depth-of-binary-tree](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0104-maximum-depth-of-binary-tree) |
 | [0112-path-sum](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0112-path-sum) |
 | [0129-sum-root-to-leaf-numbers](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0129-sum-root-to-leaf-numbers) |
+## Union Find
+|  |
+| ------- |
+| [0200-number-of-islands](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0200-number-of-islands) |
+## Matrix
+|  |
+| ------- |
+| [0200-number-of-islands](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0200-number-of-islands) |
 <!---LeetCode Topics End-->
