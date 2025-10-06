@@ -46,18 +46,22 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 ## Tree
 |  |
 | ------- |
+| [0530-minimum-absolute-difference-in-bst](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0530-minimum-absolute-difference-in-bst) |
 | [0637-average-of-levels-in-binary-tree](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0637-average-of-levels-in-binary-tree) |
 ## Depth-First Search
 |  |
 | ------- |
+| [0530-minimum-absolute-difference-in-bst](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0530-minimum-absolute-difference-in-bst) |
 | [0637-average-of-levels-in-binary-tree](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0637-average-of-levels-in-binary-tree) |
 ## Breadth-First Search
 |  |
 | ------- |
+| [0530-minimum-absolute-difference-in-bst](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0530-minimum-absolute-difference-in-bst) |
 | [0637-average-of-levels-in-binary-tree](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0637-average-of-levels-in-binary-tree) |
 ## Binary Tree
 |  |
 | ------- |
+| [0530-minimum-absolute-difference-in-bst](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0530-minimum-absolute-difference-in-bst) |
 | [0637-average-of-levels-in-binary-tree](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0637-average-of-levels-in-binary-tree) |
 ## Array
 |  |
@@ -98,4 +102,8 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 |  |
 | ------- |
 | [0053-maximum-subarray](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0053-maximum-subarray) |
+## Binary Search Tree
+|  |
+| ------- |
+| [0530-minimum-absolute-difference-in-bst](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0530-minimum-absolute-difference-in-bst) |
 <!---LeetCode Topics End-->
