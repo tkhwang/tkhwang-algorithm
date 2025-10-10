@@ -12,11 +12,7 @@ var maximumEnergy = function(energy, k) {
     let max = -Infinity;
 
     for (let i = N- 1; i >= 0; i -= 1) {
-        if (dp[i+k] !== undefined) {
-            dp[i] = dp[i+k] + energy[i]
-        } else {
-            dp[i] = energy[i]
-        }
+        dp[i] = (dp[i+k] ?? 0) + energy[i]
         if (max < dp[i]) max = dp[i];
     }
 
