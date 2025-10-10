@@ -91,11 +91,13 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 ## Two Pointers
 |  |
 | ------- |
+| [0125-valid-palindrome](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0125-valid-palindrome) |
 | [0151-reverse-words-in-a-string](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0151-reverse-words-in-a-string) |
 ## String
 |  |
 | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0003-longest-substring-without-repeating-characters) |
+| [0125-valid-palindrome](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0125-valid-palindrome) |
 | [0151-reverse-words-in-a-string](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0151-reverse-words-in-a-string) |
 ## Hash Table
 |  |
