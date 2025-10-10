@@ -73,6 +73,7 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 | [0053-maximum-subarray](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0053-maximum-subarray) |
 | [0209-minimum-size-subarray-sum](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0209-minimum-size-subarray-sum) |
 | [0215-kth-largest-element-in-an-array](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0215-kth-largest-element-in-an-array) |
+| [3383-taking-maximum-energy-from-the-mystic-dungeon](https://github.com/tkhwang/tkhwang-algorithm/tree/master/3383-taking-maximum-energy-from-the-mystic-dungeon) |
 ## Binary Search
 |  |
 | ------- |
@@ -86,6 +87,7 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 |  |
 | ------- |
 | [0209-minimum-size-subarray-sum](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0209-minimum-size-subarray-sum) |
+| [3383-taking-maximum-energy-from-the-mystic-dungeon](https://github.com/tkhwang/tkhwang-algorithm/tree/master/3383-taking-maximum-energy-from-the-mystic-dungeon) |
 ## Two Pointers
 |  |
 | ------- |
