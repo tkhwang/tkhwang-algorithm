@@ -4,26 +4,26 @@
  * @return {number[][]}
  */
 var combinationSum = function(candidates, target) {
-    const n = candidates.length;
+    const N = candidates.length;
+
     const result = [];
-    
-    const dfs = (cur, sum, index) => {
-        if (sum === 0) {
-            result.push([...cur])
-            return;
-        }
-        if (sum < 0) return;
+
+    const backtrack = (paths, index, remain) => {
+        if (remain === 0) result.push([...paths]);
         
-        for (let i = index; i < n; i += 1) {
-            cur.push(candidates[i]);
-            
-            dfs(cur, sum - candidates[i], i);
-            
-            cur.pop();
+        if (index > N - 1) return;
+
+        for (let i = index; i < N; i += 1) {
+            const cur = candidates[i];
+            if (remain - cur < 0) continue;
+
+            paths.push(cur);
+            backtrack(paths, i, remain - cur);
+            paths.pop();
         }
     }
-    
-    dfs([], target, 0);
-    
+
+    backtrack([], 0, target);
+
     return result;
 };

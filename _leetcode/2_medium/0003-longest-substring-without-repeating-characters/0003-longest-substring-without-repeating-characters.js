@@ -4,20 +4,22 @@
  */
 var lengthOfLongestSubstring = function(s) {
     const N = s.length;
-    
-    const freq = {};
-    let max = -Infinity;
-    
+
+    const window = new Map();
+    let max = 0;
+
     let left = 0;
     for (let right = 0; right < N; right += 1) {
         const cur = s[right];
-        freq[cur] = (freq[cur] || 0) + 1;
-        while (freq[cur] > 1) {
+        window.set(cur, (window.get(cur) ?? 0) + 1);
+        
+        while (window.get(cur) > 1) {
             const leftNum = s[left];
-            freq[leftNum] -= 1;
+            window.set(leftNum, window.get(leftNum) - 1);
             left += 1;
         }
-        if (max < right - left + 1) max = right - left + 1;    
+
+        if (max < right - left + 1) max = right - left + 1;
     }
-    return max === -Infinity ? 0 : max;
+    return max;
 };

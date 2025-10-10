@@ -11,25 +11,25 @@
  * @return {number}
  */
 var getMinimumDifference = function(root) {
-    let prv = null;
     let min = Infinity;
-    
+    let prv = null;
+
     const dfs = (node) => {
         if (!node) return;
-        
+
         dfs(node.left);
-    
+
         if (prv !== null) {
-            const local = Math.abs(node.val - prv);
-            if (min > local) min = local;
+            const localDiff = Math.abs(node.val - prv);
+            if (localDiff < min) min = localDiff;
         }
-        
+
         prv = node.val;
-        
-        dfs(node.right);        
+
+        dfs(node.right)
     }
-    
+
     dfs(root);
-    
+
     return min;
 };
