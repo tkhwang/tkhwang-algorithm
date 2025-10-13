@@ -8,9 +8,12 @@ var isSubsequence = function(s, t) {
     const NT = t.length;
 
     let indexS = 0;
-    
+
     for (let indexT = 0; indexT < NT; indexT += 1) {
-        if (s[indexS] === t[indexT]) indexS += 1;
+        if (s[indexS] === t[indexT]) {
+            indexS += 1;
+            if (indexS >= NS) return true;
+        }
     }
 
     return indexS === NS;
