@@ -39,8 +39,18 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 |  |
 | ------- |
 | [0001-two-sum](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0001-two-sum) |
+| [1353-find-resultant-array-after-removing-anagrams](https://github.com/tkhwang/tkhwang-algorithm/tree/master/1353-find-resultant-array-after-removing-anagrams) |
 ## Hash Table
 |  |
 | ------- |
 | [0001-two-sum](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0001-two-sum) |
+| [1353-find-resultant-array-after-removing-anagrams](https://github.com/tkhwang/tkhwang-algorithm/tree/master/1353-find-resultant-array-after-removing-anagrams) |
+## String
+|  |
+| ------- |
+| [1353-find-resultant-array-after-removing-anagrams](https://github.com/tkhwang/tkhwang-algorithm/tree/master/1353-find-resultant-array-after-removing-anagrams) |
+## Sorting
+|  |
+| ------- |
+| [1353-find-resultant-array-after-removing-anagrams](https://github.com/tkhwang/tkhwang-algorithm/tree/master/1353-find-resultant-array-after-removing-anagrams) |
 <!---LeetCode Topics End-->
