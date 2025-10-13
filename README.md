@@ -53,4 +53,20 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 |  |
 | ------- |
 | [1353-find-resultant-array-after-removing-anagrams](https://github.com/tkhwang/tkhwang-algorithm/tree/master/1353-find-resultant-array-after-removing-anagrams) |
+## Tree
+|  |
+| ------- |
+| [0226-invert-binary-tree](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0226-invert-binary-tree) |
+## Depth-First Search
+|  |
+| ------- |
+| [0226-invert-binary-tree](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0226-invert-binary-tree) |
+## Breadth-First Search
+|  |
+| ------- |
+| [0226-invert-binary-tree](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0226-invert-binary-tree) |
+## Binary Tree
+|  |
+| ------- |
+| [0226-invert-binary-tree](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0226-invert-binary-tree) |
 <!---LeetCode Topics End-->
