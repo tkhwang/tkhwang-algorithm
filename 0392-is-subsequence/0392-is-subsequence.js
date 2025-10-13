@@ -7,14 +7,15 @@ var isSubsequence = function(s, t) {
     const NS = s.length;
     const NT = t.length;
 
-    let indexS = 0;
+    let indexT = 0;
 
-    for (let indexT = 0; indexT < NT; indexT += 1) {
-        if (s[indexS] === t[indexT]) {
-            indexS += 1;
-            if (indexS >= NS) return true;
-        }
+    for (let indexS = 0; indexS < NS; indexS += 1) {
+        while (indexT < NT && t[indexT] !== s[indexS]) indexT += 1;
+
+        if (indexT === NT) return false;
+
+        indexT += 1;
     }
 
-    return indexS === NS;
+    return true;
 };
