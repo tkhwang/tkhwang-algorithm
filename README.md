@@ -49,6 +49,7 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 |  |
 | ------- |
 | [0345-reverse-vowels-of-a-string](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0345-reverse-vowels-of-a-string) |
+| [0392-is-subsequence](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0392-is-subsequence) |
 | [1353-find-resultant-array-after-removing-anagrams](https://github.com/tkhwang/tkhwang-algorithm/tree/master/1353-find-resultant-array-after-removing-anagrams) |
 ## Sorting
 |  |
@@ -74,4 +75,9 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 |  |
 | ------- |
 | [0345-reverse-vowels-of-a-string](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0345-reverse-vowels-of-a-string) |
+| [0392-is-subsequence](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0392-is-subsequence) |
+## Dynamic Programming
+|  |
+| ------- |
+| [0392-is-subsequence](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0392-is-subsequence) |
 <!---LeetCode Topics End-->
