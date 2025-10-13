@@ -48,6 +48,7 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 ## String
 |  |
 | ------- |
+| [0345-reverse-vowels-of-a-string](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0345-reverse-vowels-of-a-string) |
 | [1353-find-resultant-array-after-removing-anagrams](https://github.com/tkhwang/tkhwang-algorithm/tree/master/1353-find-resultant-array-after-removing-anagrams) |
 ## Sorting
 |  |
@@ -69,4 +70,8 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 |  |
 | ------- |
 | [0226-invert-binary-tree](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0226-invert-binary-tree) |
+## Two Pointers
+|  |
+| ------- |
+| [0345-reverse-vowels-of-a-string](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0345-reverse-vowels-of-a-string) |
 <!---LeetCode Topics End-->
