@@ -15,6 +15,7 @@ var isSubsequence = function(s, t) {
         if (indexT === NT) return false;
 
         indexT += 1;
+
     }
 
     return true;
