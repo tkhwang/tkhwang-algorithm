@@ -2,20 +2,21 @@
  * @param {number} n
  * @return {number}
  */
-var countPrimes = function(n) {
-    if (n < 2) return 0;
+var countPrimes = function(N) {
+    if (N < 2) return 0;
 
-    const sieve = new Array(n).fill(true);
-    sieve[0] = sieve[1] = false;
+    const dp = new Array(N).fill(true);
+    dp[0] = false;
+    dp[1] = false;
 
-    for (let i = 2; i * i <= n; i += 1) {
-        if (!sieve[i]) continue;
+    for (let i = 2; i * i <= N; i += 1) {
+        if (!dp[i]) continue;
 
         // found prime
-        for (let j = i * i; j < n; j += i) {
-            sieve[j] = false;
+        for (let j = i * i; j <= N; j += i) {
+            dp[j] = false;
         }
     }
 
-    return sieve.filter(Boolean).length;
+    return dp.filter(Boolean).length;
 };
