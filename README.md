@@ -60,10 +60,12 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 ## Tree
 |  |
 | ------- |
+| [0098-validate-binary-search-tree](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0098-validate-binary-search-tree) |
 | [0226-invert-binary-tree](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0226-invert-binary-tree) |
 ## Depth-First Search
 |  |
 | ------- |
+| [0098-validate-binary-search-tree](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0098-validate-binary-search-tree) |
 | [0226-invert-binary-tree](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0226-invert-binary-tree) |
 ## Breadth-First Search
 |  |
@@ -72,6 +74,7 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 ## Binary Tree
 |  |
 | ------- |
+| [0098-validate-binary-search-tree](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0098-validate-binary-search-tree) |
 | [0226-invert-binary-tree](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0226-invert-binary-tree) |
 ## Two Pointers
 |  |
@@ -82,4 +85,8 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 |  |
 | ------- |
 | [0392-is-subsequence](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0392-is-subsequence) |
+## Binary Search Tree
+|  |
+| ------- |
+| [0098-validate-binary-search-tree](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0098-validate-binary-search-tree) |
 <!---LeetCode Topics End-->
