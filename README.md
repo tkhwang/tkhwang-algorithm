@@ -39,12 +39,14 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 |  |
 | ------- |
 | [0001-two-sum](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0001-two-sum) |
+| [0268-missing-number](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0268-missing-number) |
 | [1353-find-resultant-array-after-removing-anagrams](https://github.com/tkhwang/tkhwang-algorithm/tree/master/1353-find-resultant-array-after-removing-anagrams) |
 | [4008-restore-finishing-order](https://github.com/tkhwang/tkhwang-algorithm/tree/master/4008-restore-finishing-order) |
 ## Hash Table
 |  |
 | ------- |
 | [0001-two-sum](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0001-two-sum) |
+| [0268-missing-number](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0268-missing-number) |
 | [1353-find-resultant-array-after-removing-anagrams](https://github.com/tkhwang/tkhwang-algorithm/tree/master/1353-find-resultant-array-after-removing-anagrams) |
 | [4008-restore-finishing-order](https://github.com/tkhwang/tkhwang-algorithm/tree/master/4008-restore-finishing-order) |
 ## String
@@ -56,6 +58,7 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 ## Sorting
 |  |
 | ------- |
+| [0268-missing-number](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0268-missing-number) |
 | [1353-find-resultant-array-after-removing-anagrams](https://github.com/tkhwang/tkhwang-algorithm/tree/master/1353-find-resultant-array-after-removing-anagrams) |
 ## Tree
 |  |
@@ -89,4 +92,13 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 |  |
 | ------- |
 | [0098-validate-binary-search-tree](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0098-validate-binary-search-tree) |
+| [0268-missing-number](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0268-missing-number) |
+## Math
+|  |
+| ------- |
+| [0268-missing-number](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0268-missing-number) |
+## Bit Manipulation
+|  |
+| ------- |
+| [0268-missing-number](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0268-missing-number) |
 <!---LeetCode Topics End-->
