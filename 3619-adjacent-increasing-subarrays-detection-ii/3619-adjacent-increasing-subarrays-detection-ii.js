@@ -6,7 +6,7 @@ var maxIncreasingSubarrays = function(nums) {
     const N = nums.length;
 
     let left = 1;
-    let right = 2 *N;
+    let right = N;
 
     const dp = Array(N + 1).fill(1);
 
