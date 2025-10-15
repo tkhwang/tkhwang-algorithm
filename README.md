@@ -42,6 +42,7 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 | [0204-count-primes](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0204-count-primes) |
 | [0268-missing-number](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0268-missing-number) |
 | [1353-find-resultant-array-after-removing-anagrams](https://github.com/tkhwang/tkhwang-algorithm/tree/master/1353-find-resultant-array-after-removing-anagrams) |
+| [3612-adjacent-increasing-subarrays-detection-i](https://github.com/tkhwang/tkhwang-algorithm/tree/master/3612-adjacent-increasing-subarrays-detection-i) |
 | [4008-restore-finishing-order](https://github.com/tkhwang/tkhwang-algorithm/tree/master/4008-restore-finishing-order) |
 ## Hash Table
 |  |
