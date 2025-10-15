@@ -39,4 +39,9 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 |  |
 | ------- |
 | [3612-adjacent-increasing-subarrays-detection-i](https://github.com/tkhwang/tkhwang-algorithm/tree/master/3612-adjacent-increasing-subarrays-detection-i) |
+| [3619-adjacent-increasing-subarrays-detection-ii](https://github.com/tkhwang/tkhwang-algorithm/tree/master/3619-adjacent-increasing-subarrays-detection-ii) |
+## Binary Search
+|  |
+| ------- |
+| [3619-adjacent-increasing-subarrays-detection-ii](https://github.com/tkhwang/tkhwang-algorithm/tree/master/3619-adjacent-increasing-subarrays-detection-ii) |
 <!---LeetCode Topics End-->
