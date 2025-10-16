@@ -43,5 +43,22 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 ## Binary Search
 |  |
 | ------- |
+| [0270-closest-binary-search-tree-value](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0270-closest-binary-search-tree-value) |
 | [3619-adjacent-increasing-subarrays-detection-ii](https://github.com/tkhwang/tkhwang-algorithm/tree/master/3619-adjacent-increasing-subarrays-detection-ii) |
+## Tree
+|  |
+| ------- |
+| [0270-closest-binary-search-tree-value](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0270-closest-binary-search-tree-value) |
+## Depth-First Search
+|  |
+| ------- |
+| [0270-closest-binary-search-tree-value](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0270-closest-binary-search-tree-value) |
+## Binary Search Tree
+|  |
+| ------- |
+| [0270-closest-binary-search-tree-value](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0270-closest-binary-search-tree-value) |
+## Binary Tree
+|  |
+| ------- |
+| [0270-closest-binary-search-tree-value](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0270-closest-binary-search-tree-value) |
 <!---LeetCode Topics End-->
