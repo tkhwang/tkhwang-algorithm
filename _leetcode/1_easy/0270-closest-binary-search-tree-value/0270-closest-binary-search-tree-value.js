@@ -12,25 +12,24 @@
  * @return {number}
  */
 var closestValue = function(root, target) {
-    let min = Infinity;
-    
+    let minDiff = Infinity;
+    let minValue = null;
+
     const dfs = (node) => {
         if (!node) return;
-        
-        if (Math.abs(min - target) > Math.abs(node.val - target)) {
-            min = node.val;
+
+        dfs(node.left);
+
+        const diff = Math.abs(node.val - target);
+        if (diff < minDiff) {
+            minDiff = diff;
+            minValue = node.val;
         }
 
-        if (node.val === target) {
-            return;
-        } else if (node.val < target) {
-            dfs(node.right);
-        } else if (node.val > target) {
-            dfs(node.left);
-        }
+        dfs(node.right);
     }
-    
+
     dfs(root);
-    
-    return min;
+
+    return minValue;
 };
