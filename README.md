@@ -39,6 +39,7 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 |  |
 | ------- |
 | [0209-minimum-size-subarray-sum](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0209-minimum-size-subarray-sum) |
+| [0560-subarray-sum-equals-k](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0560-subarray-sum-equals-k) |
 | [3612-adjacent-increasing-subarrays-detection-i](https://github.com/tkhwang/tkhwang-algorithm/tree/master/3612-adjacent-increasing-subarrays-detection-i) |
 | [3619-adjacent-increasing-subarrays-detection-ii](https://github.com/tkhwang/tkhwang-algorithm/tree/master/3619-adjacent-increasing-subarrays-detection-ii) |
 ## Binary Search
@@ -71,4 +72,9 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 |  |
 | ------- |
 | [0209-minimum-size-subarray-sum](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0209-minimum-size-subarray-sum) |
+| [0560-subarray-sum-equals-k](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0560-subarray-sum-equals-k) |
+## Hash Table
+|  |
+| ------- |
+| [0560-subarray-sum-equals-k](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0560-subarray-sum-equals-k) |
 <!---LeetCode Topics End-->
