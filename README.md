@@ -38,11 +38,13 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 ## Array
 |  |
 | ------- |
+| [0209-minimum-size-subarray-sum](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0209-minimum-size-subarray-sum) |
 | [3612-adjacent-increasing-subarrays-detection-i](https://github.com/tkhwang/tkhwang-algorithm/tree/master/3612-adjacent-increasing-subarrays-detection-i) |
 | [3619-adjacent-increasing-subarrays-detection-ii](https://github.com/tkhwang/tkhwang-algorithm/tree/master/3619-adjacent-increasing-subarrays-detection-ii) |
 ## Binary Search
 |  |
 | ------- |
+| [0209-minimum-size-subarray-sum](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0209-minimum-size-subarray-sum) |
 | [0270-closest-binary-search-tree-value](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0270-closest-binary-search-tree-value) |
 | [3619-adjacent-increasing-subarrays-detection-ii](https://github.com/tkhwang/tkhwang-algorithm/tree/master/3619-adjacent-increasing-subarrays-detection-ii) |
 ## Tree
@@ -61,4 +63,12 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 |  |
 | ------- |
 | [0270-closest-binary-search-tree-value](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0270-closest-binary-search-tree-value) |
+## Sliding Window
+|  |
+| ------- |
+| [0209-minimum-size-subarray-sum](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0209-minimum-size-subarray-sum) |
+## Prefix Sum
+|  |
+| ------- |
+| [0209-minimum-size-subarray-sum](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0209-minimum-size-subarray-sum) |
 <!---LeetCode Topics End-->
