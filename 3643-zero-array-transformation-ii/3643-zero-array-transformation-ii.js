@@ -17,7 +17,7 @@ var minZeroArray = function(nums, queries) {
             const [ left, right, value ] = queries[i];
 
             diff[left] += value;
-            if (right + 1 < N) diff[right + 1] -= value;
+            diff[right + 1] -= value;
         }
 
         let pendingDecrements = 0;
