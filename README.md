@@ -40,6 +40,7 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 | ------- |
 | [0494-target-sum](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0494-target-sum) |
 | [3639-zero-array-transformation-i](https://github.com/tkhwang/tkhwang-algorithm/tree/master/3639-zero-array-transformation-i) |
+| [3643-zero-array-transformation-ii](https://github.com/tkhwang/tkhwang-algorithm/tree/master/3643-zero-array-transformation-ii) |
 | [3750-closest-equal-element-queries](https://github.com/tkhwang/tkhwang-algorithm/tree/master/3750-closest-equal-element-queries) |
 | [3788-maximum-unique-subarray-sum-after-deletion](https://github.com/tkhwang/tkhwang-algorithm/tree/master/3788-maximum-unique-subarray-sum-after-deletion) |
 ## Dynamic Programming
@@ -62,9 +63,11 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 ## Binary Search
 |  |
 | ------- |
+| [3643-zero-array-transformation-ii](https://github.com/tkhwang/tkhwang-algorithm/tree/master/3643-zero-array-transformation-ii) |
 | [3750-closest-equal-element-queries](https://github.com/tkhwang/tkhwang-algorithm/tree/master/3750-closest-equal-element-queries) |
 ## Prefix Sum
 |  |
 | ------- |
 | [3639-zero-array-transformation-i](https://github.com/tkhwang/tkhwang-algorithm/tree/master/3639-zero-array-transformation-i) |
+| [3643-zero-array-transformation-ii](https://github.com/tkhwang/tkhwang-algorithm/tree/master/3643-zero-array-transformation-ii) |
 <!---LeetCode Topics End-->
