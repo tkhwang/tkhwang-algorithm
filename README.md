@@ -39,6 +39,7 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 |  |
 | ------- |
 | [0494-target-sum](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0494-target-sum) |
+| [3750-closest-equal-element-queries](https://github.com/tkhwang/tkhwang-algorithm/tree/master/3750-closest-equal-element-queries) |
 | [3788-maximum-unique-subarray-sum-after-deletion](https://github.com/tkhwang/tkhwang-algorithm/tree/master/3788-maximum-unique-subarray-sum-after-deletion) |
 ## Dynamic Programming
 |  |
@@ -51,9 +52,14 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 ## Hash Table
 |  |
 | ------- |
+| [3750-closest-equal-element-queries](https://github.com/tkhwang/tkhwang-algorithm/tree/master/3750-closest-equal-element-queries) |
 | [3788-maximum-unique-subarray-sum-after-deletion](https://github.com/tkhwang/tkhwang-algorithm/tree/master/3788-maximum-unique-subarray-sum-after-deletion) |
 ## Greedy
 |  |
 | ------- |
 | [3788-maximum-unique-subarray-sum-after-deletion](https://github.com/tkhwang/tkhwang-algorithm/tree/master/3788-maximum-unique-subarray-sum-after-deletion) |
+## Binary Search
+|  |
+| ------- |
+| [3750-closest-equal-element-queries](https://github.com/tkhwang/tkhwang-algorithm/tree/master/3750-closest-equal-element-queries) |
 <!---LeetCode Topics End-->
