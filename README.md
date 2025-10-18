@@ -38,13 +38,16 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 ## Array
 |  |
 | ------- |
+| [2245-destroying-asteroids](https://github.com/tkhwang/tkhwang-algorithm/tree/master/2245-destroying-asteroids) |
 | [3620-maximum-number-of-distinct-elements-after-operations](https://github.com/tkhwang/tkhwang-algorithm/tree/master/3620-maximum-number-of-distinct-elements-after-operations) |
 ## Greedy
 |  |
 | ------- |
+| [2245-destroying-asteroids](https://github.com/tkhwang/tkhwang-algorithm/tree/master/2245-destroying-asteroids) |
 | [3620-maximum-number-of-distinct-elements-after-operations](https://github.com/tkhwang/tkhwang-algorithm/tree/master/3620-maximum-number-of-distinct-elements-after-operations) |
 ## Sorting
 |  |
 | ------- |
+| [2245-destroying-asteroids](https://github.com/tkhwang/tkhwang-algorithm/tree/master/2245-destroying-asteroids) |
 | [3620-maximum-number-of-distinct-elements-after-operations](https://github.com/tkhwang/tkhwang-algorithm/tree/master/3620-maximum-number-of-distinct-elements-after-operations) |
 <!---LeetCode Topics End-->
