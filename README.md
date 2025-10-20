@@ -38,6 +38,7 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 ## Array
 |  |
 | ------- |
+| [0739-daily-temperatures](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0739-daily-temperatures) |
 | [2137-final-value-of-variable-after-performing-operations](https://github.com/tkhwang/tkhwang-algorithm/tree/master/2137-final-value-of-variable-after-performing-operations) |
 | [2245-destroying-asteroids](https://github.com/tkhwang/tkhwang-algorithm/tree/master/2245-destroying-asteroids) |
 | [3620-maximum-number-of-distinct-elements-after-operations](https://github.com/tkhwang/tkhwang-algorithm/tree/master/3620-maximum-number-of-distinct-elements-after-operations) |
@@ -59,4 +60,12 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 |  |
 | ------- |
 | [2137-final-value-of-variable-after-performing-operations](https://github.com/tkhwang/tkhwang-algorithm/tree/master/2137-final-value-of-variable-after-performing-operations) |
+## Stack
+|  |
+| ------- |
+| [0739-daily-temperatures](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0739-daily-temperatures) |
+## Monotonic Stack
+|  |
+| ------- |
+| [0739-daily-temperatures](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0739-daily-temperatures) |
 <!---LeetCode Topics End-->
