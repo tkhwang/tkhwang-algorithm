@@ -38,6 +38,7 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 ## Array
 |  |
 | ------- |
+| [2137-final-value-of-variable-after-performing-operations](https://github.com/tkhwang/tkhwang-algorithm/tree/master/2137-final-value-of-variable-after-performing-operations) |
 | [2245-destroying-asteroids](https://github.com/tkhwang/tkhwang-algorithm/tree/master/2245-destroying-asteroids) |
 | [3620-maximum-number-of-distinct-elements-after-operations](https://github.com/tkhwang/tkhwang-algorithm/tree/master/3620-maximum-number-of-distinct-elements-after-operations) |
 ## Greedy
@@ -50,4 +51,12 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 | ------- |
 | [2245-destroying-asteroids](https://github.com/tkhwang/tkhwang-algorithm/tree/master/2245-destroying-asteroids) |
 | [3620-maximum-number-of-distinct-elements-after-operations](https://github.com/tkhwang/tkhwang-algorithm/tree/master/3620-maximum-number-of-distinct-elements-after-operations) |
+## String
+|  |
+| ------- |
+| [2137-final-value-of-variable-after-performing-operations](https://github.com/tkhwang/tkhwang-algorithm/tree/master/2137-final-value-of-variable-after-performing-operations) |
+## Simulation
+|  |
+| ------- |
+| [2137-final-value-of-variable-after-performing-operations](https://github.com/tkhwang/tkhwang-algorithm/tree/master/2137-final-value-of-variable-after-performing-operations) |
 <!---LeetCode Topics End-->
