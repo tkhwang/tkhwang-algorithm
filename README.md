@@ -39,6 +39,7 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 |  |
 | ------- |
 | [0274-h-index](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0274-h-index) |
+| [0377-combination-sum-iv](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0377-combination-sum-iv) |
 | [0739-daily-temperatures](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0739-daily-temperatures) |
 | [2137-final-value-of-variable-after-performing-operations](https://github.com/tkhwang/tkhwang-algorithm/tree/master/2137-final-value-of-variable-after-performing-operations) |
 | [2245-destroying-asteroids](https://github.com/tkhwang/tkhwang-algorithm/tree/master/2245-destroying-asteroids) |
@@ -79,4 +80,8 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 |  |
 | ------- |
 | [0274-h-index](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0274-h-index) |
+## Dynamic Programming
+|  |
+| ------- |
+| [0377-combination-sum-iv](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0377-combination-sum-iv) |
 <!---LeetCode Topics End-->
