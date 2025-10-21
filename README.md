@@ -42,6 +42,7 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 | [2137-final-value-of-variable-after-performing-operations](https://github.com/tkhwang/tkhwang-algorithm/tree/master/2137-final-value-of-variable-after-performing-operations) |
 | [2245-destroying-asteroids](https://github.com/tkhwang/tkhwang-algorithm/tree/master/2245-destroying-asteroids) |
 | [3620-maximum-number-of-distinct-elements-after-operations](https://github.com/tkhwang/tkhwang-algorithm/tree/master/3620-maximum-number-of-distinct-elements-after-operations) |
+| [3731-sum-of-variable-length-subarrays](https://github.com/tkhwang/tkhwang-algorithm/tree/master/3731-sum-of-variable-length-subarrays) |
 ## Greedy
 |  |
 | ------- |
@@ -68,4 +69,8 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 |  |
 | ------- |
 | [0739-daily-temperatures](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0739-daily-temperatures) |
+## Prefix Sum
+|  |
+| ------- |
+| [3731-sum-of-variable-length-subarrays](https://github.com/tkhwang/tkhwang-algorithm/tree/master/3731-sum-of-variable-length-subarrays) |
 <!---LeetCode Topics End-->
