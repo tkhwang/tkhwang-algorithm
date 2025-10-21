@@ -38,6 +38,7 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 ## Array
 |  |
 | ------- |
+| [0274-h-index](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0274-h-index) |
 | [0739-daily-temperatures](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0739-daily-temperatures) |
 | [2137-final-value-of-variable-after-performing-operations](https://github.com/tkhwang/tkhwang-algorithm/tree/master/2137-final-value-of-variable-after-performing-operations) |
 | [2245-destroying-asteroids](https://github.com/tkhwang/tkhwang-algorithm/tree/master/2245-destroying-asteroids) |
@@ -51,6 +52,7 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 ## Sorting
 |  |
 | ------- |
+| [0274-h-index](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0274-h-index) |
 | [2245-destroying-asteroids](https://github.com/tkhwang/tkhwang-algorithm/tree/master/2245-destroying-asteroids) |
 | [3620-maximum-number-of-distinct-elements-after-operations](https://github.com/tkhwang/tkhwang-algorithm/tree/master/3620-maximum-number-of-distinct-elements-after-operations) |
 ## String
@@ -73,4 +75,8 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 |  |
 | ------- |
 | [3731-sum-of-variable-length-subarrays](https://github.com/tkhwang/tkhwang-algorithm/tree/master/3731-sum-of-variable-length-subarrays) |
+## Counting Sort
+|  |
+| ------- |
+| [0274-h-index](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0274-h-index) |
 <!---LeetCode Topics End-->
