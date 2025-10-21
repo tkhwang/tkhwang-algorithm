@@ -4,16 +4,16 @@
  */
 var dailyTemperatures = function(temperatures) {
     const N = temperatures.length;
+
+    const result = Array(N).fill(0);
     const stack = [];
-    const res = Array(N).fill(0);
-          
-    for (const [ i, temperature ] of temperatures.entries()) {
-        while (stack.length && temperatures[stack.at(-1)] < temperature) {
-            const last = stack.pop();
-            res[last] = i - last;
+
+    for (const [ index, temperature] of temperatures.entries()) {
+        while (stack.length && stack.at(-1)[1] < temperature) {
+            const [ lastIndex, lastTemp ] = stack.pop();
+            result[lastIndex] = index - lastIndex;
         }
-        stack.push(i)    
+        stack.push([ index, temperature ])
     }
-    
-    return res;
+    return result;
 };

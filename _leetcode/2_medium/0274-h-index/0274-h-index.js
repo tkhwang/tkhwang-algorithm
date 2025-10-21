@@ -3,22 +3,28 @@
  * @return {number}
  */
 var hIndex = function(citations) {
-    citations.sort((a,b) => a - b);
-    
     const N = citations.length;
-    
+    citations.sort((a,b) => a - b);
+
     let left = 0;
-    let right = N - 1;
+    let right = Math.max(...citations);
+
+    const isOK = (index) => {
+        let count = 0;
+        for (let i = 0; i < N; i += 1) {
+            if (index <= citations[i]) count += 1;
+        }
+        return index <= count;
+    }
 
     while (left <= right) {
-        const mid = Math.floor((left + right)/2);
-        
-        if (citations[mid] === N - mid) return N - mid;
-        else if (citations[mid] < N - mid) {
+        const mid = Math.floor((left + right) / 2);
+
+        if (isOK(mid)) {
             left = mid + 1;
-        } else if (citations[mid] > N - mid) {
+        } else {
             right = mid - 1;
         }
     }
-    return N - left;
+    return right;
 };
