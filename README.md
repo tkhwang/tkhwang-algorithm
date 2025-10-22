@@ -41,6 +41,7 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 | [0046-permutations](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0046-permutations) |
 | [0079-word-search](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0079-word-search) |
 | [0139-word-break](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0139-word-break) |
+| [0416-partition-equal-subset-sum](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0416-partition-equal-subset-sum) |
 | [0745-find-smallest-letter-greater-than-target](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0745-find-smallest-letter-greater-than-target) |
 ## Binary Search
 |  |
@@ -75,6 +76,7 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 | ------- |
 | [0005-longest-palindromic-substring](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0005-longest-palindromic-substring) |
 | [0139-word-break](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0139-word-break) |
+| [0416-partition-equal-subset-sum](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0416-partition-equal-subset-sum) |
 ## Trie
 |  |
 | ------- |
