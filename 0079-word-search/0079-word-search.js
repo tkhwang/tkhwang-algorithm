@@ -22,6 +22,7 @@ var exist = function(board, word) {
 
             if (!isValid(newR, newC)) continue;
             if (seen.has(genKey(newR, newC))) continue;
+            if (board[newR][newC] !== word[index + 1]) continue;
 
             seen.add(genKey(newR, newC));
             temp = temp || backtrack(newR, newC, index + 1, seen);
