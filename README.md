@@ -54,6 +54,7 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 | [0005-longest-palindromic-substring](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0005-longest-palindromic-substring) |
 | [0079-word-search](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0079-word-search) |
 | [0139-word-break](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0139-word-break) |
+| [0208-implement-trie-prefix-tree](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0208-implement-trie-prefix-tree) |
 ## Backtracking
 |  |
 | ------- |
@@ -72,6 +73,7 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 |  |
 | ------- |
 | [0139-word-break](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0139-word-break) |
+| [0208-implement-trie-prefix-tree](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0208-implement-trie-prefix-tree) |
 ## Dynamic Programming
 |  |
 | ------- |
@@ -82,6 +84,7 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 |  |
 | ------- |
 | [0139-word-break](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0139-word-break) |
+| [0208-implement-trie-prefix-tree](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0208-implement-trie-prefix-tree) |
 ## Memoization
 |  |
 | ------- |
@@ -94,4 +97,8 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 |  |
 | ------- |
 | [0056-merge-intervals](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0056-merge-intervals) |
+## Design
+|  |
+| ------- |
+| [0208-implement-trie-prefix-tree](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0208-implement-trie-prefix-tree) |
 <!---LeetCode Topics End-->
