@@ -32,3 +32,15 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 - [leethub v2](https://chromewebstore.google.com/detail/leethub-v2/mhanfgfagplhgemhjfeolkkdidbakocm)
 - [백준허브](https://chromewebstore.google.com/detail/%EB%B0%B1%EC%A4%80%ED%97%88%EB%B8%8Cbaekjoonhub/ccammcjdkpgjmcpijpahlehmapgmphmk)
 
+
+<!---LeetCode Topics Start-->
+# LeetCode Topics
+## Array
+|  |
+| ------- |
+| [0745-find-smallest-letter-greater-than-target](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0745-find-smallest-letter-greater-than-target) |
+## Binary Search
+|  |
+| ------- |
+| [0745-find-smallest-letter-greater-than-target](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0745-find-smallest-letter-greater-than-target) |
+<!---LeetCode Topics End-->
