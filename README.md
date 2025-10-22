@@ -38,6 +38,7 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 ## Array
 |  |
 | ------- |
+| [0046-permutations](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0046-permutations) |
 | [0079-word-search](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0079-word-search) |
 | [0745-find-smallest-letter-greater-than-target](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0745-find-smallest-letter-greater-than-target) |
 ## Binary Search
@@ -51,6 +52,7 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 ## Backtracking
 |  |
 | ------- |
+| [0046-permutations](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0046-permutations) |
 | [0079-word-search](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0079-word-search) |
 ## Depth-First Search
 |  |
