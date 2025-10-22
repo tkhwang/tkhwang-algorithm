@@ -42,6 +42,7 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 | [0056-merge-intervals](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0056-merge-intervals) |
 | [0079-word-search](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0079-word-search) |
 | [0139-word-break](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0139-word-break) |
+| [0217-contains-duplicate](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0217-contains-duplicate) |
 | [0416-partition-equal-subset-sum](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0416-partition-equal-subset-sum) |
 | [0745-find-smallest-letter-greater-than-target](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0745-find-smallest-letter-greater-than-target) |
 ## Binary Search
@@ -74,6 +75,7 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 | ------- |
 | [0139-word-break](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0139-word-break) |
 | [0208-implement-trie-prefix-tree](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0208-implement-trie-prefix-tree) |
+| [0217-contains-duplicate](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0217-contains-duplicate) |
 ## Dynamic Programming
 |  |
 | ------- |
@@ -97,6 +99,7 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 |  |
 | ------- |
 | [0056-merge-intervals](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0056-merge-intervals) |
+| [0217-contains-duplicate](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0217-contains-duplicate) |
 ## Design
 |  |
 | ------- |
