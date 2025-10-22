@@ -49,6 +49,7 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 ## String
 |  |
 | ------- |
+| [0005-longest-palindromic-substring](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0005-longest-palindromic-substring) |
 | [0079-word-search](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0079-word-search) |
 | [0139-word-break](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0139-word-break) |
 ## Backtracking
@@ -72,6 +73,7 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 ## Dynamic Programming
 |  |
 | ------- |
+| [0005-longest-palindromic-substring](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0005-longest-palindromic-substring) |
 | [0139-word-break](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0139-word-break) |
 ## Trie
 |  |
@@ -81,4 +83,8 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 |  |
 | ------- |
 | [0139-word-break](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0139-word-break) |
+## Two Pointers
+|  |
+| ------- |
+| [0005-longest-palindromic-substring](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0005-longest-palindromic-substring) |
 <!---LeetCode Topics End-->
