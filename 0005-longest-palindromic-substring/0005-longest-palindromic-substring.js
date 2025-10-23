@@ -4,30 +4,38 @@
  */
 var longestPalindrome = function(s) {
     const N = s.length;
-    let max = 0;
-    let maxValue = "";
+    if (N <= 1) return s;
 
-    const expandAroundCorner = (left, right) => {
-        let max = 0;
-        let maxValue = [];
-        while (0 <= left && right < N && s[left] === s[right]) {
-            if (max < right - left + 1) {
-                max = right - left + 1;
-                maxValue = [ left, right ];
-            }
-            left -= 1;
-            right += 1;
-        }
-        return [ max, maxValue ];
-    }
+    const dp = Array(N).fill(null).map(() => Array(N).fill(false));
+
+    let start = 0;
+    let maxLen = 1;
 
     for (let i = 0; i < N; i += 1) {
-        const [ oddMax, oddMaxValue] = expandAroundCorner(i, i);
-        if (max < oddMax) [ max, maxValue ] = [ oddMax, oddMaxValue ];
-
-        const [evenMax, evenMaxValue ] = expandAroundCorner(i, i + 1);
-        if (max < evenMax) [ max, maxValue ] = [ evenMax, evenMaxValue ];
+        dp[i][i] = true;
     }
 
-    return maxValue.length > 0 ? s.slice(maxValue[0], maxValue[1] + 1) : "";
+    for (let len = 2; len <= N; len += 1) {
+        for (let i = 0; i + len - 1 < N; i += 1) {
+            const j = i + len - 1;
+
+            if (s[i] !== s[j]) {
+                dp[i][j] = false;
+                continue;
+            }
+
+            if (len <= 3) {
+                dp[i][j] = true;
+            } else {
+                dp[i][j] = dp[i+1][j-1];
+            }
+
+            if (dp[i][j] && len > maxLen) {
+                maxLen = len;
+                start = i;
+            }
+        }
+    }
+
+    return s.substring(start, start + maxLen);
 };
