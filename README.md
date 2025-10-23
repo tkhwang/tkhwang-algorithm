@@ -57,6 +57,7 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 | [0079-word-search](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0079-word-search) |
 | [0139-word-break](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0139-word-break) |
 | [0208-implement-trie-prefix-tree](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0208-implement-trie-prefix-tree) |
+| [3502-count-substrings-with-k-frequency-characters-i](https://github.com/tkhwang/tkhwang-algorithm/tree/master/3502-count-substrings-with-k-frequency-characters-i) |
 ## Backtracking
 |  |
 | ------- |
@@ -77,6 +78,7 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 | [0139-word-break](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0139-word-break) |
 | [0208-implement-trie-prefix-tree](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0208-implement-trie-prefix-tree) |
 | [0217-contains-duplicate](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0217-contains-duplicate) |
+| [3502-count-substrings-with-k-frequency-characters-i](https://github.com/tkhwang/tkhwang-algorithm/tree/master/3502-count-substrings-with-k-frequency-characters-i) |
 ## Dynamic Programming
 |  |
 | ------- |
@@ -123,4 +125,8 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 |  |
 | ------- |
 | [0062-unique-paths](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0062-unique-paths) |
+## Sliding Window
+|  |
+| ------- |
+| [3502-count-substrings-with-k-frequency-characters-i](https://github.com/tkhwang/tkhwang-algorithm/tree/master/3502-count-substrings-with-k-frequency-characters-i) |
 <!---LeetCode Topics End-->
