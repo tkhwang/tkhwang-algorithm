@@ -45,6 +45,7 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 | [0152-maximum-product-subarray](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0152-maximum-product-subarray) |
 | [0198-house-robber](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0198-house-robber) |
 | [0217-contains-duplicate](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0217-contains-duplicate) |
+| [0373-find-k-pairs-with-smallest-sums](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0373-find-k-pairs-with-smallest-sums) |
 | [0416-partition-equal-subset-sum](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0416-partition-equal-subset-sum) |
 | [0745-find-smallest-letter-greater-than-target](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0745-find-smallest-letter-greater-than-target) |
 ## Binary Search
@@ -131,4 +132,8 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 |  |
 | ------- |
 | [3502-count-substrings-with-k-frequency-characters-i](https://github.com/tkhwang/tkhwang-algorithm/tree/master/3502-count-substrings-with-k-frequency-characters-i) |
+## Heap (Priority Queue)
+|  |
+| ------- |
+| [0373-find-k-pairs-with-smallest-sums](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0373-find-k-pairs-with-smallest-sums) |
 <!---LeetCode Topics End-->
