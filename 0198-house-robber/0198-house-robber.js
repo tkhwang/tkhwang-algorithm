@@ -5,7 +5,7 @@
 var rob = function(nums) {
     const N = nums.length;
 
-    const dp = Array(N + 1).fill(0);
+    const dp = Array(N).fill(0);
     dp[0] = nums[0];
     dp[1] = Math.max(nums[0], nums[1]);
 
