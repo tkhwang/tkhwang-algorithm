@@ -104,4 +104,12 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 |  |
 | ------- |
 | [0208-implement-trie-prefix-tree](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0208-implement-trie-prefix-tree) |
+## Linked List
+|  |
+| ------- |
+| [0206-reverse-linked-list](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0206-reverse-linked-list) |
+## Recursion
+|  |
+| ------- |
+| [0206-reverse-linked-list](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0206-reverse-linked-list) |
 <!---LeetCode Topics End-->
