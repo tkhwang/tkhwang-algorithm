@@ -81,6 +81,7 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 |  |
 | ------- |
 | [0005-longest-palindromic-substring](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0005-longest-palindromic-substring) |
+| [0062-unique-paths](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0062-unique-paths) |
 | [0139-word-break](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0139-word-break) |
 | [0198-house-robber](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0198-house-robber) |
 | [0416-partition-equal-subset-sum](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0416-partition-equal-subset-sum) |
@@ -114,4 +115,12 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 |  |
 | ------- |
 | [0206-reverse-linked-list](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0206-reverse-linked-list) |
+## Math
+|  |
+| ------- |
+| [0062-unique-paths](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0062-unique-paths) |
+## Combinatorics
+|  |
+| ------- |
+| [0062-unique-paths](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0062-unique-paths) |
 <!---LeetCode Topics End-->
