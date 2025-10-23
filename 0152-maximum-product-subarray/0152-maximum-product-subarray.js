@@ -29,7 +29,6 @@ var maxProduct = function(nums) {
 
         max = Math.max(
             max,
-            dp[i][MIN],
             dp[i][MAX]
         )
     }
