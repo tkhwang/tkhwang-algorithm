@@ -42,6 +42,7 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 | [0056-merge-intervals](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0056-merge-intervals) |
 | [0079-word-search](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0079-word-search) |
 | [0139-word-break](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0139-word-break) |
+| [0152-maximum-product-subarray](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0152-maximum-product-subarray) |
 | [0198-house-robber](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0198-house-robber) |
 | [0217-contains-duplicate](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0217-contains-duplicate) |
 | [0416-partition-equal-subset-sum](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0416-partition-equal-subset-sum) |
@@ -85,6 +86,7 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 | [0005-longest-palindromic-substring](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0005-longest-palindromic-substring) |
 | [0062-unique-paths](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0062-unique-paths) |
 | [0139-word-break](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0139-word-break) |
+| [0152-maximum-product-subarray](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0152-maximum-product-subarray) |
 | [0198-house-robber](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0198-house-robber) |
 | [0416-partition-equal-subset-sum](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0416-partition-equal-subset-sum) |
 ## Trie
