@@ -45,6 +45,7 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 | [0152-maximum-product-subarray](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0152-maximum-product-subarray) |
 | [0198-house-robber](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0198-house-robber) |
 | [0217-contains-duplicate](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0217-contains-duplicate) |
+| [0252-meeting-rooms](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0252-meeting-rooms) |
 | [0373-find-k-pairs-with-smallest-sums](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0373-find-k-pairs-with-smallest-sums) |
 | [0416-partition-equal-subset-sum](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0416-partition-equal-subset-sum) |
 | [0745-find-smallest-letter-greater-than-target](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0745-find-smallest-letter-greater-than-target) |
@@ -108,6 +109,7 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 | ------- |
 | [0056-merge-intervals](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0056-merge-intervals) |
 | [0217-contains-duplicate](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0217-contains-duplicate) |
+| [0252-meeting-rooms](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0252-meeting-rooms) |
 ## Design
 |  |
 | ------- |
