@@ -46,6 +46,7 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 | [0198-house-robber](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0198-house-robber) |
 | [0217-contains-duplicate](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0217-contains-duplicate) |
 | [0252-meeting-rooms](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0252-meeting-rooms) |
+| [0253-meeting-rooms-ii](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0253-meeting-rooms-ii) |
 | [0373-find-k-pairs-with-smallest-sums](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0373-find-k-pairs-with-smallest-sums) |
 | [0416-partition-equal-subset-sum](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0416-partition-equal-subset-sum) |
 | [0745-find-smallest-letter-greater-than-target](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0745-find-smallest-letter-greater-than-target) |
@@ -104,12 +105,14 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 |  |
 | ------- |
 | [0005-longest-palindromic-substring](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0005-longest-palindromic-substring) |
+| [0253-meeting-rooms-ii](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0253-meeting-rooms-ii) |
 ## Sorting
 |  |
 | ------- |
 | [0056-merge-intervals](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0056-merge-intervals) |
 | [0217-contains-duplicate](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0217-contains-duplicate) |
 | [0252-meeting-rooms](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0252-meeting-rooms) |
+| [0253-meeting-rooms-ii](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0253-meeting-rooms-ii) |
 ## Design
 |  |
 | ------- |
@@ -137,5 +140,14 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 ## Heap (Priority Queue)
 |  |
 | ------- |
+| [0253-meeting-rooms-ii](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0253-meeting-rooms-ii) |
 | [0373-find-k-pairs-with-smallest-sums](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0373-find-k-pairs-with-smallest-sums) |
+## Greedy
+|  |
+| ------- |
+| [0253-meeting-rooms-ii](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0253-meeting-rooms-ii) |
+## Prefix Sum
+|  |
+| ------- |
+| [0253-meeting-rooms-ii](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0253-meeting-rooms-ii) |
 <!---LeetCode Topics End-->
