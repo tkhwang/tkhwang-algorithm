@@ -8,16 +8,11 @@ var canAttendMeetings = function(intervals) {
 
     intervals.sort((a,b) => a[0] - b[0]);
 
-    let prvBegin = intervals[0][0];
-    let prvEnd = intervals[0][1];
-
     for (let i = 1; i < N; i += 1) {
+        const [ prvBegin, prvEnd ] = intervals[i-1];
         const [ begin, end ] = intervals[i];
 
-        if (prvEnd > begin) return false;
-
-        prvBegin = begin;
-        prvEnd = end;
+        if (begin < prvEnd) return false;
     }
 
     return true;
