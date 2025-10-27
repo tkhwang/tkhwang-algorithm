@@ -4,16 +4,15 @@
  */
 var canAttendMeetings = function(intervals) {
     const N = intervals.length;
+    if (N === 0) return true;
 
-    intervals.sort((a,b) => a[0] - b[0] || a[1] - b[1]);
-
-    if (intervals.length === 0) return true;
-    let prvEnd = intervals[0][1];
+    intervals.sort((a,b) => a[0] - b[0]);
 
     for (let i = 1; i < N; i += 1) {
-        const [ start, end ] = intervals[i];
-        if (prvEnd > start) return false;
-        prvEnd = end;
+        const [ prvBegin, prvEnd ] = intervals[i-1];
+        const [ begin, end ] = intervals[i];
+
+        if (begin < prvEnd) return false;
     }
 
     return true;

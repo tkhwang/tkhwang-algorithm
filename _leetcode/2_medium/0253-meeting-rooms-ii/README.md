@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/meeting-rooms-ii/?envType=weekly-question&envId=2024-03-15">253. Meeting Rooms II</a></h2><h3>Medium</h3><hr><p>Given an array of meeting time intervals <code>intervals</code> where <code>intervals[i] = [start<sub>i</sub>, end<sub>i</sub>]</code>, return <em>the minimum number of conference rooms required</em>.</p>
+<h2><a href="https://leetcode.com/problems/meeting-rooms-ii">253. Meeting Rooms II</a></h2><h3>Medium</h3><hr><p>Given an array of meeting time intervals <code>intervals</code> where <code>intervals[i] = [start<sub>i</sub>, end<sub>i</sub>]</code>, return <em>the minimum number of conference rooms required</em>.</p>
 
 <p>&nbsp;</p>
 <p><strong class="example">Example 1:</strong></p>

@@ -3,11 +3,13 @@
  * @return {boolean}
  */
 var containsDuplicate = function(nums) {
-    const freq = {};
-    
+    const set = new Set();
+
     for (const num of nums) {
-        if (freq[num] !== undefined) return true;
-        else freq[num] = 1;
+        if (set.has(num)) return true;
+
+        set.add(num);
     }
+
     return false;
 };

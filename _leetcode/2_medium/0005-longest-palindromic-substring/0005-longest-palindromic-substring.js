@@ -4,42 +4,29 @@
  */
 var longestPalindrome = function(s) {
     const N = s.length;
-    
-    let maxValue = [];
-    let max = 0;
-    
-    
-    const expandArroundCorner = (left, right) => {
-        let max = 0;
-        let maxValue = [];
-        while (0 <= left && right < N && s[left] === s[right]) {
-            if (max < right - left + 1) {
-                max = right - left + 1;
-                maxValue = [ left, right ];
-            }
-            left -= 1;
-            right += 1;
-        }
-        return [ max, maxValue ];
-    }
-    
+
+    const dp = Array(N).fill(null).map(() => Array(N).fill(false));
+
     for (let i = 0; i < N; i += 1) {
-        // odd
-        const [ oddMax, oddMaxValue ] = expandArroundCorner(i, i);
-        if (max < oddMax) {
-            max = oddMax;
-            maxValue = oddMaxValue;
-        }
-        
-        // even
-        const [ evenMax, evenMaxValue ] = expandArroundCorner(i, i + 1);
-        if (max < evenMax) {
-            max = evenMax;
-            maxValue = evenMaxValue;
+        dp[i][i] = true;
+    }
+
+    let start = 0;
+    let max = 1;
+
+    for (let len = 2; len <= N; len += 1) {
+        for (let i = 0; i < N - len + 1; i += 1) {
+            const j = i + len - 1;
+            if (s[i] === s[j]) {
+                if (len === 2 || dp[i+1][j-1]) {
+                    dp[i][j] = true;
+                    if (max < len) {
+                        start = i;
+                        max = len;
+                    }
+                }
+            }
         }
     }
-    
-    return maxValue.length > 0 
-            ? s.slice(maxValue[0], maxValue[1] + 1)
-            : "";
+    return s.substring(start, start + max);
 };

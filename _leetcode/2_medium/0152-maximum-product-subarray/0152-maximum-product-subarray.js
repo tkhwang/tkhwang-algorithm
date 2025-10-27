@@ -4,15 +4,16 @@
  */
 var maxProduct = function(nums) {
     const N = nums.length;
-    
-    const dp = Array(N).fill(null).map((_) => Array(2).fill(-1));
+    if (N === 1) return nums[0];
+
+    const dp = Array(N).fill(null).map(() => Array(2).fill(-Infinity));
     const MIN = 0;
     const MAX = 1;
-    
+
     dp[0][MIN] = nums[0];
     dp[0][MAX] = nums[0];
     let max = nums[0];
-    
+
     for (let i = 1; i < N; i += 1) {
         dp[i][MIN] = Math.min(
             dp[i-1][MIN] * nums[i],
@@ -24,7 +25,8 @@ var maxProduct = function(nums) {
             dp[i-1][MAX] * nums[i],
             nums[i]
         )
-        if (max < dp[i][MAX]) max = dp[i][MAX];
+        if (max < dp[i][MAX]) max = dp[i][MAX]
     }
+
     return max;
 };
