@@ -39,6 +39,7 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 |  |
 | ------- |
 | [0055-jump-game](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0055-jump-game) |
+| [3430-count-days-without-meetings](https://github.com/tkhwang/tkhwang-algorithm/tree/master/3430-count-days-without-meetings) |
 ## Dynamic Programming
 |  |
 | ------- |
@@ -47,4 +48,8 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 |  |
 | ------- |
 | [0055-jump-game](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0055-jump-game) |
+## Sorting
+|  |
+| ------- |
+| [3430-count-days-without-meetings](https://github.com/tkhwang/tkhwang-algorithm/tree/master/3430-count-days-without-meetings) |
 <!---LeetCode Topics End-->
