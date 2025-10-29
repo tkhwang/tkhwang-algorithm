@@ -39,6 +39,7 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 |  |
 | ------- |
 | [0055-jump-game](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0055-jump-game) |
+| [0136-single-number](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0136-single-number) |
 | [0448-find-all-numbers-disappeared-in-an-array](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0448-find-all-numbers-disappeared-in-an-array) |
 | [1713-dot-product-of-two-sparse-vectors](https://github.com/tkhwang/tkhwang-algorithm/tree/master/1713-dot-product-of-two-sparse-vectors) |
 | [2546-number-of-subarrays-with-gcd-equal-to-k](https://github.com/tkhwang/tkhwang-algorithm/tree/master/2546-number-of-subarrays-with-gcd-equal-to-k) |
@@ -70,6 +71,7 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 ## Bit Manipulation
 |  |
 | ------- |
+| [0136-single-number](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0136-single-number) |
 | [3676-smallest-number-with-all-set-bits](https://github.com/tkhwang/tkhwang-algorithm/tree/master/3676-smallest-number-with-all-set-bits) |
 ## Number Theory
 |  |
