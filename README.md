@@ -39,4 +39,12 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 |  |
 | ------- |
 | [1069-confusing-number](https://github.com/tkhwang/tkhwang-algorithm/tree/master/1069-confusing-number) |
+## Array
+|  |
+| ------- |
+| [4015-split-array-with-minimum-difference](https://github.com/tkhwang/tkhwang-algorithm/tree/master/4015-split-array-with-minimum-difference) |
+## Prefix Sum
+|  |
+| ------- |
+| [4015-split-array-with-minimum-difference](https://github.com/tkhwang/tkhwang-algorithm/tree/master/4015-split-array-with-minimum-difference) |
 <!---LeetCode Topics End-->
