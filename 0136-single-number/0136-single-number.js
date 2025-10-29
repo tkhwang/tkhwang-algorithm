@@ -8,8 +8,8 @@ var singleNumber = function(nums) {
         freq[num] = (freq[num] ?? 0) + 1;
     }
 
-    const keys = Object.keys(freq);
-    const key =  keys.filter((key) => freq[key] === 1)
-
-    return +key[0];
+    for (const num of nums) {
+        if (freq[num] === 1) return num;
+    }
+    return -1;
 };
