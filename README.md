@@ -52,4 +52,12 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 |  |
 | ------- |
 | [3430-count-days-without-meetings](https://github.com/tkhwang/tkhwang-algorithm/tree/master/3430-count-days-without-meetings) |
+## Math
+|  |
+| ------- |
+| [3676-smallest-number-with-all-set-bits](https://github.com/tkhwang/tkhwang-algorithm/tree/master/3676-smallest-number-with-all-set-bits) |
+## Bit Manipulation
+|  |
+| ------- |
+| [3676-smallest-number-with-all-set-bits](https://github.com/tkhwang/tkhwang-algorithm/tree/master/3676-smallest-number-with-all-set-bits) |
 <!---LeetCode Topics End-->
