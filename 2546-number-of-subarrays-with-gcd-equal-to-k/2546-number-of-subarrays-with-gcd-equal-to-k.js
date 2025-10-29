@@ -19,7 +19,7 @@ var subarrayGCD = function(nums, k) {
             currentGCD = gcd(currentGCD, nums[right]);
             
             if (currentGCD === k) count++;
-            else if (currentGCD < k) break;
+            // else if (currentGCD < k) break;
         }
     }
     return count;
