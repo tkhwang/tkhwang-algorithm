@@ -39,6 +39,7 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 |  |
 | ------- |
 | [0055-jump-game](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0055-jump-game) |
+| [1713-dot-product-of-two-sparse-vectors](https://github.com/tkhwang/tkhwang-algorithm/tree/master/1713-dot-product-of-two-sparse-vectors) |
 | [2546-number-of-subarrays-with-gcd-equal-to-k](https://github.com/tkhwang/tkhwang-algorithm/tree/master/2546-number-of-subarrays-with-gcd-equal-to-k) |
 | [2579-minimum-split-into-subarrays-with-gcd-greater-than-one](https://github.com/tkhwang/tkhwang-algorithm/tree/master/2579-minimum-split-into-subarrays-with-gcd-greater-than-one) |
 | [2607-minimum-subarrays-in-a-valid-split](https://github.com/tkhwang/tkhwang-algorithm/tree/master/2607-minimum-subarrays-in-a-valid-split) |
@@ -75,4 +76,16 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 | [2546-number-of-subarrays-with-gcd-equal-to-k](https://github.com/tkhwang/tkhwang-algorithm/tree/master/2546-number-of-subarrays-with-gcd-equal-to-k) |
 | [2579-minimum-split-into-subarrays-with-gcd-greater-than-one](https://github.com/tkhwang/tkhwang-algorithm/tree/master/2579-minimum-split-into-subarrays-with-gcd-greater-than-one) |
 | [2607-minimum-subarrays-in-a-valid-split](https://github.com/tkhwang/tkhwang-algorithm/tree/master/2607-minimum-subarrays-in-a-valid-split) |
+## Hash Table
+|  |
+| ------- |
+| [1713-dot-product-of-two-sparse-vectors](https://github.com/tkhwang/tkhwang-algorithm/tree/master/1713-dot-product-of-two-sparse-vectors) |
+## Two Pointers
+|  |
+| ------- |
+| [1713-dot-product-of-two-sparse-vectors](https://github.com/tkhwang/tkhwang-algorithm/tree/master/1713-dot-product-of-two-sparse-vectors) |
+## Design
+|  |
+| ------- |
+| [1713-dot-product-of-two-sparse-vectors](https://github.com/tkhwang/tkhwang-algorithm/tree/master/1713-dot-product-of-two-sparse-vectors) |
 <!---LeetCode Topics End-->
