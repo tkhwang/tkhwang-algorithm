@@ -39,11 +39,13 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 |  |
 | ------- |
 | [0055-jump-game](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0055-jump-game) |
+| [2607-minimum-subarrays-in-a-valid-split](https://github.com/tkhwang/tkhwang-algorithm/tree/master/2607-minimum-subarrays-in-a-valid-split) |
 | [3430-count-days-without-meetings](https://github.com/tkhwang/tkhwang-algorithm/tree/master/3430-count-days-without-meetings) |
 ## Dynamic Programming
 |  |
 | ------- |
 | [0055-jump-game](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0055-jump-game) |
+| [2607-minimum-subarrays-in-a-valid-split](https://github.com/tkhwang/tkhwang-algorithm/tree/master/2607-minimum-subarrays-in-a-valid-split) |
 ## Greedy
 |  |
 | ------- |
@@ -55,9 +57,14 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 ## Math
 |  |
 | ------- |
+| [2607-minimum-subarrays-in-a-valid-split](https://github.com/tkhwang/tkhwang-algorithm/tree/master/2607-minimum-subarrays-in-a-valid-split) |
 | [3676-smallest-number-with-all-set-bits](https://github.com/tkhwang/tkhwang-algorithm/tree/master/3676-smallest-number-with-all-set-bits) |
 ## Bit Manipulation
 |  |
 | ------- |
 | [3676-smallest-number-with-all-set-bits](https://github.com/tkhwang/tkhwang-algorithm/tree/master/3676-smallest-number-with-all-set-bits) |
+## Number Theory
+|  |
+| ------- |
+| [2607-minimum-subarrays-in-a-valid-split](https://github.com/tkhwang/tkhwang-algorithm/tree/master/2607-minimum-subarrays-in-a-valid-split) |
 <!---LeetCode Topics End-->
