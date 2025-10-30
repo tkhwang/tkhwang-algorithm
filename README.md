@@ -42,9 +42,26 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 ## Array
 |  |
 | ------- |
+| [1633-minimum-number-of-increments-on-subarrays-to-form-a-target-array](https://github.com/tkhwang/tkhwang-algorithm/tree/master/1633-minimum-number-of-increments-on-subarrays-to-form-a-target-array) |
 | [4015-split-array-with-minimum-difference](https://github.com/tkhwang/tkhwang-algorithm/tree/master/4015-split-array-with-minimum-difference) |
 ## Prefix Sum
 |  |
 | ------- |
 | [4015-split-array-with-minimum-difference](https://github.com/tkhwang/tkhwang-algorithm/tree/master/4015-split-array-with-minimum-difference) |
+## Dynamic Programming
+|  |
+| ------- |
+| [1633-minimum-number-of-increments-on-subarrays-to-form-a-target-array](https://github.com/tkhwang/tkhwang-algorithm/tree/master/1633-minimum-number-of-increments-on-subarrays-to-form-a-target-array) |
+## Stack
+|  |
+| ------- |
+| [1633-minimum-number-of-increments-on-subarrays-to-form-a-target-array](https://github.com/tkhwang/tkhwang-algorithm/tree/master/1633-minimum-number-of-increments-on-subarrays-to-form-a-target-array) |
+## Greedy
+|  |
+| ------- |
+| [1633-minimum-number-of-increments-on-subarrays-to-form-a-target-array](https://github.com/tkhwang/tkhwang-algorithm/tree/master/1633-minimum-number-of-increments-on-subarrays-to-form-a-target-array) |
+## Monotonic Stack
+|  |
+| ------- |
+| [1633-minimum-number-of-increments-on-subarrays-to-form-a-target-array](https://github.com/tkhwang/tkhwang-algorithm/tree/master/1633-minimum-number-of-increments-on-subarrays-to-form-a-target-array) |
 <!---LeetCode Topics End-->
