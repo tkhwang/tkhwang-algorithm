@@ -64,4 +64,8 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 |  |
 | ------- |
 | [1633-minimum-number-of-increments-on-subarrays-to-form-a-target-array](https://github.com/tkhwang/tkhwang-algorithm/tree/master/1633-minimum-number-of-increments-on-subarrays-to-form-a-target-array) |
+## String
+|  |
+| ------- |
+| [3636-check-balanced-string](https://github.com/tkhwang/tkhwang-algorithm/tree/master/3636-check-balanced-string) |
 <!---LeetCode Topics End-->
