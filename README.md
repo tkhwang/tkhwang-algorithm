@@ -74,14 +74,20 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 |  |
 | ------- |
 | [3636-check-balanced-string](https://github.com/tkhwang/tkhwang-algorithm/tree/master/3636-check-balanced-string) |
+| [3736-find-valid-pair-of-adjacent-digits-in-string](https://github.com/tkhwang/tkhwang-algorithm/tree/master/3736-find-valid-pair-of-adjacent-digits-in-string) |
 ## Hash Table
 |  |
 | ------- |
 | [3044-minimum-operations-to-collect-elements](https://github.com/tkhwang/tkhwang-algorithm/tree/master/3044-minimum-operations-to-collect-elements) |
 | [3163-subarrays-distinct-element-sum-of-squares-i](https://github.com/tkhwang/tkhwang-algorithm/tree/master/3163-subarrays-distinct-element-sum-of-squares-i) |
 | [3581-the-two-sneaky-numbers-of-digitville](https://github.com/tkhwang/tkhwang-algorithm/tree/master/3581-the-two-sneaky-numbers-of-digitville) |
+| [3736-find-valid-pair-of-adjacent-digits-in-string](https://github.com/tkhwang/tkhwang-algorithm/tree/master/3736-find-valid-pair-of-adjacent-digits-in-string) |
 ## Bit Manipulation
 |  |
 | ------- |
 | [3044-minimum-operations-to-collect-elements](https://github.com/tkhwang/tkhwang-algorithm/tree/master/3044-minimum-operations-to-collect-elements) |
+## Counting
+|  |
+| ------- |
+| [3736-find-valid-pair-of-adjacent-digits-in-string](https://github.com/tkhwang/tkhwang-algorithm/tree/master/3736-find-valid-pair-of-adjacent-digits-in-string) |
 <!---LeetCode Topics End-->
