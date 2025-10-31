@@ -43,6 +43,7 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 ## Array
 |  |
 | ------- |
+| [0053-maximum-subarray](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0053-maximum-subarray) |
 | [0064-minimum-path-sum](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0064-minimum-path-sum) |
 | [1633-minimum-number-of-increments-on-subarrays-to-form-a-target-array](https://github.com/tkhwang/tkhwang-algorithm/tree/master/1633-minimum-number-of-increments-on-subarrays-to-form-a-target-array) |
 | [3044-minimum-operations-to-collect-elements](https://github.com/tkhwang/tkhwang-algorithm/tree/master/3044-minimum-operations-to-collect-elements) |
@@ -57,6 +58,7 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 ## Dynamic Programming
 |  |
 | ------- |
+| [0053-maximum-subarray](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0053-maximum-subarray) |
 | [0064-minimum-path-sum](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0064-minimum-path-sum) |
 | [1633-minimum-number-of-increments-on-subarrays-to-form-a-target-array](https://github.com/tkhwang/tkhwang-algorithm/tree/master/1633-minimum-number-of-increments-on-subarrays-to-form-a-target-array) |
 | [3106-length-of-the-longest-subsequence-that-sums-to-target](https://github.com/tkhwang/tkhwang-algorithm/tree/master/3106-length-of-the-longest-subsequence-that-sums-to-target) |
@@ -96,4 +98,8 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 |  |
 | ------- |
 | [0064-minimum-path-sum](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0064-minimum-path-sum) |
+## Divide and Conquer
+|  |
+| ------- |
+| [0053-maximum-subarray](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0053-maximum-subarray) |
 <!---LeetCode Topics End-->
