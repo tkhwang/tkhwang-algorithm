@@ -39,6 +39,7 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 |  |
 | ------- |
 | [1069-confusing-number](https://github.com/tkhwang/tkhwang-algorithm/tree/master/1069-confusing-number) |
+| [3581-the-two-sneaky-numbers-of-digitville](https://github.com/tkhwang/tkhwang-algorithm/tree/master/3581-the-two-sneaky-numbers-of-digitville) |
 ## Array
 |  |
 | ------- |
@@ -46,6 +47,7 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 | [3044-minimum-operations-to-collect-elements](https://github.com/tkhwang/tkhwang-algorithm/tree/master/3044-minimum-operations-to-collect-elements) |
 | [3106-length-of-the-longest-subsequence-that-sums-to-target](https://github.com/tkhwang/tkhwang-algorithm/tree/master/3106-length-of-the-longest-subsequence-that-sums-to-target) |
 | [3163-subarrays-distinct-element-sum-of-squares-i](https://github.com/tkhwang/tkhwang-algorithm/tree/master/3163-subarrays-distinct-element-sum-of-squares-i) |
+| [3581-the-two-sneaky-numbers-of-digitville](https://github.com/tkhwang/tkhwang-algorithm/tree/master/3581-the-two-sneaky-numbers-of-digitville) |
 | [4015-split-array-with-minimum-difference](https://github.com/tkhwang/tkhwang-algorithm/tree/master/4015-split-array-with-minimum-difference) |
 ## Prefix Sum
 |  |
@@ -77,6 +79,7 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 | ------- |
 | [3044-minimum-operations-to-collect-elements](https://github.com/tkhwang/tkhwang-algorithm/tree/master/3044-minimum-operations-to-collect-elements) |
 | [3163-subarrays-distinct-element-sum-of-squares-i](https://github.com/tkhwang/tkhwang-algorithm/tree/master/3163-subarrays-distinct-element-sum-of-squares-i) |
+| [3581-the-two-sneaky-numbers-of-digitville](https://github.com/tkhwang/tkhwang-algorithm/tree/master/3581-the-two-sneaky-numbers-of-digitville) |
 ## Bit Manipulation
 |  |
 | ------- |
