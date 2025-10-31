@@ -43,6 +43,7 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 ## Array
 |  |
 | ------- |
+| [0064-minimum-path-sum](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0064-minimum-path-sum) |
 | [1633-minimum-number-of-increments-on-subarrays-to-form-a-target-array](https://github.com/tkhwang/tkhwang-algorithm/tree/master/1633-minimum-number-of-increments-on-subarrays-to-form-a-target-array) |
 | [3044-minimum-operations-to-collect-elements](https://github.com/tkhwang/tkhwang-algorithm/tree/master/3044-minimum-operations-to-collect-elements) |
 | [3106-length-of-the-longest-subsequence-that-sums-to-target](https://github.com/tkhwang/tkhwang-algorithm/tree/master/3106-length-of-the-longest-subsequence-that-sums-to-target) |
@@ -56,6 +57,7 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 ## Dynamic Programming
 |  |
 | ------- |
+| [0064-minimum-path-sum](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0064-minimum-path-sum) |
 | [1633-minimum-number-of-increments-on-subarrays-to-form-a-target-array](https://github.com/tkhwang/tkhwang-algorithm/tree/master/1633-minimum-number-of-increments-on-subarrays-to-form-a-target-array) |
 | [3106-length-of-the-longest-subsequence-that-sums-to-target](https://github.com/tkhwang/tkhwang-algorithm/tree/master/3106-length-of-the-longest-subsequence-that-sums-to-target) |
 ## Stack
@@ -90,4 +92,8 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 |  |
 | ------- |
 | [3736-find-valid-pair-of-adjacent-digits-in-string](https://github.com/tkhwang/tkhwang-algorithm/tree/master/3736-find-valid-pair-of-adjacent-digits-in-string) |
+## Matrix
+|  |
+| ------- |
+| [0064-minimum-path-sum](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0064-minimum-path-sum) |
 <!---LeetCode Topics End-->
