@@ -51,6 +51,7 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 | [3163-subarrays-distinct-element-sum-of-squares-i](https://github.com/tkhwang/tkhwang-algorithm/tree/master/3163-subarrays-distinct-element-sum-of-squares-i) |
 | [3581-the-two-sneaky-numbers-of-digitville](https://github.com/tkhwang/tkhwang-algorithm/tree/master/3581-the-two-sneaky-numbers-of-digitville) |
 | [3610-find-x-sum-of-all-k-long-subarrays-i](https://github.com/tkhwang/tkhwang-algorithm/tree/master/3610-find-x-sum-of-all-k-long-subarrays-i) |
+| [4003-longest-fibonacci-subarray](https://github.com/tkhwang/tkhwang-algorithm/tree/master/4003-longest-fibonacci-subarray) |
 | [4015-split-array-with-minimum-difference](https://github.com/tkhwang/tkhwang-algorithm/tree/master/4015-split-array-with-minimum-difference) |
 ## Prefix Sum
 |  |
