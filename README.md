@@ -56,6 +56,7 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 |  |
 | ------- |
 | [4015-split-array-with-minimum-difference](https://github.com/tkhwang/tkhwang-algorithm/tree/master/4015-split-array-with-minimum-difference) |
+| [4052-equal-score-substrings](https://github.com/tkhwang/tkhwang-algorithm/tree/master/4052-equal-score-substrings) |
 ## Dynamic Programming
 |  |
 | ------- |
@@ -80,6 +81,7 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 | ------- |
 | [3636-check-balanced-string](https://github.com/tkhwang/tkhwang-algorithm/tree/master/3636-check-balanced-string) |
 | [3736-find-valid-pair-of-adjacent-digits-in-string](https://github.com/tkhwang/tkhwang-algorithm/tree/master/3736-find-valid-pair-of-adjacent-digits-in-string) |
+| [4052-equal-score-substrings](https://github.com/tkhwang/tkhwang-algorithm/tree/master/4052-equal-score-substrings) |
 ## Hash Table
 |  |
 | ------- |
