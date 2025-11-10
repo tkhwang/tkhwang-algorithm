@@ -39,6 +39,7 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 |  |
 | ------- |
 | [1069-confusing-number](https://github.com/tkhwang/tkhwang-algorithm/tree/master/1069-confusing-number) |
+| [2288-count-operations-to-obtain-zero](https://github.com/tkhwang/tkhwang-algorithm/tree/master/2288-count-operations-to-obtain-zero) |
 | [3581-the-two-sneaky-numbers-of-digitville](https://github.com/tkhwang/tkhwang-algorithm/tree/master/3581-the-two-sneaky-numbers-of-digitville) |
 ## Array
 |  |
@@ -120,4 +121,8 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 |  |
 | ------- |
 | [3610-find-x-sum-of-all-k-long-subarrays-i](https://github.com/tkhwang/tkhwang-algorithm/tree/master/3610-find-x-sum-of-all-k-long-subarrays-i) |
+## Simulation
+|  |
+| ------- |
+| [2288-count-operations-to-obtain-zero](https://github.com/tkhwang/tkhwang-algorithm/tree/master/2288-count-operations-to-obtain-zero) |
 <!---LeetCode Topics End-->
