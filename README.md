@@ -51,6 +51,7 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 | [3163-subarrays-distinct-element-sum-of-squares-i](https://github.com/tkhwang/tkhwang-algorithm/tree/master/3163-subarrays-distinct-element-sum-of-squares-i) |
 | [3581-the-two-sneaky-numbers-of-digitville](https://github.com/tkhwang/tkhwang-algorithm/tree/master/3581-the-two-sneaky-numbers-of-digitville) |
 | [3610-find-x-sum-of-all-k-long-subarrays-i](https://github.com/tkhwang/tkhwang-algorithm/tree/master/3610-find-x-sum-of-all-k-long-subarrays-i) |
+| [3834-minimum-operations-to-convert-all-elements-to-zero](https://github.com/tkhwang/tkhwang-algorithm/tree/master/3834-minimum-operations-to-convert-all-elements-to-zero) |
 | [4003-longest-fibonacci-subarray](https://github.com/tkhwang/tkhwang-algorithm/tree/master/4003-longest-fibonacci-subarray) |
 | [4015-split-array-with-minimum-difference](https://github.com/tkhwang/tkhwang-algorithm/tree/master/4015-split-array-with-minimum-difference) |
 ## Prefix Sum
@@ -69,14 +70,17 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 |  |
 | ------- |
 | [1633-minimum-number-of-increments-on-subarrays-to-form-a-target-array](https://github.com/tkhwang/tkhwang-algorithm/tree/master/1633-minimum-number-of-increments-on-subarrays-to-form-a-target-array) |
+| [3834-minimum-operations-to-convert-all-elements-to-zero](https://github.com/tkhwang/tkhwang-algorithm/tree/master/3834-minimum-operations-to-convert-all-elements-to-zero) |
 ## Greedy
 |  |
 | ------- |
 | [1633-minimum-number-of-increments-on-subarrays-to-form-a-target-array](https://github.com/tkhwang/tkhwang-algorithm/tree/master/1633-minimum-number-of-increments-on-subarrays-to-form-a-target-array) |
+| [3834-minimum-operations-to-convert-all-elements-to-zero](https://github.com/tkhwang/tkhwang-algorithm/tree/master/3834-minimum-operations-to-convert-all-elements-to-zero) |
 ## Monotonic Stack
 |  |
 | ------- |
 | [1633-minimum-number-of-increments-on-subarrays-to-form-a-target-array](https://github.com/tkhwang/tkhwang-algorithm/tree/master/1633-minimum-number-of-increments-on-subarrays-to-form-a-target-array) |
+| [3834-minimum-operations-to-convert-all-elements-to-zero](https://github.com/tkhwang/tkhwang-algorithm/tree/master/3834-minimum-operations-to-convert-all-elements-to-zero) |
 ## String
 |  |
 | ------- |
@@ -91,6 +95,7 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 | [3581-the-two-sneaky-numbers-of-digitville](https://github.com/tkhwang/tkhwang-algorithm/tree/master/3581-the-two-sneaky-numbers-of-digitville) |
 | [3610-find-x-sum-of-all-k-long-subarrays-i](https://github.com/tkhwang/tkhwang-algorithm/tree/master/3610-find-x-sum-of-all-k-long-subarrays-i) |
 | [3736-find-valid-pair-of-adjacent-digits-in-string](https://github.com/tkhwang/tkhwang-algorithm/tree/master/3736-find-valid-pair-of-adjacent-digits-in-string) |
+| [3834-minimum-operations-to-convert-all-elements-to-zero](https://github.com/tkhwang/tkhwang-algorithm/tree/master/3834-minimum-operations-to-convert-all-elements-to-zero) |
 ## Bit Manipulation
 |  |
 | ------- |
