@@ -4,36 +4,25 @@
  */
 var minPathSum = function(grid) {
     const [ ROWS, COLS ] = [ grid.length, grid[0].length ];
-    
-    const directions = [ [1,0], [0,1] ];
-    const isValid = (r, c) => !(r < 0 || r >= ROWS || c < 0 || c >= COLS);
-    const genKey = (r,c) => `${r}:${c}`
-    
-    const dp = Array(ROWS).fill(null).map((_) => Array(COLS).fill(Infinity));
-    dp[0][0] = grid[0][0];
-    
-    let min = Infinity;
-    
-    let res = null;
-    const dfs = (r, c) => {
-        if (r === ROWS -1 && c === COLS -1) {
-            res = dp[r][c];
-            return;
-        }
-        
-        for (const [ dR, dC ] of directions) {
-            const newR = r + dR;
-            const newC = c + dC;
-            
-            if (!isValid(newR, newC)) continue;
-            if (dp[newR][newC] <= dp[r][c] + grid[newR][newC]) continue;
-            
-            dp[newR][newC] = dp[r][c] + grid[newR][newC]
-            dfs(newR, newC);
+
+    const dp = Array(ROWS).fill(null).map(() => Array(COLS).fill(0));
+    dp[0][0] = grid[0][0]
+
+    for (let r = 1 ; r < ROWS; r += 1) {
+        dp[r][0] = dp[r-1][0] + grid[r][0]
+    }
+    for (let c = 1; c < COLS; c += 1) {
+        dp[0][c] = dp[0][c-1] + grid[0][c];
+    }
+
+    for (let r = 1; r < ROWS; r += 1) {
+        for (let c = 1; c < COLS; c += 1) {
+            dp[r][c] = Math.min(
+                dp[r-1][c] + grid[r][c],
+                dp[r][c-1] + grid[r][c]
+            )
         }
     }
-    
-    dfs(0, 0, 0)
-    
-    return res;
+
+    return dp[ROWS-1][COLS-1];
 };
