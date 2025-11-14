@@ -38,6 +38,7 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 ## Array
 |  |
 | ------- |
+| [2058-concatenation-of-array](https://github.com/tkhwang/tkhwang-algorithm/tree/master/2058-concatenation-of-array) |
 | [2625-increment-submatrices-by-one](https://github.com/tkhwang/tkhwang-algorithm/tree/master/2625-increment-submatrices-by-one) |
 ## Matrix
 |  |
@@ -47,4 +48,8 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 |  |
 | ------- |
 | [2625-increment-submatrices-by-one](https://github.com/tkhwang/tkhwang-algorithm/tree/master/2625-increment-submatrices-by-one) |
+## Simulation
+|  |
+| ------- |
+| [2058-concatenation-of-array](https://github.com/tkhwang/tkhwang-algorithm/tree/master/2058-concatenation-of-array) |
 <!---LeetCode Topics End-->
