@@ -40,6 +40,7 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 | ------- |
 | [0485-max-consecutive-ones](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0485-max-consecutive-ones) |
 | [0645-set-mismatch](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0645-set-mismatch) |
+| [1482-how-many-numbers-are-smaller-than-the-current-number](https://github.com/tkhwang/tkhwang-algorithm/tree/master/1482-how-many-numbers-are-smaller-than-the-current-number) |
 | [1580-shuffle-the-array](https://github.com/tkhwang/tkhwang-algorithm/tree/master/1580-shuffle-the-array) |
 | [2058-concatenation-of-array](https://github.com/tkhwang/tkhwang-algorithm/tree/master/2058-concatenation-of-array) |
 | [2625-increment-submatrices-by-one](https://github.com/tkhwang/tkhwang-algorithm/tree/master/2625-increment-submatrices-by-one) |
@@ -59,6 +60,7 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 |  |
 | ------- |
 | [0645-set-mismatch](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0645-set-mismatch) |
+| [1482-how-many-numbers-are-smaller-than-the-current-number](https://github.com/tkhwang/tkhwang-algorithm/tree/master/1482-how-many-numbers-are-smaller-than-the-current-number) |
 ## Bit Manipulation
 |  |
 | ------- |
@@ -67,4 +69,9 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 |  |
 | ------- |
 | [0645-set-mismatch](https://github.com/tkhwang/tkhwang-algorithm/tree/master/0645-set-mismatch) |
+| [1482-how-many-numbers-are-smaller-than-the-current-number](https://github.com/tkhwang/tkhwang-algorithm/tree/master/1482-how-many-numbers-are-smaller-than-the-current-number) |
+## Counting Sort
+|  |
+| ------- |
+| [1482-how-many-numbers-are-smaller-than-the-current-number](https://github.com/tkhwang/tkhwang-algorithm/tree/master/1482-how-many-numbers-are-smaller-than-the-current-number) |
 <!---LeetCode Topics End-->
