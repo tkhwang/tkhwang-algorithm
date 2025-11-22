@@ -45,6 +45,7 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 | [1580-shuffle-the-array](https://github.com/tkhwang/tkhwang-algorithm/tree/master/1580-shuffle-the-array) |
 | [2058-concatenation-of-array](https://github.com/tkhwang/tkhwang-algorithm/tree/master/2058-concatenation-of-array) |
 | [2625-increment-submatrices-by-one](https://github.com/tkhwang/tkhwang-algorithm/tree/master/2625-increment-submatrices-by-one) |
+| [3190-find-minimum-operations-to-make-all-elements-divisible-by-three](https://github.com/tkhwang/tkhwang-algorithm/tree/master/3190-find-minimum-operations-to-make-all-elements-divisible-by-three) |
 ## Matrix
 |  |
 | ------- |
@@ -76,4 +77,8 @@ typical code snippet for solving algorithm problems in [blog](https://tkhwang.me
 |  |
 | ------- |
 | [1482-how-many-numbers-are-smaller-than-the-current-number](https://github.com/tkhwang/tkhwang-algorithm/tree/master/1482-how-many-numbers-are-smaller-than-the-current-number) |
+## Math
+|  |
+| ------- |
+| [3190-find-minimum-operations-to-make-all-elements-divisible-by-three](https://github.com/tkhwang/tkhwang-algorithm/tree/master/3190-find-minimum-operations-to-make-all-elements-divisible-by-three) |
 <!---LeetCode Topics End-->
